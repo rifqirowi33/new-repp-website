@@ -1,0 +1,20 @@
+[
+  {
+    "id": "j2me",
+    "title": "Situs Java J2ME",
+    "url": "https://java.repp.my.id/",
+    "desc": [
+      "Ini arsip aplikasi J2ME populer di feature‑phone.",
+      "Semua file di‑hosting sendiri & gratis."
+    ]
+  },
+  {
+    "id": "lama",
+    "title": "Situs Lama (v1)",
+    "url": "https://reppwebsite.vercel.app/",
+    "desc": [
+      "Versi pertama situsku (HTML statis retro).",
+      "Menarik melihat evolusinya."
+    ]
+  }
+]

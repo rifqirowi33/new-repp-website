@@ -4,8 +4,8 @@
     "<askName> Dengan Siapa Saya berbicara?"
   ],
   "guest": [
-    "Halo Tamu! jika kamu melihat situs ini, itu artinya",
-    "situs ini telah aktif!",
+    "Halo Tamu! jika kamu melihat situs ini,",
+    "itu artinya situs ini telah aktif!",
     "karena kamu baru pertama kali mengunjungi situs ini",
     "maka aku akan menjelaskan terkait pengembangan situs ini",
     "izinkan aku menjelaskannya padamu",
@@ -26,8 +26,8 @@
     "Silahkan pilih!"
   ],
   "named": [
-    "Halo {name}! jika kamu melihat situs ini, itu artinya",
-    "situs ini telah aktif!",
+    "Halo {name}! jika kamu melihat situs ini,",
+    "itu artinya situs ini telah aktif!",
     "karena {name} baru pertama kali mengunjungi situs ini",
     "maka aku akan menjelaskan terkait pengembangan situs ini",
     "izinkan aku menjelaskannya padamu",

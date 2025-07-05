@@ -15,14 +15,17 @@ let menuUnlocked=false, menuIdx=0;
 let currentUrl = "";
 
 /* ---------- DATA PROYEK ---------- */
-const projects=[
-  {id:"j2me",title:"Situs Java J2ME",url:"https://java.repp.my.id/",
-   desc:["Ini arsip aplikasi J2ME populer di feature‑phone.",
-         "Semua file di‑hosting sendiri & gratis."]},
-  {id:"lama",title:"Situs Lama (v1)",url:"https://reppwebsite.vercel.app/",
-   desc:["Versi pertama situsku (HTML statis retro).",
-         "Menarik melihat evolusinya."]}
-];
+let projects = [];
+
+async function loadProjects(){
+  try {
+    const res = await fetch(`/data/projects.json?t=${Date.now()}`);
+    projects = await res.json();
+  } catch (e) {
+    console.warn("Gagal memuat projects.json:", e);
+    projects = []; // fallback kosong
+  }
+}
 
 /* ---------- 1. loader dialog ---------- */
 let dialogGlobal = {};         // dialog.json
@@ -68,6 +71,7 @@ const mkBtn=(txt,type,sel)=>{const b=ce("button","choice-btn"+(sel?" selected":"
    ========================================================= */
 document.addEventListener("DOMContentLoaded",async()=>{
   await loadDialog();
+  await loadProjects();
   const saved=await fetchName();
 
   /* refs */
