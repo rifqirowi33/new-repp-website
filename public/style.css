@@ -70,6 +70,22 @@ html, body {
   display:flex;align-items:center;justify-content:center;text-align:center;
   z-index: 1;
 }
+
+.link-blue    { color: #0077cc; }
+.link-green   { color: #2ecc71; }
+.link-orange  { color: #ff9900; }
+.link-yellow  { color: #f1c40f; }
+.link-red     { color: #e74c3c; }
+.link-brown   { color: #fbf0df; }
+
+.link-blue:hover,
+.link-green:hover,
+.link-orange:hover,
+.link-yellow:hover,
+.link-red:hover {
+  opacity: 0.8;
+}
+
 #arrow{position:absolute;right:.8rem;bottom:.5rem;opacity:0;animation:blink 1s step-end infinite}
 @keyframes blink{50%{opacity:0}51%,100%{opacity:1}}
 

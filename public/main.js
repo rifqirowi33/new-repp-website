@@ -1,158 +1,250 @@
-/******************* 1. load dialog JSON *******************/
-let dialogData = {};
-async function loadDialog() {
-  try {
-    const res = await fetch(`/data/dialog.json?t=${Date.now()}`); // bust cache
-    dialogData = await res.json();
-  } catch (e) {
-    console.error("dialog.json gagal dimuat:", e);
-    dialogData = {
-      firstVisit: ["Halo, Saya REPP!", "<askName> Kamu siapa?"],
-      guest: ["Halo Tamu!", "situs ini telah aktif!"],
-      named: ["Halo {name}!", "situs ini telah aktif!"],
-      returning: ["Halo {name}, selamat datang kembali!"]
-    };
+/* =========================================================
+   main.js — versi FINAL  (multi‑dialog, proyek OK, keyboard OK)
+   ========================================================= */
+
+/* ---------- GLOBAL STATE ---------- */
+let waitingMainChoice = false;
+let waitingSubChoice  = false;
+let waitingProjList   = false;
+
+let mainBtns=[], mainIdx=0;
+let subBtns =[], subIdx =0;
+let projBtns=[], projIdx=0;
+
+let menuUnlocked=false, menuIdx=0;
+let currentUrl = "";
+
+/* ---------- DATA PROYEK ---------- */
+const projects=[
+  {id:"j2me",title:"Situs Java J2ME",url:"https://java.repp.my.id/",
+   desc:["Ini arsip aplikasi J2ME populer di feature‑phone.",
+         "Semua file di‑hosting sendiri & gratis."]},
+  {id:"lama",title:"Situs Lama (v1)",url:"https://reppwebsite.vercel.app/",
+   desc:["Versi pertama situsku (HTML statis retro).",
+         "Menarik melihat evolusinya."]}
+];
+
+/* ---------- 1. loader dialog ---------- */
+let dialogGlobal = {};         // dialog.json
+let dialogProyek = {};         // dialog_proyek.json
+
+async function loadDialog(){
+  try{
+    const r=await fetch(`/data/dialog.json?t=${Date.now()}`);
+    dialogGlobal=await r.json();
+  }catch(e){
+    console.warn("dialog.json gagal:",e);
+    dialogGlobal={firstVisit:["Halo!","<askName> Siapa namamu?"],
+                  guest:["Halo tamu!","Silahkan pilih!"],
+                  named:["Halo {name}!","Silahkan pilih!"],
+                  returning:["Halo {name}!","Silahkan pilih!"]};
   }
 }
 
-/******************* 2. util fetch whoami *******************/
-async function fetchSavedName() {
-  try {
-    const res = await fetch("/api/whoami");
-    const { name } = await res.json();
-    return name;
-  } catch {return null;}
+async function loadDialogFor(section){
+  try{
+    const r=await fetch(`/data/dialog_${section}.json?t=${Date.now()}`);
+    return await r.json();
+  }catch(e){
+    console.warn(`dialog_${section}.json gagal:`,e);
+    return null;
+  }
 }
 
-/******************* helper: parse line & tag *****************/
-function parseDialogLine(line){
-  const tags=[];let content=line;
-  const m=line.match(/^<(\w+)>/);
-  if(m){tags.push(m[1]);content=line.replace(/^<\w+>\s*/,'');}
-  return{content,tags};
-}
+/* ---------- 2. siapa saya ---------- */
+const fetchName=async()=>{try{return (await (await fetch("/api/whoami")).json()).name}catch{return null}};
 
-/******************* 3. main app ****************************/
+/* ---------- 3. util ---------- */
+const parse=l=>{const m=l.match(/^<(\w+)>/);return m?{content:l.slice(m[0].length).trimStart(),tag:m[1]}:{content:l,tag:null}};
+const linkRX=/<link\s+href=['"]([^'"]+)['"](?:\s+color=['"]([^'"]+)['"])?>(.*?)<\/link>/g;
+const render=l=>l.replace(linkRX,(_,h,c="blue",t)=>`<a target="_blank" href="${h}" class="link-${c}">${t}</a>`);
+const strip=h=>{const d=document.createElement("div");d.innerHTML=h;return d.textContent||""};
+const qs=s=>document.querySelector(s);
+const ce=(t,c)=>Object.assign(document.createElement(t),{className:c||""});
+const mkBtn=(txt,type,sel)=>{const b=ce("button","choice-btn"+(sel?" selected":""));b.textContent=txt;b.dataset.type=type;return b;};
+
+/* =========================================================
+   DOM & LOGIC
+   ========================================================= */
 document.addEventListener("DOMContentLoaded",async()=>{
   await loadDialog();
-  const savedName=await fetchSavedName();
+  const saved=await fetchName();
 
-  /* elements */
-  const dialogText=document.getElementById("dialogText");
-  const arrow=document.getElementById("arrow");
-  const dialogBox=document.getElementById("dialogBox");
-  const choicesWrap=document.getElementById("choicesContainer");
-  const menu=document.getElementById("menu");
-  const modal=document.getElementById("nameModal");
-  const blurBG=document.getElementById("blurBackground");
-  const nameInput=document.getElementById("nameInput");
-  const confirmBtn=document.getElementById("confirmBtn");
-  const cancelBtn=document.getElementById("cancelBtn");
-  const menuItems=[...menu.querySelectorAll("li")];
+  /* refs */
+  const $txt=qs("#dialogText"), $arrow=qs("#arrow"), $dlg=qs("#dialogBox");
+  const $choices=qs("#choicesContainer"), $menu=qs("#menu");
+  const $modal=qs("#nameModal"), $blur=qs("#blurBackground");
+  const $input=qs("#nameInput"), $ok=qs("#confirmBtn"), $cancel=qs("#cancelBtn");
+  const menuItems=[...$menu.querySelectorAll("li")];
 
-  /* queue */
-  let queue=savedName?dialogData.returning.map(l=>l.replace("{name}",savedName)):[...dialogData.firstVisit];
+  /* queue init */
+  let q=saved? dialogGlobal.returning.map(l=>l.replace("{name}",saved))
+             : [...dialogGlobal.firstVisit];
+  let idx=0,pos=0,typing=false,skip=false; const speed=35;
 
-  /* state */
-  let idx=0,pos=0,typing=false,skip=false;
-  let waitingChoice=false,menuUnlocked=false;
-  let choiceButtons=[],choiceIndex=0;
-  let menuIndex=0;
-  const speed=35;
+  /* ---------- helper ---------- */
+  const highlightMenu=i=>{menuItems.forEach((li,x)=>li.querySelector(".icon-btn").classList.toggle("selected",x===i));menuIdx=i;};
 
-  /***************** typeLoop *****************/
-  function typeLoop(){
-    typing=true;arrow.style.opacity=0;
-    const {content,tags}=parseDialogLine(queue[idx]);
-    dialogText.textContent=content.slice(0,++pos);
-    if(pos<content.length&&!skip){setTimeout(typeLoop,speed);return;}
+  /* ---------- typewriter ---------- */
+  function type(){
+    if(idx>=q.length){console.warn("queue selesai");return;}
+    typing=true;$arrow.style.opacity=0;
 
-    typing=false;skip=false;arrow.style.opacity=1;
+    const {content,tag}=parse(q[idx]);
+    const html=render(content), plain=strip(html);
+    $txt.textContent=plain.slice(0,++pos);
 
-    if(tags.includes("askName")){
-      setTimeout(spawnChoices,1000);
-    }
-    if(content.trim()==="Silahkan pilih!"&&!menuUnlocked){
-      menu.classList.remove("disabled");
-      menuUnlocked=true;
-      highlightMenu(menuIndex);
+    if(pos<plain.length && !skip){setTimeout(type,speed);return;}
+
+    typing=false;skip=false;$txt.innerHTML=html;$arrow.style.opacity=1;
+
+    if(tag==="askName")   setTimeout(spawnMainChoices,600);
+    if(tag==="askProject")setTimeout(()=>spawnSubChoices(doProyekYes,doProyekNo),600);
+    if(tag==="askMore")   setTimeout(()=>spawnSubChoices(doProyekList,doProyekNo,"Boleh","Ngga perlu"),600);
+    if(tag==="askVisit")  setTimeout(spawnVisit,600);
+
+    if(!menuUnlocked && plain.toLowerCase().includes("silahkan pilih")){
+      $menu.classList.remove("disabled"); menuUnlocked=true; highlightMenu(menuIdx);
     }
   }
 
-  /********* spawn choices *********/
-  function spawnChoices(){
-    if(choicesWrap.childElementCount)return;
-    waitingChoice=true;choiceIndex=0;
-    const wrap=document.createElement("div");wrap.className="choices";
-    const btnGuest=document.createElement("button");btnGuest.className="choice-btn selected";btnGuest.dataset.type="guest";btnGuest.textContent="Tamu";
-    const btnName=document.createElement("button");btnName.className="choice-btn";btnName.dataset.type="name";btnName.textContent="Isi Nama";
-    wrap.append(btnGuest,btnName);choicesWrap.append(wrap);
-    choiceButtons=[btnGuest,btnName];
-    choiceButtons.forEach((btn,i)=>{
-      btn.addEventListener("mouseenter",()=>highlightChoice(i));
-      btn.addEventListener("click",()=>handleChoice(btn.dataset.type));
-    });
-    highlightChoice(0);
+  /* ---------- MAIN choice ---------- */
+  function spawnMainChoices(){
+    if(waitingMainChoice)return;
+    waitingMainChoice=true; mainIdx=0; $choices.innerHTML="";
+    const box=ce("div","choices");
+    const g=mkBtn("Tamu","guest",true), n=mkBtn("Isi Nama","name");
+    box.append(g,n); $choices.append(box); mainBtns=[g,n];
+    mainBtns.forEach((b,x)=>{b.onmouseenter=()=>setMain(x);b.onclick=()=>chooseMain(b.dataset.type)});
+    setMain(0);
   }
-  function highlightChoice(i){choiceButtons.forEach((b,x)=>b.classList.toggle("selected",x===i));choiceIndex=i;}
-
-  /********* handle choice *********/
-  function handleChoice(type){choicesWrap.innerHTML="";waitingChoice=false;
-    if(type==="guest"){queue=[...dialogData.guest];idx=pos=0;typeLoop();return;}
+  const setMain=i=>{mainIdx=i; mainBtns.forEach((b,x)=>b.classList.toggle("selected",x===i));};
+  function chooseMain(t){
+    waitingMainChoice=false;$choices.innerHTML="";
+    $menu.classList.add("disabled"); menuUnlocked=false;
+    if(t==="guest"){q=[...dialogGlobal.guest]; idx=pos=0; type(); return;}
     openModal();
   }
 
-  /********* modal *********/
-  function openModal(){modal.classList.remove("hidden");blurBG.classList.remove("hidden");nameInput.value="";nameInput.focus();
-    const close=()=>{modal.classList.add("hidden");blurBG.classList.add("hidden");};
-    cancelBtn.onclick=close;
-    confirmBtn.onclick=async()=>{
-      const name=nameInput.value.trim();if(!name)return;
-      try{await fetch("/api/visit",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name})});}catch{}
-      close();queue=dialogData.named.map(l=>l.replace("{name}",name));idx=pos=0;typeLoop();
-    };
+  /* ---------- YES / NO generic ---------- */
+  function spawnSubChoices(yesCB,noCB,yesT="Tentu",noT="Tidak"){
+    if(waitingSubChoice)return;
+    waitingSubChoice=true; subIdx=0; $choices.innerHTML="";
+    const w=ce("div","choices"), y=mkBtn(yesT,"yes",true), n=mkBtn(noT,"no");
+    w.append(y,n); $choices.append(w); subBtns=[y,n]; setSub(0);
+    subBtns.forEach((b,x)=>b.onmouseenter=()=>setSub(x));
+    y.onclick=()=>{waitingSubChoice=false;$choices.innerHTML="";yesCB();};
+    n.onclick=()=>{waitingSubChoice=false;$choices.innerHTML="";noCB();};
+  }
+  const setSub=i=>{subIdx=i; subBtns.forEach((b,x)=>b.classList.toggle("selected",x===i));};
+
+  /* ---------- Proyek branch ---------- */
+  const doProyekYes=()=>{q=[...(dialogProyek.proyekYes||["(tidak ada data)","Silahkan pilih!"])];idx=pos=0;type();};
+  const doProyekNo =()=>{q=[...(dialogProyek.proyekNo ||["Silahkan pilih!"])];idx=pos=0;type();};
+
+  function doProyekList(){
+    waitingProjList=true; projIdx=0; $choices.innerHTML="";
+    const wrap=ce("div","choices proj-list");
+    projects.forEach((p,i)=>wrap.append(mkBtn(p.title,p.id,i===0)));
+    wrap.append(mkBtn("Tidak jadi","cancel"));
+    $choices.append(wrap);
+    projBtns=[...wrap.querySelectorAll("button")]; setProj(0);
+    projBtns.forEach((b,x)=>b.onmouseenter=()=>setProj(x));
+    projBtns.forEach(b=>b.onclick=()=>chooseProject(b.dataset.type));
+  }
+  const setProj=i=>{projIdx=i;projBtns.forEach((b,x)=>b.classList.toggle("selected",x===i));};
+  function chooseProject(id){
+    waitingProjList=false;$choices.innerHTML="";
+    if(id==="cancel"){doProyekNo();return;}
+    const p=projects.find(pr=>pr.id===id);
+    if(!p){q=["Proyek tidak ditemukan","Silahkan pilih!"];idx=pos=0;type();return;}
+    currentUrl=p.url;
+    q=[...p.desc,"<askVisit>apakah kamu ingin mengunjunginya?"];idx=pos=0;type();
   }
 
-  /********* next sentence *********/
-  function next(){
-    if(typing||waitingChoice){if(waitingChoice)return;skip=true;const {content}=parseDialogLine(queue[idx]);pos=content.length;dialogText.textContent=content;return;}
-    idx++;if(idx>=queue.length){arrow.style.opacity=0;return;}
-    pos=0;dialogText.textContent="";typeLoop();
+  /* visit */
+  function spawnVisit(){
+    spawnSubChoices(
+      ()=>{q=["tunggu sebentar, aku akan membawamu"];idx=pos=0;type();setTimeout(()=>window.location.href=currentUrl,1200);},
+      ()=>{q=["yahh sayang sekali, padahal proyek yang kubuat ini sangat keren","Silahkan pilih!"];idx=pos=0;type();},
+      "bawa aku","Tidak"
+    );
   }
 
-  dialogBox.addEventListener("click",next);
+  /* modal */
+  function openModal(){
+    $modal.classList.remove("hidden");$blur.classList.remove("hidden");
+    $input.value="";$input.focus();
+    const close=()=>{$modal.classList.add("hidden");$blur.classList.add("hidden");};
+    $cancel.onclick=close;
+    $ok.onclick=async()=>{const n=$input.value.trim();if(!n)return;
+      try{await fetch("/api/visit",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name:n})});}catch{}
+      close();q=dialogGlobal.named.map(l=>l.replace("{name}",n));idx=pos=0;type();};
+  }
+
+  /* next */
+  const next=()=>{if(typing||waitingMainChoice||waitingSubChoice||waitingProjList)return;
+    idx++; if(idx>=q.length){$arrow.style.opacity=0;return;} pos=0;$txt.textContent="";type();};
+
+  /* events */
+  $dlg.onclick=next;
   document.addEventListener("keydown",e=>{
-    const key=e.key;
-    /* Arrow nav inside choice buttons */
-    if(waitingChoice){
-      if(key==="ArrowLeft"){choiceIndex=(choiceIndex-1+choiceButtons.length)%choiceButtons.length;highlightChoice(choiceIndex);}
-      if(key==="ArrowRight"){choiceIndex=(choiceIndex+1)%choiceButtons.length;highlightChoice(choiceIndex);}
-      if(key==="Enter"){choiceButtons[choiceIndex].click();}
+    const k=e.key;
+    if(waitingMainChoice){
+      if(k==="ArrowLeft") setMain((mainIdx-1+mainBtns.length)%mainBtns.length);
+      else if(k==="ArrowRight")setMain((mainIdx+1)%mainBtns.length);
+      else if(k==="Enter") mainBtns[mainIdx].click();
       return;
     }
-
-    /* Arrow nav in menu after unlocked */
-    if(menuUnlocked&&!typing){
-      if(key==="ArrowLeft"){menuIndex=(menuIndex-1+menuItems.length)%menuItems.length;highlightMenu(menuIndex);}
-      if(key==="ArrowRight"){menuIndex=(menuIndex+1)%menuItems.length;highlightMenu(menuIndex);}
-      if(key==="Enter"){const btn=menuItems[menuIndex].querySelector(".icon-btn");btn.click();}
-      if(["ArrowLeft","ArrowRight","Enter"].includes(key))return; // jangan trigger next()
+    if(waitingSubChoice){
+      if(k==="ArrowLeft") setSub((subIdx-1+subBtns.length)%subBtns.length);
+      else if(k==="ArrowRight")setSub((subIdx+1)%subBtns.length);
+      else if(k==="Enter") subBtns[subIdx].click();
+      return;
     }
-
-    if(key==="Enter")next();
+    if(waitingProjList){
+      if(k==="ArrowLeft") setProj((projIdx-1+projBtns.length)%projBtns.length);
+      else if(k==="ArrowRight")setProj((projIdx+1)%projBtns.length);
+      else if(k==="Enter") projBtns[projIdx].click();
+      return;
+    }
+    if(menuUnlocked&&!typing){
+      if(k==="ArrowLeft") highlightMenu((menuIdx-1+menuItems.length)%menuItems.length);
+      else if(k==="ArrowRight")highlightMenu((menuIdx+1)%menuItems.length);
+      else if(k==="Enter") menuItems[menuIdx].querySelector(".icon-btn").click();
+      if(["ArrowLeft","ArrowRight","Enter"].includes(k))return;
+    }
+    if(k==="Enter") next();
   });
 
-  function highlightMenu(i){menuItems.forEach((li,x)=>li.querySelector(".icon-btn").classList.toggle("selected",x===i));}
-
-  /********* menu hover update dialog *********/
+  /* menu click */
   menuItems.forEach((li,i)=>{
     const btn=li.querySelector(".icon-btn");
-    const msg=li.dataset.dialog;
-    const show=()=>{if(menu.classList.contains("disabled"))return;dialogText.textContent=msg;highlightMenu(i);menuIndex=i;};
-    btn.addEventListener("mouseenter",show);
-    btn.addEventListener("focus",show);
+    btn.onmouseenter=()=>{if(!$menu.classList.contains("disabled")){$txt.textContent=li.dataset.dialog;highlightMenu(i);}};
+    btn.onclick = async () => {
+  if ($menu.classList.contains("disabled")) return;
+  const path = btn.dataset.link;
+
+  if (path === "/proyek") {
+    $menu.classList.add("disabled");
+    menuUnlocked = false;
+
+    dialogProyek = await loadDialogFor("proyek") || {};
+    let intro = dialogProyek?.intro;
+    if (!Array.isArray(intro)) {
+      console.warn("dialog_proyek.json.intro tidak valid:", intro);
+      intro = ["<askProject>Kamu ingin mengetahui tentang Proyek ya?"];
+    }
+
+    q = [...intro];
+    idx = pos = 0;
+    type();
+  } else {
+    window.location.href = path;
+  }
+};
   });
 
   /* start */
-  typeLoop();
+  type();
 });

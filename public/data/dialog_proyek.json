@@ -1,0 +1,23 @@
+{
+  "proyekIntro": [
+  "<askProject>Kamu ingin mengetahui tentang Proyek ya?"
+  ],
+   "proyekYes": [
+    "Ok, Baiklah! aku akan menjelaskan tentang Proyek.",
+    "Proyek ini dibuat dengan penuh semangat", 
+    "dan menggunakan berbagai teknologi open-source.",
+    "Salah satu proyeknya adalah situs ini sendiri,",
+    "yang dijalankan langsung dari ponsel Android.",
+    "<askMore>apa kamu mau melihat proyekku yang lain?"
+  ],
+  "proyekNo": [
+  "Kamu tidak tertarik?", 
+  "atau mungkin kamu ingin mengetahui hal yang lain?",
+  "Silahkan pilih!"
+  ],
+   "proyekCancel": [
+    "ngga jadi ya? padahal aku ingin menunjukkan proyekku padamu",
+    "mungkin kamu ingin mengetahui hal lain",
+    "Silahkan pilih!"
+  ]
+}
