@@ -221,21 +221,70 @@ footer{
 }
 
 /* RESPONSIVE */
-@media(max-width:600px){
-    .title{font-size:1.7rem;margin:0}
-.tagline{font-size:.8rem;margin:0 0 2rem}
-  .dialog{margin-top: -40px;font-size:.70rem;padding:.8rem 1.2rem}
-  .choice-btn{font-size:.75rem;padding:.35rem 1.6rem}
-   .icon-btn {
-    width: 72px;
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 1.9rem;
   }
-
+  .tagline {
+    font-size: 0.9rem;
+  }
   .icon-btn img {
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
   }
+}
 
-  .icon-btn span {
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.6rem;
+  }
+  .tagline {
+    font-size: 0.8rem;
+  }
+  .dialog {
+    font-size: 0.75rem;
+    padding: 0.9rem 1.2rem;
+  }
+  .choice-btn {
     font-size: 0.7rem;
+    padding: 0.35rem 1.2rem;
+  }
+  .icon-btn {
+    width: 64px;
+  }
+  .icon-btn img {
+    width: 52px;
+    height: 52px;
+  }
+  .icon-btn span {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.4rem;
+  }
+  .tagline {
+    font-size: 0.75rem;
+  }
+  .dialog {
+    font-size: 0.68rem;
+    padding: 0.7rem 1rem;
+  }
+  .choice-btn {
+    font-size: 0.65rem;
+    padding: 0.3rem 1rem;
+  }
+  .modal-box {
+    padding: 1rem;
+  }
+  .modal-btn {
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+  }
+  footer {
+    font-size: 1.4rem;
   }
 }
