@@ -1,0 +1,52 @@
+{
+  "firstVisit": [
+    "Halo, Saya REPP.MY.ID",
+    "<askName> Dengan Siapa Saya berbicara?"
+  ],
+  "guest": [
+    "Halo Tamu! jika kamu melihat situs ini, itu artinya",
+    "situs ini telah aktif!",
+    "karena kamu baru pertama kali mengunjungi situs ini",
+    "maka aku akan menjelaskan terkait pengembangan situs ini",
+    "Situs ini dikembangkan dengan menggunakan Termux.dev.",
+    "Web server yang digunakan adalah NGINX.",
+    "Situs ini berjalan pada backend yang dibuat dalam lingkungan javascript",
+    "menggunakan framework ExpressJS.",
+    "Server backend dalam pengembangan situs ini",
+    "menggunakan runtime JavaScript secepat kilat, yang disebut dengan BunJS.",
+    "Untuk dapat diakses secara online, situs ini mengandalkan Cloudflare.",
+    "Dan yang tak kalah penting,",
+    "ini dihost dengan hanya menggunakan smartphone Android yang sudah usang!",
+    "ada yang ingin kamu ketahui tentang situs ini?",
+    "kamu bisa memilih icon dibawah",
+    "aku akan menjelaskannya padamu,",
+    "Silahkan pilih!"
+  ],
+  "named": [
+    "Halo {name}! jika kamu melihat situs ini, itu artinya",
+    "situs ini telah aktif!",
+    "karena {name} baru pertama kali mengunjungi situs ini",
+    "maka aku akan menjelaskan terkait pengembangan situs ini",
+    "izinkan aku menjelaskannya padamu",
+    "Situs ini dikembangkan dengan menggunakan Termux.dev.",
+    "Web server yang digunakan adalah NGINX.",
+    "Situs ini berjalan pada backend yang dibuat dalam lingkungan javascript",
+    "menggunakan framework ExpressJS.",
+    "Server backend dalam pengembangan situs ini",
+    "menggunakan runtime JavaScript secepat kilat, yang disebut dengan BunJS.",
+    "Untuk dapat diakses secara online, situs ini mengandalkan Cloudflare.",
+    "Dan yang tak kalah penting,",
+    "ini dihost dengan hanya menggunakan smartphone Android yang sudah usang!",
+    "ada yang ingin kamu ketahui tentang situs ini?",
+    "kamu bisa memilih icon dibawah",
+    "aku akan menjelaskannya padamu,",
+    "Silahkan pilih!"
+  ],
+  "returning": [
+    "Halo {name}, selamat datang kembali disitus ini!",
+    "ada yang ingin kamu ketahui tentang situs ini?",
+    "kamu bisa memilih icon dibawah",
+    "aku akan menjelaskannya padamu,",
+    "Silahkan pilih!"
+  ]
+}
