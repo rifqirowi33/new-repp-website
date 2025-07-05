@@ -222,8 +222,9 @@ footer{
 
 /* RESPONSIVE */
 @media(max-width:600px){
-  #avatar{width:72px}
-  .dialog{font-size:.75rem;padding:.8rem 1.2rem}
+    .title{font-size:1.7rem;margin:0}
+.tagline{font-size:.8rem;margin:0 0 2rem}
+  .dialog{margin-top: -40px;font-size:.70rem;padding:.8rem 1.2rem}
   .choice-btn{font-size:.75rem;padding:.35rem 1.6rem}
    .icon-btn {
     width: 72px;
