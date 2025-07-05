@@ -193,7 +193,12 @@ html, body {
 .icon-btn.selected{outline:3px solid var(--blue);outline-offset:4px}
 
 /* FOOTER */
-footer{font-family:"pixelary";margin-top:7rem;font-size:1.8rem;opacity:.7}
+footer{
+    font-family:"pixelary";
+    margin-top:2.2rem;
+    font-size:2rem;
+    opacity:.7
+}
 
 /* RESPONSIVE */
 @media(max-width:600px){
