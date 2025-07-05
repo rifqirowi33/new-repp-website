@@ -30,11 +30,10 @@ async function fetchSavedName() {
 function parseDialogLine(line) {
   const tags = [];
   let content = line;
-
-  const match = line.match(/^<(\w+)>/);        // tag di awal baris
+  const match = line.match(/^<(\w+)>/);
   if (match) {
     tags.push(match[1]);
-    content = line.replace(/^<\w+>\s*/, "");   // hilangkan tag
+    content = line.replace(/^<\w+>\s*/, "");
   }
   return { content, tags };
 }
@@ -62,8 +61,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     ? dialogData.returning.map(l => l.replace("{name}", savedName))
     : [...dialogData.firstVisit];
 
-  /* typewriter state */
+  /* state flags */
   let idx = 0, pos = 0, typing = false, skip = false;
+  let waitingChoice = false;     // true sampai user klik Tamu / Isi Nama
+  let menuUnlocked = false;      // true setelah "Silahkan pilih!" selesai
   const speed = 35;
 
   /***************** typeLoop *****************/
@@ -85,15 +86,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     arrow.style.opacity = 1;
 
     if (tags.includes("askName")) {
-    setTimeout(() => {
-      spawnChoices();
-    }, 1000); // ⏱️ Delay 1 detik baru muncul pilihan
+      setTimeout(spawnChoices, 1000);
+    }
+
+    if (content.trim() === "Silahkan pilih!" && !menuUnlocked) {
+      menu.classList.remove("disabled");
+      menuUnlocked = true;
     }
   }
 
   /********* spawn choices *********/
   function spawnChoices() {
     if (choicesWrap.childElementCount) return;
+    waitingChoice = true;
 
     const wrap = document.createElement("div");
     wrap.className = "choices";
@@ -122,6 +127,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   /********* handle choice *********/
   function handleChoice(type) {
     choicesWrap.innerHTML = "";
+    waitingChoice = false;
 
     if (type === "guest") {
       queue = [...dialogData.guest];
@@ -168,10 +174,24 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   /********* next sentence (click / enter) *********/
   function next() {
-    if (typing) { skip = true; pos = parseDialogLine(queue[idx]).content.length; dialogText.textContent = parseDialogLine(queue[idx]).content; return; }
+    if (typing || waitingChoice) {
+      if (waitingChoice) return;          // harus pilih dulu
+      skip = true;                        // kalau masih mengetik boleh skip
+      const { content } = parseDialogLine(queue[idx]);
+      pos = content.length;
+      dialogText.textContent = content;
+      return;
+    }
+
     idx++;
-    if (idx >= queue.length) { arrow.style.opacity = 0; menu.classList.remove("disabled"); return; }
-    pos = 0; dialogText.textContent = ""; typeLoop();
+    if (idx >= queue.length) {
+      arrow.style.opacity = 0;
+      return;
+    }
+
+    pos = 0;
+    dialogText.textContent = "";
+    typeLoop();
   }
 
   dialogBox.addEventListener("click", next);

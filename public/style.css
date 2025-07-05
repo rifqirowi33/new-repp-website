@@ -35,12 +35,13 @@ html, body {
 /* #app{max-width:960px;margin:auto;padding:2rem 1rem;text-align:center} */
 
 /* HEADER */
-.title{font-family:"NES";font-size:1.6rem;line-height:1.4;margin:0}
+.title{font-family:"NES";font-size:2.8rem;line-height:1.2;margin:0}
 .accent{color:var(--blue)}
-.tagline{font-family:"NPS";font-size:.9rem;margin:0 0 2rem}
+.tagline{font-family:"NPS";font-size:1rem;margin:0 0 2rem}
 
 /* ---------- HERO ---------- */
 .hero{
+    position: relative;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -74,12 +75,15 @@ html, body {
 
 /* ------ CHOICES (akan disisipkan) ------ */
 #choicesContainer {
+  position: absolute; /* Supaya tidak dorong elemen lain */
+  top: calc(100% - 24px); /* Sesuaikan agar mepet ke bawah dialog box */
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: center;   /* <== pusatkan secara horizontal */
+  justify-content: center;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 0.5rem;
-  width: 100%;
+  z-index: 2;
 }
 
 .choices {
@@ -196,7 +200,7 @@ html, body {
 footer{
     font-family:"pixelary";
     margin-top:1rem;
-    font-size:2rem;
+    font-size:1.8rem;
     opacity:.7
 }
 
