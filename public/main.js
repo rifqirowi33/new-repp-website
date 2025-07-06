@@ -124,7 +124,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     if(tag==="askMore")       setTimeout(()=>spawnSubChoices(doProyekMoreYes,doProyekNo,"Boleh","Ngga perlu"),600);
     if(tag==="askVisit")      setTimeout(spawnVisit,600);
     if(tag==="askProjPrompt") setTimeout(doProyekList,600);
-    if(tag==="askSiteAgain")  setTimeout(()=>spawnSubChoices(doSiteIntroAgain,doSiteAgainNo,"Boleh","Cukup!"),600);
+    if(tag==="askSiteAgain")  setTimeout(() => { requestAnimationFrame(() => {
+    spawnSubChoices(doSiteAgainYes, doSiteAgainNo, "Boleh", "Cukup!");
+  });
+}, 0);
 
     if(!menuUnlocked && plain.toLowerCase().includes("silahkan pilih")){
       $menu.classList.remove("disabled"); menuUnlocked=true; highlightMenu(menuIdx);
