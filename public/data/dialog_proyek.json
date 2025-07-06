@@ -4,10 +4,12 @@
   ],
   "proyekYes": [
     "Ok, Baiklah! aku akan menjelaskan tentang Proyek.",
-    "Proyek ini dibuat dengan penuh semangat",
-    "dan menggunakan berbagai teknologi open‑source.",
+    "Proyekku ini dibuat dengan imajinasiku",
+    "dibuat menggunakan teknologi yang open‑source.",
     "Salah satu proyeknya adalah situs ini sendiri,",
-    "yang dijalankan langsung dari ponsel Android.",
+    "<askSiteAgain>apa kamu ingin mengetahui tentang situs ini lagi?",
+    "oh, iya!",
+    "aku juga punya beberapa proyek selain ini",
     "<askMore>apa kamu mau melihat proyekku yang lain?"
   ],
   "proyekNo": [
@@ -19,5 +21,24 @@
     "ngga jadi ya? padahal aku ingin menunjukkan proyekku padamu",
     "mungkin kamu ingin mengetahui hal lain",
     "Silahkan pilih!"
+  ],
+  "proyekSiteAgain":[
+    "Situs ini dikembangkan dengan menggunakan <link href='https://termux.dev' color='blue'>Termux.dev</link>.",
+    "Web server yang digunakan adalah <link href='https://nginx.org/' color='green'>NGINX</link>.",
+    "Situs ini berjalan pada backend yang dibuat dalam lingkungan Javascript",
+    "menggunakan framework <link href='https://expressjs.com/' color='yellow'>ExpressJS</link>.",
+    "Server backend dalam pengembangan situs ini",
+    "menggunakan runtime JavaScript secepat kilat",
+    "yang disebut dengan <link href='https://bun.sh/' color='brown'>BunJS</link>.",
+    "Untuk dapat diakses secara online",
+    "situs ini mengandalkan <link href='https://www.cloudflare.com/' color='orange'>Cloudflare</link>.",
+    "Dan yang tak kalah penting,",
+    "ini di‑host dengan hanya menggunakan smartphone Android yang sudah usang!"
+  ],
+  "proyekNoSiteAgain": [
+    "wahh kamu sudah tahu ya? bagus deh!",
+    "Oh, iya!",
+    "aku juga punya beberapa proyek selain ini",
+    "<askMore>apa kamu mau melihat proyekku yang lain?"
   ]
 }
