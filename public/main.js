@@ -101,10 +101,11 @@ document.addEventListener("DOMContentLoaded",async()=>{
     typing=false;skip=false;$txt.innerHTML=html;$arrow.style.opacity=1;
 
     /* tag trigger */
-    if(tag==="askName")   setTimeout(spawnMainChoices,600);
-    if(tag==="askProject")setTimeout(()=>spawnSubChoices(doProyekYes,doProyekNo),600);
-    if(tag==="askMore")   setTimeout(()=>spawnSubChoices(doProyekMoreYes,doProyekNo,"Boleh","Ngga perlu"),600);
-    if(tag==="askVisit")  setTimeout(spawnVisit,600);
+    if(tag==="askName")        setTimeout(spawnMainChoices,600);
+    if(tag==="askProject")     setTimeout(()=>spawnSubChoices(doProyekYes,doProyekNo),600);
+    if(tag==="askMore")        setTimeout(()=>spawnSubChoices(doProyekMoreYes,doProyekNo,"Boleh","Ngga perlu"),600);
+    if(tag==="askVisit")       setTimeout(spawnVisit,600);
+    if(tag==="askProjPrompt")  setTimeout(doProyekList,600);
 
     /* auto‑unlock ikon */
     if(!menuUnlocked && plain.toLowerCase().includes("silahkan pilih")){
@@ -113,7 +114,6 @@ document.addEventListener("DOMContentLoaded",async()=>{
   }
 
   /* ---------- CHOICES ---------- */
-  /* main */
   function spawnMainChoices(){
     if(waitingMainChoice)return;
     waitingMainChoice=true; mainIdx=0; $choices.innerHTML="";
@@ -130,7 +130,6 @@ document.addEventListener("DOMContentLoaded",async()=>{
     openModal();
   }
 
-  /* yes/no generic */
   function spawnSubChoices(yesCB,noCB,yesT="Tentu",noT="Tidak"){
     if(waitingSubChoice)return;
     waitingSubChoice=true; subIdx=0; $choices.innerHTML="";
@@ -142,10 +141,13 @@ document.addEventListener("DOMContentLoaded",async()=>{
   }
   const setSub=i=>{subIdx=i;subBtns.forEach((b,x)=>b.classList.toggle("selected",x===i));};
 
-  /* PROYEK branch */
   const doProyekYes = ()=>{ q=[...(dialogProyek.proyekYes||["(data kosong)","Silahkan pilih!"])]; idx=pos=0; type(); };
-  const doProyekNo  = ()=>{ q=[...(dialogProyek.proyekNo ||["Silahkan pilih!"])];    idx=pos=0; type(); };
-  const doProyekMoreYes = ()=>{ q=["Mau Lihat yang Mana?"]; idx=pos=0; type(); setTimeout(doProyekList,1500); };
+  const doProyekNo  = ()=>{ q=[...(dialogProyek.proyekNo ||["Silahkan pilih!"])]; idx=pos=0; type(); };
+  const doProyekMoreYes = () => {
+    q = ["<askProjPrompt>Mau Lihat yang Mana?"];
+    idx = pos = 0;
+    type();
+  };
 
   function doProyekList(){
     waitingProjList=true; projIdx=0; $choices.innerHTML="";
@@ -174,7 +176,6 @@ document.addEventListener("DOMContentLoaded",async()=>{
     );
   }
 
-  /* modal nama */
   function openModal(){
     $modal.classList.remove("hidden");$blur.classList.remove("hidden");
     $input.value="";$input.focus();
@@ -185,11 +186,9 @@ document.addEventListener("DOMContentLoaded",async()=>{
       close();q=dialogGlobal.named.map(l=>l.replace("{name}",n));idx=pos=0;type();};
   }
 
-  /* next */
   const next=()=>{if(typing||waitingMainChoice||waitingSubChoice||waitingProjList)return;
     idx++; if(idx>=q.length){$arrow.style.opacity=0;return;} pos=0;$txt.textContent="";type();};
 
-  /* keyboard + click */
   $dlg.onclick=next;
   document.addEventListener("keydown",e=>{
     const k=e.key;
@@ -205,7 +204,6 @@ document.addEventListener("DOMContentLoaded",async()=>{
     if(k==="Enter") next();
   });
 
-  /* icon click */
   menuItems.forEach((li,i)=>{
     const btn=li.querySelector(".icon-btn");
     btn.onmouseenter=()=>!$menu.classList.contains("disabled")&&($txt.textContent=li.dataset.dialog,highlightMenu(i));
@@ -222,6 +220,5 @@ document.addEventListener("DOMContentLoaded",async()=>{
     };
   });
 
-  /* start */
   type();
 });
