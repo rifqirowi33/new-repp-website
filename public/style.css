@@ -153,9 +153,12 @@ html, body {
   outline:none;
 }
 .cursor{
-  position:absolute;right:-10px;top:2px;
-  animation:blink 1s steps(1) infinite
+    position:absolute;
+    right:-10px;
+    top:2px;
+    animation:blink 1s steps(1,end) infinite;
 }
+
 @keyframes blink{50%{opacity:0}51%,100%{opacity:1}}
 
 .modal-actions{display:flex;gap:1rem;justify-content:center;margin-top:1.2rem}
