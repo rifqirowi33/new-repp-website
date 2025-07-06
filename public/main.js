@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     q=[
       `Baiklah, akan kujelaskan lagi padamu, ${nama}!`,
       ...siteIntro,
-      "<askSiteAgain>apa kamu mau mengetahui tentang situs ini lagi?"
+      "<askSiteAgain>apa kamu ingin mengetahui tentang situs ini lagi?"
     ];
     idx=pos=0; type();
   }
