@@ -34,6 +34,14 @@ app.use(rateLimit({
 /* ---------- trust proxy (Cloudflare / vercel) ---------- */
 app.set("trust proxy", true);
 
+app.use((req, res, next) => {
+  // Jangan cache file JavaScript dan HTML
+  if (req.url.endsWith(".js") || req.url.endsWith(".html")) {
+    res.setHeader("Cache-Control", "no-store");
+  }
+  next();
+});
+
 /* ---------- static ---------- */
 app.use(express.static(path.join(__dirname, "public")));
 
