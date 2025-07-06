@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   await Promise.all([loadDialogGlobal(), loadProjects()]);
 
   /* -------- visitor info dari backend -------- */
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
   const who = await fetch("/api/whoami").then(r=>r.json()).catch(()=>({}));
   const savedName = who.name || null;
   let   seenIntro = !!who.seenIntro;
@@ -124,10 +125,23 @@ document.addEventListener("DOMContentLoaded", async () => {
     if(tag==="askMore")       setTimeout(()=>spawnSubChoices(doProyekMoreYes,doProyekNo,"Boleh","Ngga perlu"),600);
     if(tag==="askVisit")      setTimeout(spawnVisit,600);
     if(tag==="askProjPrompt") setTimeout(doProyekList,600);
-    if(tag==="askSiteAgain")  setTimeout(() => { requestAnimationFrame(() => {
-    spawnSubChoices(doSiteAgainYes, doSiteAgainNo, "Boleh", "Cukup!");
-  });
-}, 0);
+    if(tag==="askSiteAgain"){
+  if (isSafari) {
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        if (!$choices.querySelector("button")) {
+          console.warn("Safari fallback aktif");
+          spawnSubChoices(doSiteAgainYes, doSiteAgainNo, "Boleh", "Cukup!");
+        }
+      }, 0);
+    });
+  } else {
+    setTimeout(() => {
+      spawnSubChoices(doSiteAgainYes, doSiteAgainNo, "Boleh", "Cukup!");
+    }, 600);
+  }
+}
+
 
     if(!menuUnlocked && plain.toLowerCase().includes("silahkan pilih")){
       $menu.classList.remove("disabled"); menuUnlocked=true; highlightMenu(menuIdx);
@@ -204,6 +218,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   q = [...(dialogProyek.proyekNoSiteAgain || ["wahh kamu sudah tahu ya?","Bagus deh!"])];
   idx = pos = 0;
   type();
+};
+
+const doSiteAgainYes = () => {
+  doSiteIntroAgain();
 };
 
   /* ---------- VISIT PROMPT ---------- */
