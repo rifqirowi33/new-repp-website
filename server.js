@@ -78,17 +78,30 @@ app.post("/api/visit", async (req, res) => {
 
   /* --- simpan ke visitors.json --- */
   const visitors    = readVisitors();
-  const existingIdx = visitors.findIndex(v => v.ip === ip);
-  const visitorData = { ip, name, timestamp: now, location, coords, maps, browser, os, device };
+const existingIdx = visitors.findIndex(v => v.ip === ip); // ✅ ini yang tadinya belum ada
+const existing = visitors[existingIdx];
 
-  if (existingIdx >= 0) {
-    visitors[existingIdx] = visitorData;
-    console.log(`[REVISIT] ${ip} -> "${name}"`);
-  } else {
-    visitors.push(visitorData);
-    console.log(`[VISIT] ${ip} -> "${name}"`);
-  }
-  writeVisitors(visitors);
+const visitorData = {
+  ip,
+  name,
+  timestamp: now,
+  seenIntro: existing?.seenIntro ?? false,
+  location,
+  coords,
+  maps,
+  browser,
+  os,
+  device
+};
+
+if (existingIdx >= 0) {
+  visitors[existingIdx] = visitorData;
+  console.log(`[REVISIT] ${ip} -> "${name}"`);
+} else {
+  visitors.push(visitorData);
+  console.log(`[VISIT] ${ip} -> "${name}"`);
+}
+writeVisitors(visitors);
 
   res.json({ ok: true });
 });
@@ -98,7 +111,18 @@ app.post("/api/visit", async (req, res) => {
    ========================================================= */
 app.get("/api/whoami", (req, res) => {
   const user = readVisitors().find(v => v.ip === req.ip);
-  res.json({ name: user?.name || null });
+  res.json({
+  name: user?.name || null,
+  seenIntro: user?.seenIntro || false
+    });
+});
+
+app.post("/api/introDone",(req,res)=>{
+  const ip=req.ip;
+  const visitors=readVisitors();
+  const v=visitors.find(v=>v.ip===ip);
+  if(v){ v.seenIntro=true; writeVisitors(visitors); }
+  res.json({ ok:true });
 });
 
 /* fallback */
