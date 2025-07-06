@@ -1,14 +1,20 @@
+/* =========================================================
+   server.js – geolocation ipwho.is + coords + Google Maps
+   ========================================================= */
 import express from "express";
 import path from "path";
-import fs from "fs";
 import { fileURLToPath } from "url";
+import fs from "fs";
 import helmet from "helmet";
 import compression from "compression";
 import rateLimit from "express-rate-limit";
 import cors from "cors";
+import { UAParser } from "ua-parser-js";
+
+/* --- Bun & Node18 sudah punya fetch global --- */
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const app = express();
+const app  = express();
 const PORT = 3333;
 
 /* ---------- security & perf ---------- */
@@ -22,18 +28,11 @@ app.use(rateLimit({
   max: 100,
   standardHeaders: true,
   legacyHeaders: false,
-  keyGenerator: (req) => {
-    // Gunakan IP asli dari req.ip yang sudah diperiksa express
-    return req.ip;
-  }
+  keyGenerator: req => req.ip        // trust‑proxy di bawah
 }));
 
-/* ---------- trust proxy (CDN / vercel) ---------- */
+/* ---------- trust proxy (Cloudflare / vercel) ---------- */
 app.set("trust proxy", true);
-if (process.env.TRUST_PROXY === "true") {
-  app.set("trust proxy", true);
-}
-
 
 /* ---------- static ---------- */
 app.use(express.static(path.join(__dirname, "public")));
@@ -41,60 +40,68 @@ app.use(express.static(path.join(__dirname, "public")));
 /* ---------- helpers ---------- */
 const DATA_DIR = path.join(__dirname, "data");
 const VIS_PATH = path.join(DATA_DIR, "visitors.json");
-
-/* pastikan data dir & file ada */
-if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR);
+if (!fs.existsSync(DATA_DIR))  fs.mkdirSync(DATA_DIR);
 if (!fs.existsSync(VIS_PATH)) fs.writeFileSync(VIS_PATH, "[]", "utf-8");
 
-function readVisitors() {
-  return JSON.parse(fs.readFileSync(VIS_PATH, "utf-8"));
-}
-function writeVisitors(data) {
-  fs.writeFileSync(VIS_PATH, JSON.stringify(data, null, 2));
-}
+const readVisitors  = () => JSON.parse(fs.readFileSync(VIS_PATH, "utf-8"));
+const writeVisitors = data => fs.writeFileSync(VIS_PATH, JSON.stringify(data, null, 2));
 
-/* ---------- POST /api/visit ---------- */
-app.post("/api/visit", (req, res) => {
+/* =========================================================
+   POST /api/visit
+   ========================================================= */
+app.post("/api/visit", async (req, res) => {
   const { name } = req.body;
   if (!name) return res.status(400).json({ error: "name required" });
 
-  const ip = req.ip; // sudah trust proxy
+  const ip  = req.ip;                          // sudah “trust proxy”
+  const ua  = req.headers["user-agent"] || "";
   const now = new Date().toISOString();
 
-  let visitors = readVisitors();
-  const existing = visitors.find(v => v.ip === ip);
+  /* --- user‑agent summary --- */
+  const parser  = new UAParser(ua);
+  const browser = parser.getBrowser().name  || "Unknown";
+  const os      = parser.getOS().name       || "Unknown";
+  const device  = parser.getDevice().type   || "desktop";
 
-  if (existing) {
-    const wasSameName = existing.name === name;
-    existing.name = name;
-    existing.timestamp = now;
-    writeVisitors(visitors);
-
-    if (wasSameName) {
-      console.log(`[Berkunjung Kembali] ${ip} → "${name}"`);
-    } else {
-      console.log(`[VISIT] ${ip} → "${name}"`);
+  /* --- geolocation via ipwho.is (tanpa API‑key) --- */
+  let location = "Unknown", coords = "", maps = "";
+  try {
+    const geo = await fetch(`https://ipwho.is/${ip}`).then(r => r.json());
+    if (geo && geo.success) {
+      location = `${geo.city}, ${geo.region}, ${geo.country}`;
+      coords   = `${geo.latitude},${geo.longitude}`;
+      maps     = `https://www.google.com/maps?q=${coords}`;
     }
-  } else {
-    visitors.push({ ip, name, timestamp: now });
-    writeVisitors(visitors);
-    console.log(`[VISIT] ${ip} → "${name}"`);
+  } catch {
+    console.warn("ipwho.is gagal:", ip);
   }
+
+  /* --- simpan ke visitors.json --- */
+  const visitors    = readVisitors();
+  const existingIdx = visitors.findIndex(v => v.ip === ip);
+  const visitorData = { ip, name, timestamp: now, location, coords, maps, browser, os, device };
+
+  if (existingIdx >= 0) {
+    visitors[existingIdx] = visitorData;
+    console.log(`[REVISIT] ${ip} -> "${name}"`);
+  } else {
+    visitors.push(visitorData);
+    console.log(`[VISIT] ${ip} -> "${name}"`);
+  }
+  writeVisitors(visitors);
 
   res.json({ ok: true });
 });
 
-/* ---------- GET /api/whoami ---------- */
+/* =========================================================
+   GET /api/whoami
+   ========================================================= */
 app.get("/api/whoami", (req, res) => {
-  const ip = req.ip;
-  const visitors = readVisitors();
-  const user = visitors.find(v => v.ip === ip);
+  const user = readVisitors().find(v => v.ip === req.ip);
   res.json({ name: user?.name || null });
 });
 
-/* ---------- fallback ---------- */
+/* fallback */
 app.post("/", (_, res) => res.json({ message: "POST request berhasil" }));
 
-app.listen(PORT, () =>
-  console.log(`Server berjalan di http://localhost:${PORT}`)
-);
+app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
