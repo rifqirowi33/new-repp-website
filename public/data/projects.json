@@ -1,11 +1,16 @@
 [
   {
     "id": "j2me",
-    "title": "Situs Java J2ME",
+    "title": "Situs Game J2ME",
     "url": "https://java.repp.my.id/",
     "desc": [
-      "Ini arsip aplikasi J2ME populer di feature‑phone.",
-      "Semua file di‑hosting sendiri & gratis."
+      "Ini situs untuk membagikan hasil modifikasi game java/j2me buatanku",
+      "agar bisa dimainkan dan dinikmati oleh orang banyak",
+      "teknologi yang digunakan HTML, CSS, dan JavaScript",
+      "untuk runtimenya sendiri mengandalkan kecepatan bunJS",
+      "hasil file disimpan di cloudflare r2storage",
+      "kemudian dipaggil oleh backend expressjs melalui api-key r2 cloudstorage",
+      "dan situs ini dihosting menggunakan cloudflare dari hp android!"
     ]
   },
   {
