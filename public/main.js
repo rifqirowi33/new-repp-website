@@ -29,6 +29,7 @@ async function loadProjects(){
 
 /* ---------- DIALOG ---------- */
 let dialogGlobal={}, dialogProyek={};
+let afkDialog = [], afkQuotes = [];
 async function loadDialogGlobal(){
   try{
     const r=await fetch(`/data/dialog.json?t=${Date.now()}`);
@@ -50,6 +51,18 @@ async function loadDialogProyek(){
   }catch(e){
     console.warn("dialog_proyek.json gagal:",e);
     dialogProyek={};
+  }
+}
+async function loadAFKDialog(){
+  try{
+    const quotes = await fetch(`/data/quotes.json?t=${Date.now()}`).then(r=>r.json());
+    const dialog = await fetch(`/data/afk.json?t=${Date.now()}`).then(r=>r.json());
+    afkQuotes = quotes;
+    afkDialog = dialog;
+  }catch(e){
+    console.warn("quotes.json / afk.json gagal:",e);
+    afkQuotes = ["Setiap baris kode yang dibuat dengan tulus adalah langkah kecil menuju perubahan besar."];
+    afkDialog = ["...sedang tidak aktif..."];
   }
 }
 
@@ -76,7 +89,7 @@ function setCookie(name,val,durationDays=365){
    MAIN
    ========================================================= */
 document.addEventListener("DOMContentLoaded",async()=>{
-  await Promise.all([loadDialogGlobal(),loadProjects()]);
+  await Promise.all([loadDialogGlobal(),loadProjects(),loadAFKDialog(),]);
 
   /* ---------- VISITOR INFO ---------- */
   const isSafari=/^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -135,16 +148,28 @@ document.addEventListener("DOMContentLoaded",async()=>{
     setTimeout(type, speed);
     return;
   }
-
-  // Typing benar-benar selesai di sini
+    // Typing benar-benar selesai di sini
   typing = false;
   $txt.innerHTML = html;
 
-  // Baru tampilkan panah + blink setelah selesai
   setTimeout(() => {
     $arrow.style.opacity = 1;
     $arrow.classList.add("blink");
-  }, 100); // delay opsional supaya terasa smooth
+
+    // 🔁 Auto lanjut jika sedang AFK
+    if (afkMode) {
+      setTimeout(() => {
+        idx++;
+        if (idx < q.length) {
+          pos = 0;
+          $txt.textContent = "";
+          type();
+        }
+      }, 2000); // jeda antar baris AFK (misalnya 2 detik)
+    }
+
+  }, 100); // delay animasi panah
+
 
   // Hook tag dialog
   if(tag==="askName")       setTimeout(spawnMainChoices,600);
@@ -299,6 +324,70 @@ document.addEventListener("DOMContentLoaded",async()=>{
       }else window.location.href=path;
     };
   });
+
+  /* ---------- AFK DETECTION ---------- */
+let lastActive = Date.now();
+  const AFK_TIMEOUT = 45000;
+  let afkMode = false;
+  let afkTimer = null;
+  let afkBackup = null;
+  let currentAFKLine = "";
+
+  function resetAFKTimer() {
+    lastActive = Date.now();
+    if (afkMode) {
+      afkMode = false;
+      if (afkBackup) {
+        q = [...afkBackup.q];
+        idx = afkBackup.idx;
+        pos = 0;
+        afkBackup = null;
+        type();
+      }
+    }
+  }
+
+  function random(arr) {
+    return arr[Math.floor(Math.random()*arr.length)];
+  }
+
+  function enterAFKMode() {
+  afkMode = true;
+  afkBackup = { q: [...q], idx };
+
+  // Pilih quote (boleh dari afkDialog atau afkQuotes)
+  const source = Math.random() < 0.5 ? afkDialog : afkQuotes;
+  const line = random(source);
+
+  // Kalau baris-baris (array), pakai langsung; kalau string, bungkus jadi array
+  // Pecah quote jika multiline array, atau bungkus jadi array jika string
+  const lines = Array.isArray(line) ? line : [line];
+  
+  currentAFKLine = lines.map(l => String(l));
+  q = currentAFKLine;
+  idx = 0;
+  pos = 0;
+  type();
+}
+
+
+  function checkAFK() {
+    if (!afkMode && Date.now() - lastActive > AFK_TIMEOUT) {
+      enterAFKMode();
+    } else if (afkMode && Date.now() - lastActive > AFK_TIMEOUT * 2) {
+      const randomLine = random([...afkDialog, ...afkQuotes]);
+      const lines = Array.isArray(randomLine) ? randomLine : [randomLine];
+      currentAFKLine = lines.map(l => String(l));
+      q = currentAFKLine;
+      idx = 0;
+      pos = 0;
+      type();
+    }
+  }
+
+  ["mousemove","keydown","mousedown","touchstart"].forEach(e=>document.addEventListener(e,resetAFKTimer));
+  setInterval(checkAFK, 5000);
+
 
   /* ---------- START ---------- */
   type();
