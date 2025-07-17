@@ -115,41 +115,60 @@ document.addEventListener("DOMContentLoaded",async()=>{
   };
 
   /* ========== TYPEWRITER LOOP ========== */
-  function type(){
-    if(idx>=q.length){console.warn("queue selesai");return;}
-    typing=true;$arrow.style.opacity=0;
+ function type(){
+  if(idx >= q.length){ console.warn("queue selesai"); return; }
 
-    const {content,tag}=parse(q[idx]);
-    const html=render(content), plain=strip(html);
+  typing = true;
+  skip   = false;
 
-    $txt.textContent=plain.slice(0,++pos);
-    if(pos<plain.length&&!skip){setTimeout(type,speed);return;}
+  // Sembunyikan dan matikan animasi panah sebelum mulai
+  $arrow.style.opacity = 0;
+  $arrow.classList.remove("blink");
 
-    typing=false;skip=false;$txt.innerHTML=html;$arrow.style.opacity=1;
+  const { content, tag } = parse(q[idx]);
+  const html  = render(content);
+  const plain = strip(html);
 
-    /* TAG HOOKS */
-    if(tag==="askName")       setTimeout(spawnMainChoices,600);
-    if(tag==="askProject")    setTimeout(()=>spawnSubChoices(doProyekYes,doProyekNo),600);
-    if(tag==="askMore")       setTimeout(()=>spawnSubChoices(doProyekMoreYes,doProyekNo,"Boleh","Ngga perlu"),600);
-    if(tag==="askVisit")      setTimeout(spawnVisit,600);
-    if(tag==="askProjPrompt") setTimeout(doProyekList,600);
-    if(tag==="askSiteAgain"){
-      const launch=()=>spawnSubChoices(doSiteAgainYes,doSiteAgainNo,"Boleh","Cukup!");
-      isSafari?requestAnimationFrame(()=>setTimeout(launch,0)):setTimeout(launch,600);
-    }
+  $txt.textContent = plain.slice(0, ++pos);
 
-    /* INTRO DONE → unlock icon + set cookie */
-    if(!menuUnlocked && plain.toLowerCase().includes("silahkan pilih")){
-      $menu.classList.remove("disabled"); menuUnlocked=true; highlightMenu(menuIdx);
+  if(pos < plain.length && !skip){
+    setTimeout(type, speed);
+    return;
+  }
 
-      if(savedName && !seenIntro){
-        /* tandai ke backend + cookie */
-        fetch("/api/introDone",{method:"POST"});
-        setCookie("seenIntro","true");
-        seenIntro=true;
-      }
+  // Typing benar-benar selesai di sini
+  typing = false;
+  $txt.innerHTML = html;
+
+  // Baru tampilkan panah + blink setelah selesai
+  setTimeout(() => {
+    $arrow.style.opacity = 1;
+    $arrow.classList.add("blink");
+  }, 100); // delay opsional supaya terasa smooth
+
+  // Hook tag dialog
+  if(tag==="askName")       setTimeout(spawnMainChoices,600);
+  if(tag==="askProject")    setTimeout(()=>spawnSubChoices(doProyekYes,doProyekNo),600);
+  if(tag==="askMore")       setTimeout(()=>spawnSubChoices(doProyekMoreYes,doProyekNo,"Boleh","Ngga perlu"),600);
+  if(tag==="askVisit")      setTimeout(spawnVisit,600);
+  if(tag==="askProjPrompt") setTimeout(doProyekList,600);
+  if(tag==="askSiteAgain"){
+    const launch=()=>spawnSubChoices(doSiteAgainYes,doSiteAgainNo,"Boleh","Cukup!");
+    isSafari ? requestAnimationFrame(()=>setTimeout(launch,0)) : setTimeout(launch,600);
+  }
+
+  if(!menuUnlocked && plain.toLowerCase().includes("silahkan pilih")){
+    $menu.classList.remove("disabled"); 
+    menuUnlocked = true;
+    highlightMenu(menuIdx);
+
+    if(savedName && !seenIntro){
+      fetch("/api/introDone", { method: "POST" });
+      setCookie("seenIntro", "true");
+      seenIntro = true;
     }
   }
+}
 
   /* ---------- MAIN CHOICE ---------- */
   function spawnMainChoices(force=false){
