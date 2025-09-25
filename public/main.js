@@ -1,12 +1,10 @@
-/* =========================================================
-   main.js — FINAL (cookie + modal, keyboard, proyek‑loop,
-   intro‑flag, askSiteAgain, Safari‑fallback)
-   ========================================================= */
-
-/* ---------- GLOBAL STATE ---------- */
 let waitingMainChoice = false;
 let waitingSubChoice  = false;
 let waitingProjList   = false;
+let isAFKQuotes = false;
+let isAFKTyping = false;
+let specialAFKTriggered = false;
+let lastAFKShown = 0;
 
 let mainBtns=[], mainIdx=0;
 let subBtns =[], subIdx =0;
@@ -15,7 +13,8 @@ let projBtns=[], projIdx=0;
 let menuUnlocked=false, menuIdx=0;
 let currentUrl   ="";
 
-/* ---------- DATA PROYEK ---------- */
+let lockInteraction = false;
+
 let projects=[];
 async function loadProjects(){
   try{
@@ -27,9 +26,9 @@ async function loadProjects(){
   }
 }
 
-/* ---------- DIALOG ---------- */
 let dialogGlobal={}, dialogProyek={};
 let afkDialog = [], afkQuotes = [];
+let afkSpecial = [];
 async function loadDialogGlobal(){
   try{
     const r=await fetch(`/data/dialog.json?t=${Date.now()}`);
@@ -57,16 +56,18 @@ async function loadAFKDialog(){
   try{
     const quotes = await fetch(`/data/quotes.json?t=${Date.now()}`).then(r=>r.json());
     const dialog = await fetch(`/data/afk.json?t=${Date.now()}`).then(r=>r.json());
+    const special = await fetch(`/data/afkspecial.json?t=${Date.now()}`).then(r=>r.json());
     afkQuotes = quotes;
     afkDialog = dialog;
+    afkSpecial = special;
   }catch(e){
     console.warn("quotes.json / afk.json gagal:",e);
     afkQuotes = ["Setiap baris kode yang dibuat dengan tulus adalah langkah kecil menuju perubahan besar."];
     afkDialog = ["...sedang tidak aktif..."];
+    afkSpecial = ["..."];
   }
 }
 
-/* ---------- UTIL ---------- */
 const parse=l=>{const m=l.match(/^<(\w+)>/);return m?{content:l.slice(m[0].length).trimStart(),tag:m[1]}:{content:l,tag:null}};
 const linkRX=/<link\s+href=['"]([^'" ]+)['"](?:\s+color=['"]([^'" ]+)['"])?>(.*?)<\/link>/g;
 const render=l=>l.replace(linkRX,(_,h,c="blue",t)=>`<a target="_blank" href="${h}" class="link-${c}">${t}</a>`);
@@ -75,7 +76,6 @@ const qs=s=>document.querySelector(s);
 const ce=(t,c)=>Object.assign(document.createElement(t),{className:c||""});
 const mkBtn=(t,type,sel)=>{const b=ce("button","choice-btn"+(sel?" selected":""));b.textContent=t;b.dataset.type=type;return b;};
 
-/* ---------- COOKIE HELPERS ---------- */
 function getCookie(name){
   const m=document.cookie.match('(?:^|; )'+name.replace(/[-.]/g,"\\$&")+'=([^;]*)');
   return m?decodeURIComponent(m[1]):null;
@@ -85,34 +85,24 @@ function setCookie(name,val,durationDays=365){
   document.cookie=`${name}=${encodeURIComponent(val)}; expires=${exp}; path=/; SameSite=Lax`;
 }
 
-/* =========================================================
-   MAIN
-   ========================================================= */
+
 document.addEventListener("DOMContentLoaded",async()=>{
   await Promise.all([loadDialogGlobal(),loadProjects(),loadAFKDialog(),]);
-
-  /* ---------- VISITOR INFO ---------- */
   const isSafari=/^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-  /* 1️⃣ baca cookie dahulu */
   let savedName = getCookie("name");
   let seenIntro = getCookie("seenIntro")==="true";
-
-  /* 2️⃣ fallback ke backend jika belum ada */
   if(!savedName || !seenIntro){
     const who = await fetch("/api/whoami").then(r=>r.json()).catch(()=>({}));
     savedName = savedName || who.name || null;
     seenIntro = seenIntro || !!who.seenIntro;
   }
-
-  /* ---------- REFS ---------- */
+  
   const $txt=qs("#dialogText"), $arrow=qs("#arrow"), $dlg=qs("#dialogBox");
   const $choices=qs("#choicesContainer"), $menu=qs("#menu");
   const $modal=qs("#nameModal"), $blur=qs("#blurBackground");
   const $input=qs("#nameInput"), $ok=qs("#confirmBtn"), $cancel=qs("#cancelBtn");
   const menuItems=[...$menu.querySelectorAll("li")];
 
-  /* ---------- QUEUE INIT ---------- */
   let q;
   if(!savedName)      q=[...dialogGlobal.firstVisit];
   else if(!seenIntro) q=dialogGlobal.named.map(l=>l.replace("{name}",savedName));
@@ -121,20 +111,17 @@ document.addEventListener("DOMContentLoaded",async()=>{
   let idx=0,pos=0,typing=false,skip=false;
   const speed=35;
 
-  /* ---------- HELPERS ---------- */
   const highlightMenu=i=>{
     menuItems.forEach((li,x)=>li.querySelector(".icon-btn").classList.toggle("selected",x===i));
     menuIdx=i;
   };
 
-  /* ========== TYPEWRITER LOOP ========== */
  function type(){
   if(idx >= q.length){ console.warn("queue selesai"); return; }
 
   typing = true;
   skip   = false;
 
-  // Sembunyikan dan matikan animasi panah sebelum mulai
   $arrow.style.opacity = 0;
   $arrow.classList.remove("blink");
 
@@ -148,16 +135,22 @@ document.addEventListener("DOMContentLoaded",async()=>{
     setTimeout(type, speed);
     return;
   }
-    // Typing benar-benar selesai di sini
+
   typing = false;
+  if (typing || skip) return;
+  if (afkMode && idx >= q.length - 1) {
+    isAFKTyping = false;
+  }
   $txt.innerHTML = html;
 
   setTimeout(() => {
     $arrow.style.opacity = 1;
     $arrow.classList.add("blink");
 
-    // 🔁 Auto lanjut jika sedang AFK
     if (afkMode) {
+      const isQuotes = afkQuotes.includes(currentAFKLine);
+      const delayBaris = isAFKQuotes ? 5000 : 2000;
+      
       setTimeout(() => {
         idx++;
         if (idx < q.length) {
@@ -165,13 +158,10 @@ document.addEventListener("DOMContentLoaded",async()=>{
           $txt.textContent = "";
           type();
         }
-      }, 2000); // jeda antar baris AFK (misalnya 2 detik)
+      }, delayBaris);
     }
+  }, 100); 
 
-  }, 100); // delay animasi panah
-
-
-  // Hook tag dialog
   if(tag==="askName")       setTimeout(spawnMainChoices,600);
   if(tag==="askProject")    setTimeout(()=>spawnSubChoices(doProyekYes,doProyekNo),600);
   if(tag==="askMore")       setTimeout(()=>spawnSubChoices(doProyekMoreYes,doProyekNo,"Boleh","Ngga perlu"),600);
@@ -195,7 +185,6 @@ document.addEventListener("DOMContentLoaded",async()=>{
   }
 }
 
-  /* ---------- MAIN CHOICE ---------- */
   function spawnMainChoices(force=false){
     if(waitingMainChoice&&!force)return;
     waitingMainChoice=true; mainIdx=0; $choices.innerHTML="";
@@ -211,7 +200,6 @@ document.addEventListener("DOMContentLoaded",async()=>{
     openModal();
   }
 
-  /* ---------- YES / NO GENERIC ---------- */
   function spawnSubChoices(yesCB,noCB,yesT="Tentu",noT="Tidak"){
     if(waitingSubChoice)return;
     waitingSubChoice=true;subIdx=0;$choices.innerHTML="";
@@ -223,7 +211,6 @@ document.addEventListener("DOMContentLoaded",async()=>{
   }
   const setSub=i=>subBtns.forEach((b,x)=>b.classList.toggle("selected",(subIdx=i)===x));
 
-  /* ---------- PROYEK BRANCH ---------- */
   const doProyekYes=()=>{q=[...(dialogProyek.proyekYes||["(data kosong)","Silahkan pilih!"])];idx=pos=0;type();};
   const doProyekNo =()=>{q=[...(dialogProyek.proyekNo ||["Silahkan pilih!"])];idx=pos=0;type();};
   const doProyekMoreYes=()=>{q=["<askProjPrompt>Mau Lihat yang Mana?"];idx=pos=0;type();};
@@ -248,7 +235,6 @@ document.addEventListener("DOMContentLoaded",async()=>{
     q=[...p.desc,"<askVisit>apakah kamu ingin mengunjunginya?"];idx=pos=0;type();
   }
 
-  /* ----- penjelasan situs ulang ----- */
   function doSiteIntroAgain(){
     const nama=savedName||"kamu";
     const siteIntro=dialogProyek.proyekSiteAgain||["(penjelasan situs kosong)"];
@@ -263,7 +249,6 @@ document.addEventListener("DOMContentLoaded",async()=>{
     idx=pos=0;type();
   };
 
-  /* ---------- VISIT PROMPT ---------- */
   function spawnVisit(){
     spawnSubChoices(
       ()=>{q=["tunggu sebentar, aku akan membawamu"];idx=pos=0;type();setTimeout(()=>window.location.href=currentUrl,1600);},
@@ -272,7 +257,6 @@ document.addEventListener("DOMContentLoaded",async()=>{
     );
   }
 
-  /* ---------- MODAL (Isi Nama) ---------- */
   function openModal(){
     $modal.classList.remove("hidden");$blur.classList.remove("hidden");
     $input.value="";$input.focus();
@@ -284,7 +268,7 @@ document.addEventListener("DOMContentLoaded",async()=>{
     async function confirm(){
       const n=$input.value.trim();if(!n)return;
       try{await fetch("/api/visit",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({name:n})});}catch{}
-      setCookie("name",n); setCookie("seenIntro","true"); // seenIntro true agar langsung named flow nanti
+      setCookie("name",n); setCookie("seenIntro","true");
       close(false);
       savedName=n;
       q=dialogGlobal.named.map(l=>l.replace("{name}",n));idx=pos=0;type();
@@ -293,12 +277,10 @@ document.addEventListener("DOMContentLoaded",async()=>{
     $input.onkeydown=e=>{if(e.key==="Enter")confirm();if(e.key==="Escape")close(true);};
   }
 
-  /* ---------- NEXT ---------- */
-  const next=()=>{if(typing||waitingMainChoice||waitingSubChoice||waitingProjList)return;
+  const next=()=>{if(typing||waitingMainChoice||waitingSubChoice||waitingProjList||lockInteraction)return;
     idx++;if(idx>=q.length){$arrow.style.opacity=0;return;}pos=0;$txt.textContent="";type();};
   $dlg.onclick=next;
 
-  /* ---------- KEYBOARD NAV ---------- */
   document.addEventListener("keydown",e=>{
     const k=e.key;
     if(waitingMainChoice){if(k==="ArrowLeft")setMain((mainIdx-1+mainBtns.length)%mainBtns.length);else if(k==="ArrowRight")setMain((mainIdx+1)%mainBtns.length);else if(k==="Enter")mainBtns[mainIdx].click();return;}
@@ -308,7 +290,6 @@ document.addEventListener("DOMContentLoaded",async()=>{
     if(k==="Enter")next();
   });
 
-  /* ---------- MENU ICON ---------- */
   menuItems.forEach((li,i)=>{
     const btn=li.querySelector(".icon-btn");
     btn.onmouseenter=()=>!$menu.classList.contains("disabled")&&($txt.textContent=li.dataset.dialog,highlightMenu(i));
@@ -325,9 +306,9 @@ document.addEventListener("DOMContentLoaded",async()=>{
     };
   });
 
-  /* ---------- AFK DETECTION ---------- */
 let lastActive = Date.now();
   const AFK_TIMEOUT = 45000;
+  const AFK_SPECIAL_DELAY = 120000;
   let afkMode = false;
   let afkTimer = null;
   let afkBackup = null;
@@ -351,18 +332,20 @@ let lastActive = Date.now();
     return arr[Math.floor(Math.random()*arr.length)];
   }
 
-  function enterAFKMode() {
+function enterAFKMode() {
+  if (typing || isAFKTyping || afkMode || lockInteraction) return;
+
   afkMode = true;
+  isAFKTyping = true;
+  lockInteraction = false;
+  lastAFKShown = Date.now();
   afkBackup = { q: [...q], idx };
 
-  // Pilih quote (boleh dari afkDialog atau afkQuotes)
   const source = Math.random() < 0.5 ? afkDialog : afkQuotes;
+  isAFKQuotes = (source === afkQuotes);
   const line = random(source);
-
-  // Kalau baris-baris (array), pakai langsung; kalau string, bungkus jadi array
-  // Pecah quote jika multiline array, atau bungkus jadi array jika string
   const lines = Array.isArray(line) ? line : [line];
-  
+
   currentAFKLine = lines.map(l => String(l));
   q = currentAFKLine;
   idx = 0;
@@ -370,25 +353,85 @@ let lastActive = Date.now();
   type();
 }
 
+function checkAFK() {
+  const now = Date.now();
+  const afkDuration = now - lastActive;
 
-  function checkAFK() {
-    if (!afkMode && Date.now() - lastActive > AFK_TIMEOUT) {
-      enterAFKMode();
-    } else if (afkMode && Date.now() - lastActive > AFK_TIMEOUT * 2) {
-      const randomLine = random([...afkDialog, ...afkQuotes]);
-      const lines = Array.isArray(randomLine) ? randomLine : [randomLine];
-      currentAFKLine = lines.map(l => String(l));
-      q = currentAFKLine;
-      idx = 0;
-      pos = 0;
-      type();
-    }
+  if (typing || isAFKTyping || waitingMainChoice || waitingSubChoice || waitingProjList) return;
+
+  if (!afkMode && afkDuration > AFK_SPECIAL_DELAY && savedName && !specialAFKTriggered) {
+    specialAFKTriggered = true;
+    fetch("/api/whoami")
+      .then(r => r.json())
+      .then(data => {
+        const loc = data.location || "tempatmu";
+        enterSpecialAFK(loc);
+      })
+      .catch(() => {
+        enterSpecialAFK("tempatmu");
+      });
+    return;
   }
 
-  ["mousemove","keydown","mousedown","touchstart"].forEach(e=>document.addEventListener(e,resetAFKTimer));
+  if (!afkMode && afkDuration > AFK_TIMEOUT) {
+    enterAFKMode();
+    return;
+  }
+
+  const sinceLastAFK = now - lastAFKShown;
+  if (afkMode && !isAFKTyping && sinceLastAFK > AFK_TIMEOUT) {
+    lastAFKShown = Date.now();
+    const source = Math.random() < 0.5 ? afkDialog : afkQuotes;
+    isAFKQuotes = (source === afkQuotes);
+    const randomLine = random(source);
+    const lines = Array.isArray(randomLine) ? randomLine : [randomLine];
+
+    currentAFKLine = lines.map(l => String(l));
+    q = currentAFKLine;
+    idx = 0;
+    pos = 0;
+    isAFKTyping = true;
+    type();
+  }
+}
+
+  ["mousemove","keydown","mousedown","touchstart"].forEach(e=>
+    document.addEventListener(e,()=>{if(!lockInteraction)resetAFKTimer();}));
   setInterval(checkAFK, 5000);
 
+  function enterSpecialAFK(location) {
+  afkMode = true;
+  isAFKTyping = true;
+  lockInteraction = true;
+  specialAFKTriggered = false;
 
-  /* ---------- START ---------- */
+  const personalized = afkSpecial.map(line => line.replace("{location}", location || "tempatmu"));
+  currentAFKLine = personalized;
+
+  q = [...personalized];
+  idx = 0;
+  pos = 0;
+  type();
+
+  setTimeout(() => {
+    lockInteraction = false;
+    q = afkSpecial.slice(-4).map(l => l.replace("{location}", location || "tempatmu"));
+    idx = 0;
+    pos = 0;
+    type();
+
+    setTimeout(() => {
+      afkMode = false;
+      if (afkBackup) {
+        q = [...afkBackup.q];
+        idx = afkBackup.idx;
+        pos = 0;
+        afkBackup = null;
+        type();
+      }
+    }, 8000); 
+  }, 60000);
+}
+
   type();
 });
