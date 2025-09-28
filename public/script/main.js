@@ -470,15 +470,15 @@ function chooseTentang(choice){
 }
 
 async function openTentangkuDialog() {
-  await loadDialogTentangku();
+  await Promise.all([loadDialogTentangku(), loadTentangku()]);
 
   $menu.classList.add("disabled");
   menuUnlocked = false;
 
-  if(!Array.isArray(dialogTentangku.intro) || dialogTentangku.intro.length===0){
+  if (!Array.isArray(dialogTentangku.intro) || dialogTentangku.intro.length === 0) {
     q = [`<askTentangku>Kamu ingin berkenalan dengan penciptaku ya?`];
   } else {
-    q = dialogTentangku.intro.map((line,i,arr)=> i === arr.length-1 ? `<askTentangku>${line}` : line);
+    q = dialogTentangku.intro.map((line, i, arr) => (i === arr.length - 1 ? `<askTentangku>${line}` : line));
   }
 
   idx = pos = 0;
@@ -623,50 +623,6 @@ function expandTentangku() {
   setTimeout(() => win.classList.add("show-content"), 1000);
 }
 
-// ambil element modal exit
-const exitTentangkuModal = document.getElementById("exitTentangkuModal");
-const exitYes = document.getElementById("exitYes");
-const exitNo = document.getElementById("exitNo");
-const closeTentangkuBtn = document.getElementById("closeTentangku");
-
-// event klik tombol [x] → munculkan modal
-closeTentangkuBtn.addEventListener("click", () => {
-  exitTentangkuModal.classList.remove("hidden");
-});
-
-// event tombol "Sudah"
-exitYes.addEventListener("click", () => {
-  exitTentangkuModal.classList.add("hidden");
-
-  // tutup window tentangku
-  const win = document.getElementById("tentangkuWindow");
-  win.classList.add("hidden");
-  win.classList.remove("expand", "show-content");
-
-  // reset dialog balik ke awal
-  q = ["Silahkan pilih!"];
-  idx = pos = 0;
-  type();
-
-  // buka semua ikon
-  $menu.classList.remove("disabled");
-  menuUnlocked = true;
-  highlightMenu(menuIdx);
-});
-
-// event tombol "Belum"
-exitNo.addEventListener("click", () => {
-  exitTentangkuModal.classList.add("hidden");
-});
-
-
-document.addEventListener("click", e => {
-  if(e.target.id === "closeTentangku"){
-    const win = document.getElementById("tentangkuWindow");
-    win.classList.add("hidden");
-    win.classList.remove("expand","show-content");
-  }
-});
 
 let lastActive = Date.now();
   const AFK_TIMEOUT = 45000;
