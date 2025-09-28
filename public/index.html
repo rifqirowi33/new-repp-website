@@ -13,6 +13,12 @@
     <p class="tagline">Sebuah situs pribadi yang kubuat dari isi kepalaku</p>
 
     <section class="hero">
+      <div id="tentangkuWindow" class="tentangku-window hidden">
+        <button id="closeTentangku" class="close-btn">[x]</button>
+        <div id="tentangkuContainer" class="content"></div>
+        </div>
+      </div>
+
   <div class="hero-head">
     <div id="choicesContainer"></div>
   </div>
@@ -25,7 +31,6 @@
   </div>
 </section>
 
-<!-- MODAL NAMA -->
 <div id="nameModal" class="modal hidden">
   <div class="modal-box">
     <p class="modal-msg">
@@ -37,12 +42,23 @@
     </div>
     <div class="modal-actions">
       <button id="confirmBtn" class="modal-btn">Konfirmasi</button>
-      <button id="cancelBtn"  class="modal-btn">Batal</button>
+      <button id="cancelBtn"  class="modal-btn">Batalkan</button>
     </div>
   </div>
 </div>
 
-    <!-- MENU IKON -->
+<div id="exitTentangkuModal" class="modal hidden">
+  <div class="modal-box">
+    <p class="modal-msg">
+      Senang Berkenalan denganmu!
+    </p>
+    <div class="modal-actions">
+      <button id="exitYes" class="modal-btn">Aku juga Senang!</button>
+      <button id="exitNo" class="modal-btn">Sampai Jumpa!</button>
+    </div>
+  </div>
+</div>
+
     <ul class="menu disabled" id="menu">
       <li data-dialog="Silahkan pilih!"><button class="icon-btn" data-link="/proyek"><img src="assets/icon/project_icon.png"><span>PROYEK</span></button></li>
       <li data-dialog="Silahkan pilih!"><button class="icon-btn" data-link="/tentang"><img src="assets/icon/tentangku_icon.png"><span>TENTANGKU</span></button></li>
@@ -53,6 +69,6 @@
     <footer><p>REPP.MY.ID 2023–2025</p></footer>
   </main>
 
-  <script src="main.js"></script>
+  <script src="script/main.js"></script>
 </body>
 </html>

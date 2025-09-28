@@ -1,14 +1,1 @@
-[
-  {
-    "ip": "::1",
-    "name": "TutuToxic",
-    "timestamp": "2025-07-06T08:07:18.359Z",
-    "seenIntro": true,
-    "location": "Faoug, Vaud, Switzerland",
-    "coords": "46.9095574,7.0810285",
-    "maps": "https://www.google.com/maps?q=46.9095574,7.0810285",
-    "browser": "Chrome",
-    "os": "Windows",
-    "device": "desktop"
-  }
-]
+[]

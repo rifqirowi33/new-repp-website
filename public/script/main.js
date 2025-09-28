@@ -15,6 +15,9 @@ let currentUrl   ="";
 
 let lockInteraction = false;
 
+let waitingTentangku = false;
+let tentangBtns = [], tentangIdx = 0;
+
 let projects=[];
 async function loadProjects(){
   try{
@@ -26,7 +29,7 @@ async function loadProjects(){
   }
 }
 
-let dialogGlobal={}, dialogProyek={};
+let dialogGlobal={}, dialogProyek={}, dialogTentangku={};
 let afkDialog = [], afkQuotes = [];
 let afkSpecial = [];
 async function loadDialogGlobal(){
@@ -52,6 +55,17 @@ async function loadDialogProyek(){
     dialogProyek={};
   }
 }
+
+async function loadDialogTentangku(){
+  try{
+    const r=await fetch(`/data/dialog_tentang.json?t=${Date.now()}`);
+    dialogTentangku=await r.json();
+  }catch(e){
+    console.warn("dialog_tentang.json gagal:",e);
+    dialogTentangku={ intro:["Kamu ingin berkenalan dengan penciptaku ya?"], choices:{yes:"Boleh",no:"Ngga dulu"}, reject:["Ohh, kamu tidak tertarik ya?","atau mungkin kamu ingin mengetahui hal yang lain?","Silahkan pilih!"], expand:["Halo <askName>, aku REPP!","Di sini kamu bisa tahu lebih banyak tentangku."] };
+  }
+}
+
 async function loadAFKDialog(){
   try{
     const quotes = await fetch(`/data/quotes.json?t=${Date.now()}`).then(r=>r.json());
@@ -171,6 +185,22 @@ document.addEventListener("DOMContentLoaded",async()=>{
     const launch=()=>spawnSubChoices(doSiteAgainYes,doSiteAgainNo,"Boleh","Cukup!");
     isSafari ? requestAnimationFrame(()=>setTimeout(launch,0)) : setTimeout(launch,600);
   }
+  if(tag==="askTentangku"){
+    const launch = ()=> doTentangkuChoice();
+    isSafari ? requestAnimationFrame(()=>setTimeout(launch,0)) : setTimeout(launch,600);
+  }
+  if(tag==="afterPreExpand"){
+    setTimeout(() => {
+      q = [...(dialogTentangku.expand || ["(kosong)"])];
+      idx = pos = 0;
+      type();
+      expandTentangku();
+    }, 600);
+  }
+  if(tag==="openTentangkuNow"){ 
+    expandTentangku();
+    return;
+  }
 
   if(!menuUnlocked && plain.toLowerCase().includes("silahkan pilih")){
     $menu.classList.remove("disabled"); 
@@ -242,12 +272,7 @@ document.addEventListener("DOMContentLoaded",async()=>{
     idx=pos=0;type();
   }
   const doSiteAgainYes=()=>doSiteIntroAgain();
-  const doSiteAgainNo =()=>{
-    q=[...(dialogProyek.proyekNoSiteAgain||["wahh kamu sudah tahu ya?","Bagus deh!"]),
-       "Oh, iya!","aku juga punya beberapa proyek selain ini",
-       "<askMore>apa kamu mau melihat proyekku yang lain?>"];
-    idx=pos=0;type();
-  };
+  const doSiteAgainNo =()=>{ q=[...(dialogProyek.proyekNoSiteAgain||["wahh kamu sudah tahu ya?","Bagus deh!"]), "Oh, iya!","aku juga punya beberapa proyek selain ini", "<askMore>apa kamu mau melihat proyekku yang lain?>"]; idx=pos=0;type(); };
 
   function spawnVisit(){
     spawnSubChoices(
@@ -284,27 +309,364 @@ document.addEventListener("DOMContentLoaded",async()=>{
   document.addEventListener("keydown",e=>{
     const k=e.key;
     if(waitingMainChoice){if(k==="ArrowLeft")setMain((mainIdx-1+mainBtns.length)%mainBtns.length);else if(k==="ArrowRight")setMain((mainIdx+1)%mainBtns.length);else if(k==="Enter")mainBtns[mainIdx].click();return;}
-    if(waitingSubChoice){if(k==="ArrowLeft")setSub((subIdx-1+subBtns.length)%subBtns.length);else if(k==="ArrowRight")setSub((subIdx+1)%subBtns.length);else if(k==="Enter")subBtns[subIdx].click();return;}
+    if(waitingSubChoice){if(k==="ArrowLeft") setSub((subIdx-1+subBtns.length)%subBtns.length);else if(k==="ArrowRight") setSub((subIdx+1)%subBtns.length);else if(k==="Enter"){ subBtns[subIdx].click(); 
+    return;
+  }
+  return;
+}
+
+  if(waitingTentangku){
+    if(k==="ArrowLeft") setTentang((tentangIdx-1+tentangBtns.length)%tentangBtns.length);
+    else if(k==="ArrowRight") setTentang((tentangIdx+1)%tentangBtns.length);
+    else if(k==="Enter"){ tentangBtns[tentangIdx].click(); return; }
+    return;
+  }
     if(waitingProjList){if(k==="ArrowLeft")setProj((projIdx-1+projBtns.length)%projBtns.length);else if(k==="ArrowRight")setProj((projIdx+1)%projBtns.length);else if(k==="Enter")projBtns[projIdx].click();return;}
     if(menuUnlocked&&!typing){if(k==="ArrowLeft")highlightMenu((menuIdx-1+menuItems.length)%menuItems.length);else if(k==="ArrowRight")highlightMenu((menuIdx+1)%menuItems.length);else if(k==="Enter")menuItems[menuIdx].querySelector(".icon-btn").click();if(["ArrowLeft","ArrowRight","Enter"].includes(k))return;}
     if(k==="Enter")next();
   });
 
   menuItems.forEach((li,i)=>{
-    const btn=li.querySelector(".icon-btn");
-    btn.onmouseenter=()=>!$menu.classList.contains("disabled")&&($txt.textContent=li.dataset.dialog,highlightMenu(i));
-    btn.onclick=async()=>{
-      if($menu.classList.contains("disabled"))return;
-      const path=btn.dataset.link;
-      if(path==="/proyek"){
-        $menu.classList.add("disabled");menuUnlocked=false;
-        await loadDialogProyek();
-        let intro=dialogProyek.proyekIntro||dialogProyek.intro||["<askProject>Kamu ingin mengetahui tentang Proyek ya?>"];
-        if(!Array.isArray(intro)) intro=["<askProject>Kamu ingin mengetahui tentang Proyek ya?>"];
-        q=[...intro];idx=pos=0;type();
-      }else window.location.href=path;
-    };
-  });
+  const btn = li.querySelector(".icon-btn");
+
+  btn.onclick = async () => {
+    if($menu.classList.contains("disabled")) return;
+    const path = btn.dataset.link;
+
+    if(path==="/proyek"){
+      $menu.classList.add("disabled"); menuUnlocked=false;
+      await loadDialogProyek();
+      let intro=dialogProyek.proyekIntro||dialogProyek.intro||["<askProject>Kamu ingin mengetahui tentang Proyek ya?>"];
+      if(!Array.isArray(intro)) intro=["<askProject>Kamu ingin mengetahui tentang Proyek ya?>"];
+      q=[...intro]; idx=pos=0; type();
+
+    } else if(path==="/tentang"){
+      openTentangkuDialog();
+    } else if(path==="/catatan"){
+      loadDialogCatatan();
+    } else if(path==="/pesan"){
+      loadDialogPesan();
+    } else {
+      window.location.href=path;
+    }
+  };
+});
+
+async function loadDialogCatatan() {
+  $menu.classList.add("disabled");
+  menuUnlocked = false;
+
+  showDialog("Kamu ingin melihat catatanku?", [
+    { text: "Iya", action: showCatatan },
+    { text: "Tidak", action: returnToMenu }
+  ]);
+}
+
+function showCatatan() {
+  const lines = [
+    "Wahh sayang sekali,",
+    "Aku belum menemukan catatanku",
+    "karena catatanku telah hilang,",
+    "Aku sedang mencarinya,",
+    "Silahkan kembali lain waktu"
+  ];
+
+  let idxLine = 0;
+  function nextLine() {
+    if (idxLine < lines.length) {
+      showDialog(lines[idxLine], [], () => {
+        idxLine++;
+        nextLine();
+      });
+    } else {
+      returnToMenu();
+    }
+  }
+  nextLine();
+}
+
+function loadDialogPesan() {
+  $menu.classList.add("disabled");
+  menuUnlocked = false;
+
+  showDialog("Kamu ingin mengirim pesan padaku?", [
+    { text: "Iya", action: showPesan },
+    { text: "Tidak", action: returnToMenu }
+  ]);
+}
+
+function showPesan() {
+  const lines = [
+    "Wahh, jaringanku masih bermasalah,",
+    "aku tidak bisa menerima pesan dari mu",
+    "akan kuperbaiki",
+    "Silahkan kembali lain waktu"
+  ];
+
+  let idxLine = 0;
+  function nextLine() {
+    if (idxLine < lines.length) {
+      showDialog(lines[idxLine], [], () => {
+        idxLine++;
+        nextLine();
+      });
+    } else {
+      returnToMenu();
+    }
+  }
+  nextLine();
+}
+
+function returnToMenu() {
+  $menu.classList.remove("disabled");
+  menuUnlocked = true;
+  highlightMenu(menuIdx);
+
+  q = ["Silahkan pilih!"];
+  idx = pos = 0;
+  type();
+}
+
+function doTentangkuChoice(){
+  spawnSubChoices(
+    () => {
+      const pre = dialogTentangku.preExpand || [
+        "Ikut aku",
+        "Aku akan mengantarkanmu",
+        "Untuk menemui penciptaku"
+      ];
+      q = [...pre, "<afterPreExpand>"];
+      idx = pos = 0;
+      type();
+    },
+    () => {
+      q = [...(dialogTentangku.reject || ["Ohh, kamu tidak tertarik ya?"])];
+      idx = pos = 0;
+      type();
+    },
+    dialogTentangku.choices?.yes || "Boleh",
+    dialogTentangku.choices?.no  || "Ngga dulu"
+  );
+}
+
+const setTentang = i => tentangBtns.forEach((b,x)=>
+  b.classList.toggle("selected",(tentangIdx=i)===x)
+);
+
+function chooseTentang(choice){
+  waitingTentangku = false;
+  $choices.innerHTML="";
+
+  if(choice==="yes"){
+    q = [...(dialogTentangku.expand || ["(kosong)"])];
+    idx=pos=0; 
+    type(); 
+    expandTentangku();
+  } else {
+    q = [...(dialogTentangku.reject || ["Ohh, kamu tidak tertarik ya?"])];
+    idx=pos=0; 
+    type();
+  }
+}
+
+async function openTentangkuDialog() {
+  await loadDialogTentangku();
+
+  $menu.classList.add("disabled");
+  menuUnlocked = false;
+
+  if(!Array.isArray(dialogTentangku.intro) || dialogTentangku.intro.length===0){
+    q = [`<askTentangku>Kamu ingin berkenalan dengan penciptaku ya?`];
+  } else {
+    q = dialogTentangku.intro.map((line,i,arr)=> i === arr.length-1 ? `<askTentangku>${line}` : line);
+  }
+
+  idx = pos = 0;
+  type();
+}
+
+async function loadTentangku() {
+  try {
+    const res = await fetch("/data/about/about.html");
+    const html = await res.text();
+    document.getElementById("tentangkuContainer").innerHTML = html;
+
+    const closeBtn = document.getElementById("closeTentangku");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", () => {
+        const win = document.getElementById("tentangkuWindow");
+        win.classList.add("hidden");
+        document.getElementById("blurBackground").classList.add("hidden");
+        
+        $menu.classList.remove("disabled");
+        menuUnlocked = true;
+        highlightMenu(menuIdx);
+      });
+    }
+  } catch (err) {
+    console.error("Gagal load tentangku:", err);
+  }
+}
+
+loadTentangku();
+
+function showDialog(text, options = [], callback) {
+  const $txt = document.getElementById("dialogText");
+  const $choices = document.getElementById("choicesContainer");
+
+  $txt.textContent = "";
+  $choices.innerHTML = "";
+
+  let i = 0;
+  let typing = true;
+
+  let dialogBtns = [];
+  let dialogIdx = 0;
+
+  function typeChar() {
+    if (i < text.length) {
+      $txt.textContent += text.charAt(i);
+      i++;
+      setTimeout(typeChar, 40);
+    } else {
+      typing = false;
+
+      if (options.length > 0) {
+        const wrap = document.createElement("div");
+        wrap.className = "choices";
+
+        options.forEach((opt, x) => {
+          const btn = document.createElement("button");
+          btn.className = "choice-btn";
+          btn.textContent = opt.text;
+          btn.onclick = () => {
+            cleanup();
+            $choices.innerHTML = "";
+            opt.action();
+          };
+          wrap.appendChild(btn);
+        });
+
+        $choices.appendChild(wrap);
+        dialogBtns = [...wrap.querySelectorAll("button")];
+        dialogIdx = 0;
+        highlightDialogBtn();
+      }
+
+      // klik teks untuk lanjut jika tidak ada pilihan
+      if (options.length === 0 && callback) {
+        $txt.addEventListener("click", proceed);
+        document.addEventListener("keydown", onEnter);
+      }
+    }
+  }
+
+  function highlightDialogBtn() {
+    dialogBtns.forEach((b,x)=>b.classList.toggle("selected", x===dialogIdx));
+  }
+
+  function onKey(e) {
+    if (typing) return;
+
+    const k = e.key;
+    if(dialogBtns.length){
+      if(k==="ArrowLeft") dialogIdx = (dialogIdx-1+dialogBtns.length)%dialogBtns.length;
+      else if(k==="ArrowRight") dialogIdx = (dialogIdx+1)%dialogBtns.length;
+      else if(k==="Enter") dialogBtns[dialogIdx].click();
+      highlightDialogBtn();
+    } else if(k==="Enter" && callback){
+      proceed();
+    }
+  }
+
+  function proceed() {
+    document.removeEventListener("keydown", onKey);
+    $txt.removeEventListener("click", proceed);
+    if(callback) callback();
+  }
+
+  function cleanup() {
+    document.removeEventListener("keydown", onKey);
+    $txt.removeEventListener("click", proceed);
+  }
+
+  document.addEventListener("keydown", onKey);
+  typeChar();
+}
+
+function expandTentangku() {
+  const win = document.getElementById("tentangkuWindow");
+
+  let closeBtn = win.querySelector("#closeTentangku");
+  if (!closeBtn) {
+    closeBtn = ce("button", "close-btn");
+    closeBtn.id = "closeTentangku";
+    closeBtn.textContent = "×";
+    win.appendChild(closeBtn);
+  }
+
+  closeBtn.onclick = () => {
+    win.classList.add("hidden");
+    win.classList.remove("expand", "show-content");
+
+    q = ["Silahkan pilih!"];
+    idx = pos = 0;
+    type();
+
+    $menu.classList.remove("disabled");
+    menuUnlocked = true;
+    highlightMenu(menuIdx);
+  };
+
+  win.classList.remove("expand", "show-content", "hidden");
+  setTimeout(() => win.classList.add("expand"), 50);
+  setTimeout(() => win.classList.add("show-content"), 1000);
+}
+
+// ambil element modal exit
+const exitTentangkuModal = document.getElementById("exitTentangkuModal");
+const exitYes = document.getElementById("exitYes");
+const exitNo = document.getElementById("exitNo");
+const closeTentangkuBtn = document.getElementById("closeTentangku");
+
+// event klik tombol [x] → munculkan modal
+closeTentangkuBtn.addEventListener("click", () => {
+  exitTentangkuModal.classList.remove("hidden");
+});
+
+// event tombol "Sudah"
+exitYes.addEventListener("click", () => {
+  exitTentangkuModal.classList.add("hidden");
+
+  // tutup window tentangku
+  const win = document.getElementById("tentangkuWindow");
+  win.classList.add("hidden");
+  win.classList.remove("expand", "show-content");
+
+  // reset dialog balik ke awal
+  q = ["Silahkan pilih!"];
+  idx = pos = 0;
+  type();
+
+  // buka semua ikon
+  $menu.classList.remove("disabled");
+  menuUnlocked = true;
+  highlightMenu(menuIdx);
+});
+
+// event tombol "Belum"
+exitNo.addEventListener("click", () => {
+  exitTentangkuModal.classList.add("hidden");
+});
+
+
+document.addEventListener("click", e => {
+  if(e.target.id === "closeTentangku"){
+    const win = document.getElementById("tentangkuWindow");
+    win.classList.add("hidden");
+    win.classList.remove("expand","show-content");
+  }
+});
 
 let lastActive = Date.now();
   const AFK_TIMEOUT = 45000;
@@ -432,6 +794,5 @@ function checkAFK() {
     }, 8000); 
   }, 60000);
 }
-
   type();
 });

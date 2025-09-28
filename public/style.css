@@ -48,6 +48,62 @@ html, body {
     margin-bottom:2rem
 }
 
+.tentangku-window.hidden {
+  display: none;
+}
+
+.close-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-family: "pixelmix", monospace;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  color: var(--txt);
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.close-btn:hover {
+  color: var(--blue);
+}
+
+.tentangku-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 150px;
+  background: black;
+  border: 2px solid white;
+  color: white;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+  z-index: 1000; /* pastikan di atas dialog */
+}
+
+.tentangku-window.expand {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: none;
+}
+
+.tentangku-window .content {
+  opacity: 0;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Press Start 2P', monospace;
+  transition: opacity 0.8s ease;
+}
+
+.tentangku-window.show-content .content {
+  opacity: 1;
+}
+
 .hero-head{
     display:flex;
     margin-top:1rem;

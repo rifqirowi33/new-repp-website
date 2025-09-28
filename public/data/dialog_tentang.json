@@ -1,0 +1,25 @@
+{
+  "intro": [
+    "Kamu ingin berkenalan dengan penciptaku ya?"
+  ],
+  "choices": {
+    "yes": "Boleh",
+    "no": "Ngga dulu"
+  },
+  "reject": [
+    "Ohh, kamu tidak tertarik ya?",
+    "atau mungkin kamu ingin mengetahui hal yang lain?",
+    "Silahkan pilih!"
+  ],
+  "preExpand": [
+    "Baiklah, Ikut aku",
+    "Aku akan mengantarkanmu",
+    "Untuk menemui penciptaku",
+    "Ayo!",
+    "<openTentangkuNow>"
+  ],
+  "expand": [
+    "Selamat datang di ruang pribadaku!",
+    "Di sini kamu bisa tahu lebih banyak tentangku."
+  ]
+}

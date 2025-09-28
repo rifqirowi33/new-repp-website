@@ -1,0 +1,5 @@
+node_modules
+bun_lock
+node*
+bun*
+package.json
