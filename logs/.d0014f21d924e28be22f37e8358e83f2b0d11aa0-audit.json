@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\rifqi\\Documents\\PROJEK\\PRIBADI\\WEB\\new-repp-website\\logs\\.d0014f21d924e28be22f37e8358e83f2b0d11aa0-audit.json",
+    "files": [
+        {
+            "date": 1759895394806,
+            "name": "C:\\Users\\rifqi\\Documents\\PROJEK\\PRIBADI\\WEB\\new-repp-website\\logs\\server-2025-10-08.log",
+            "hash": "d0e6e8f035945e3e7ccacd3f0b066fc30c0b889bb2a56271d2ce59257a2720b5"
+        }
+    ],
+    "hashType": "sha256"
+}

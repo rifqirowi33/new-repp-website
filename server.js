@@ -7,19 +7,21 @@ import compression from "compression";
 import rateLimit from "express-rate-limit";
 import cors from "cors";
 import { UAParser } from "ua-parser-js";
-import cookieParser from "cookie-parser"; 
+import cookieParser from "cookie-parser";
+import requestLogger from "./logger/request-logger.js";
+import logger from "./logger/logger.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 const PORT = 3333;
 
-
 app.use(helmet());
 app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cookieParser()); 
+app.use(cookieParser());
 app.use(cors({ origin: "*" }));
+
 app.use(rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 100,
@@ -28,8 +30,9 @@ app.use(rateLimit({
   keyGenerator: req => req.ip
 }));
 
-
 app.set("trust proxy", true);
+
+app.use(requestLogger());
 
 app.use((req, res, next) => {
   if (req.url.endsWith(".js") || req.url.endsWith(".html")) {
@@ -40,7 +43,6 @@ app.use((req, res, next) => {
 
 app.use(express.static(path.join(__dirname, "public")));
 
-
 const DATA_DIR = path.join(__dirname, "data");
 const VIS_PATH = path.join(DATA_DIR, "visitors.json");
 if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR);
@@ -48,7 +50,6 @@ if (!fs.existsSync(VIS_PATH)) fs.writeFileSync(VIS_PATH, "[]", "utf-8");
 
 const readVisitors = () => JSON.parse(fs.readFileSync(VIS_PATH, "utf-8"));
 const writeVisitors = data => fs.writeFileSync(VIS_PATH, JSON.stringify(data, null, 2));
-
 
 app.post("/api/visit", async (req, res) => {
   const name = req.body.name || req.cookies.name;
@@ -72,7 +73,7 @@ app.post("/api/visit", async (req, res) => {
       maps = `https://www.google.com/maps?q=${coords}`;
     }
   } catch {
-    console.warn("ipwho.is gagal:", ip);
+    logger.warn("ipwho.is gagal", { meta: { ip } });
   }
 
   const visitors = readVisitors();
@@ -94,11 +95,12 @@ app.post("/api/visit", async (req, res) => {
 
   if (existingIdx >= 0) {
     visitors[existingIdx] = visitorData;
-    console.log(`[REVISIT] ${ip} -> "${name}"`);
+    logger.info(`[REVISIT] ${ip} -> "${name}"`);
   } else {
     visitors.push(visitorData);
-    console.log(`[VISIT] ${ip} -> "${name}"`);
+    logger.info(`[VISIT] ${ip} -> "${name}"`);
   }
+
   writeVisitors(visitors);
   res.cookie("name", name, { httpOnly: false, path: "/", sameSite: "Lax" });
   res.cookie("seenIntro", String(visitorData.seenIntro), { httpOnly: false, path: "/", sameSite: "Lax" });
@@ -127,4 +129,7 @@ app.post("/api/introDone", (req, res) => {
 
 app.post("/", (_, res) => res.json({ message: "POST request berhasil" }));
 
-app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
+// === START SERVER ===
+app.listen(PORT, () => {
+  logger.info(`Server running at http://localhost:${PORT}`);
+});
