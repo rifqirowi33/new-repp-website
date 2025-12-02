@@ -1,1 +1,14 @@
-[]
+{
+  "210a61e8-622e-46fa-b8cb-0f23671fc33c": {
+        "ip": "127.0.0.1",
+        "name": "REPP",
+        "timestamp": "2025-12-02T10:38:54.446Z",
+        "seenIntro": true,
+        "location": "Unknown",
+        "coords": "",
+        "maps": "",
+        "browser": "Edge",
+        "os": "Windows",
+        "device": "desktop"
+    }
+}

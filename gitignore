@@ -3,3 +3,4 @@ bun_lock
 node*
 bun*
 package.json
+logs

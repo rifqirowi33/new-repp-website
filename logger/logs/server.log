@@ -13,3 +13,1587 @@
 2025-10-08 03:57:06 [INFO] GET /data/afk.json?t=1759895826945 200 6.82ms {"meta":{"ip":"::1","method":"GET","url":"/data/afk.json?t=1759895826945","status":200,"responseTimeMs":6.82,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
 2025-10-08 03:57:06 [INFO] GET /data/afkspecial.json?t=1759895826959 200 1.39ms {"meta":{"ip":"::1","method":"GET","url":"/data/afkspecial.json?t=1759895826959","status":200,"responseTimeMs":1.39,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
 2025-10-08 03:57:06 [INFO] GET /data/about/about.html 200 1.42ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":1.42,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:08:50 [INFO] Server running at http://localhost:3333 
+2025-12-01 10:09:07 [INFO] Server running at http://localhost:3333 
+2025-12-01 10:09:13 [INFO] GET / 200 67.88ms {"meta":{"ip":"::1","method":"GET","url":"/","status":200,"responseTimeMs":67.88,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:13 [INFO] GET /assets/icon/project_icon.png 200 3.51ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/project_icon.png","status":200,"responseTimeMs":3.51,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:13 [INFO] GET /assets/dialog/blink.png 200 25.88ms {"meta":{"ip":"::1","method":"GET","url":"/assets/dialog/blink.png","status":200,"responseTimeMs":25.88,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:13 [INFO] GET /style.css 200 36.40ms {"meta":{"ip":"::1","method":"GET","url":"/style.css","status":200,"responseTimeMs":36.4,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:13 [INFO] GET /assets/icon/tentangku_icon.png 200 7.79ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/tentangku_icon.png","status":200,"responseTimeMs":7.79,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:13 [INFO] GET /assets/icon/pesan_icon.png 200 26.17ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/pesan_icon.png","status":200,"responseTimeMs":26.17,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:13 [INFO] GET /assets/icon/blog_icon.png 200 55.93ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/blog_icon.png","status":200,"responseTimeMs":55.93,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:14 [INFO] GET /script/main.js 200 206.47ms {"meta":{"ip":"::1","method":"GET","url":"/script/main.js","status":200,"responseTimeMs":206.47,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:14 [INFO] GET /assets/font/PixelCode.woff2 200 64.33ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/PixelCode.woff2","status":200,"responseTimeMs":64.33,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:14 [INFO] GET /assets/font/Pixel_NES.ttf 200 104.14ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixel_NES.ttf","status":200,"responseTimeMs":104.14,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:14 [INFO] GET /assets/font/NeuePixelSans.ttf 200 111.00ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/NeuePixelSans.ttf","status":200,"responseTimeMs":111,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:14 [INFO] GET /data/dialog.json?t=1764583754072 200 68.15ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog.json?t=1764583754072","status":200,"responseTimeMs":68.15,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:14 [INFO] GET /assets/font/pixelmix.ttf 200 81.47ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/pixelmix.ttf","status":200,"responseTimeMs":81.47,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:14 [INFO] GET /assets/font/Pixelary.otf 200 99.32ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixelary.otf","status":200,"responseTimeMs":99.32,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:14 [INFO] GET /data/projects.json?t=1764583754073 200 74.62ms {"meta":{"ip":"::1","method":"GET","url":"/data/projects.json?t=1764583754073","status":200,"responseTimeMs":74.62,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:14 [INFO] GET /data/quotes.json?t=1764583754073 200 55.61ms {"meta":{"ip":"::1","method":"GET","url":"/data/quotes.json?t=1764583754073","status":200,"responseTimeMs":55.61,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:14 [WARN] GET /favicon.ico 404 15.22ms {"meta":{"ip":"::1","method":"GET","url":"/favicon.ico","status":404,"responseTimeMs":15.22,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:14 [INFO] GET /data/afk.json?t=1764583754749 200 22.85ms {"meta":{"ip":"::1","method":"GET","url":"/data/afk.json?t=1764583754749","status":200,"responseTimeMs":22.85,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:14 [INFO] GET /data/afkspecial.json?t=1764583754793 200 12.38ms {"meta":{"ip":"::1","method":"GET","url":"/data/afkspecial.json?t=1764583754793","status":200,"responseTimeMs":12.38,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:14 [INFO] GET /data/about/about.html 200 14.34ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":14.34,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:38 [INFO] GET /data/about/about.html 200 1.57ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":1.57,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:09:38 [INFO] GET /data/dialog_tentang.json?t=1764583778255 200 22.84ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog_tentang.json?t=1764583778255","status":200,"responseTimeMs":22.84,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:18 [INFO] Server running at http://localhost:3333 
+2025-12-01 10:19:21 [INFO] GET / 304 211.37ms {"meta":{"ip":"::1","method":"GET","url":"/","status":304,"responseTimeMs":211.37,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:21 [INFO] GET /style.css 304 2.83ms {"meta":{"ip":"::1","method":"GET","url":"/style.css","status":304,"responseTimeMs":2.83,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:21 [INFO] GET /assets/dialog/blink.png 304 6.98ms {"meta":{"ip":"::1","method":"GET","url":"/assets/dialog/blink.png","status":304,"responseTimeMs":6.98,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:21 [INFO] GET /assets/icon/project_icon.png 304 2.17ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/project_icon.png","status":304,"responseTimeMs":2.17,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:22 [INFO] GET /assets/icon/tentangku_icon.png 304 4.04ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/tentangku_icon.png","status":304,"responseTimeMs":4.04,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:22 [INFO] GET /assets/icon/blog_icon.png 304 8.58ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/blog_icon.png","status":304,"responseTimeMs":8.58,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:22 [INFO] GET /assets/icon/pesan_icon.png 304 10.18ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/pesan_icon.png","status":304,"responseTimeMs":10.18,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:22 [INFO] GET /assets/font/Pixel_NES.ttf 304 8.63ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixel_NES.ttf","status":304,"responseTimeMs":8.63,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:22 [INFO] GET /assets/font/NeuePixelSans.ttf 304 18.45ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/NeuePixelSans.ttf","status":304,"responseTimeMs":18.45,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:22 [INFO] GET /assets/font/PixelCode.woff2 304 28.43ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/PixelCode.woff2","status":304,"responseTimeMs":28.43,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:22 [INFO] GET /assets/font/Pixelary.otf 304 16.60ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixelary.otf","status":304,"responseTimeMs":16.6,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:22 [INFO] GET /assets/font/pixelmix.ttf 304 29.19ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/pixelmix.ttf","status":304,"responseTimeMs":29.19,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:22 [INFO] GET /script/main.js 200 201.12ms {"meta":{"ip":"::1","method":"GET","url":"/script/main.js","status":200,"responseTimeMs":201.12,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:22 [INFO] GET /data/projects.json?t=1764584362824 200 5.00ms {"meta":{"ip":"::1","method":"GET","url":"/data/projects.json?t=1764584362824","status":200,"responseTimeMs":5,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:22 [INFO] GET /data/quotes.json?t=1764584362824 200 13.56ms {"meta":{"ip":"::1","method":"GET","url":"/data/quotes.json?t=1764584362824","status":200,"responseTimeMs":13.56,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:22 [INFO] GET /data/dialog.json?t=1764584362823 200 31.63ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog.json?t=1764584362823","status":200,"responseTimeMs":31.63,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:22 [INFO] GET /data/afk.json?t=1764584362863 200 13.12ms {"meta":{"ip":"::1","method":"GET","url":"/data/afk.json?t=1764584362863","status":200,"responseTimeMs":13.12,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:22 [INFO] GET /data/afkspecial.json?t=1764584362887 200 1.25ms {"meta":{"ip":"::1","method":"GET","url":"/data/afkspecial.json?t=1764584362887","status":200,"responseTimeMs":1.25,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:22 [INFO] GET /data/about/about.html 200 32.28ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":32.28,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:23 [WARN] GET /public/data/about/about.css 404 10.52ms {"meta":{"ip":"::1","method":"GET","url":"/public/data/about/about.css","status":404,"responseTimeMs":10.52,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:23 [WARN] GET /Asset/layout/withstroke.png 404 11.06ms {"meta":{"ip":"::1","method":"GET","url":"/Asset/layout/withstroke.png","status":404,"responseTimeMs":11.06,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:23 [WARN] GET /Asset/layout/ballon_comico.png 404 14.10ms {"meta":{"ip":"::1","method":"GET","url":"/Asset/layout/ballon_comico.png","status":404,"responseTimeMs":14.1,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:31 [INFO] GET /assets/icon/tentangku_icon.png 304 0.55ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/tentangku_icon.png","status":304,"responseTimeMs":0.55,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:33 [INFO] GET /data/dialog_tentang.json?t=1764584373213 200 4.93ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog_tentang.json?t=1764584373213","status":200,"responseTimeMs":4.93,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:33 [INFO] GET /data/about/about.html 200 6.65ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":6.65,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:33 [WARN] GET /public/data/about/about.css 404 4.85ms {"meta":{"ip":"::1","method":"GET","url":"/public/data/about/about.css","status":404,"responseTimeMs":4.85,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:33 [WARN] GET /Asset/layout/withstroke.png 404 12.50ms {"meta":{"ip":"::1","method":"GET","url":"/Asset/layout/withstroke.png","status":404,"responseTimeMs":12.5,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:33 [WARN] GET /Asset/layout/ballon_comico.png 404 0.87ms {"meta":{"ip":"::1","method":"GET","url":"/Asset/layout/ballon_comico.png","status":404,"responseTimeMs":0.87,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:19:53 [INFO] GET /assets/icon/pesan_icon.png 304 2.66ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/pesan_icon.png","status":304,"responseTimeMs":2.66,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:47 [INFO] Server running at http://localhost:3333 
+2025-12-01 10:20:50 [INFO] GET / 304 5.46ms {"meta":{"ip":"::1","method":"GET","url":"/","status":304,"responseTimeMs":5.46,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /style.css 304 6.81ms {"meta":{"ip":"::1","method":"GET","url":"/style.css","status":304,"responseTimeMs":6.81,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /assets/icon/project_icon.png 304 23.37ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/project_icon.png","status":304,"responseTimeMs":23.37,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /assets/dialog/blink.png 304 31.95ms {"meta":{"ip":"::1","method":"GET","url":"/assets/dialog/blink.png","status":304,"responseTimeMs":31.95,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /assets/icon/tentangku_icon.png 304 12.73ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/tentangku_icon.png","status":304,"responseTimeMs":12.73,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /assets/icon/blog_icon.png 304 16.52ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/blog_icon.png","status":304,"responseTimeMs":16.52,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /assets/icon/pesan_icon.png 304 4.98ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/pesan_icon.png","status":304,"responseTimeMs":4.98,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /assets/font/Pixel_NES.ttf 304 49.43ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixel_NES.ttf","status":304,"responseTimeMs":49.43,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /assets/font/NeuePixelSans.ttf 304 9.73ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/NeuePixelSans.ttf","status":304,"responseTimeMs":9.73,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /assets/font/PixelCode.woff2 304 9.91ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/PixelCode.woff2","status":304,"responseTimeMs":9.91,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /assets/font/Pixelary.otf 304 11.47ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixelary.otf","status":304,"responseTimeMs":11.47,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /assets/font/pixelmix.ttf 304 18.61ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/pixelmix.ttf","status":304,"responseTimeMs":18.61,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /script/main.js 200 108.56ms {"meta":{"ip":"::1","method":"GET","url":"/script/main.js","status":200,"responseTimeMs":108.56,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /data/projects.json?t=1764584450728 200 8.13ms {"meta":{"ip":"::1","method":"GET","url":"/data/projects.json?t=1764584450728","status":200,"responseTimeMs":8.13,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /data/quotes.json?t=1764584450729 200 9.65ms {"meta":{"ip":"::1","method":"GET","url":"/data/quotes.json?t=1764584450729","status":200,"responseTimeMs":9.65,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /data/dialog.json?t=1764584450728 200 17.42ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog.json?t=1764584450728","status":200,"responseTimeMs":17.42,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /data/afk.json?t=1764584450815 200 1.50ms {"meta":{"ip":"::1","method":"GET","url":"/data/afk.json?t=1764584450815","status":200,"responseTimeMs":1.5,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /data/afkspecial.json?t=1764584450835 200 2.50ms {"meta":{"ip":"::1","method":"GET","url":"/data/afkspecial.json?t=1764584450835","status":200,"responseTimeMs":2.5,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [INFO] GET /data/about/about.html 200 2.96ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":2.96,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [WARN] GET /public/data/about/about.css 404 7.16ms {"meta":{"ip":"::1","method":"GET","url":"/public/data/about/about.css","status":404,"responseTimeMs":7.16,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [WARN] GET /Asset/layout/withstroke.png 404 15.85ms {"meta":{"ip":"::1","method":"GET","url":"/Asset/layout/withstroke.png","status":404,"responseTimeMs":15.85,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:50 [WARN] GET /Asset/layout/ballon_comico.png 404 0.90ms {"meta":{"ip":"::1","method":"GET","url":"/Asset/layout/ballon_comico.png","status":404,"responseTimeMs":0.9,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:59 [INFO] GET /data/dialog_tentang.json?t=1764584459258 200 3.04ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog_tentang.json?t=1764584459258","status":200,"responseTimeMs":3.04,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:59 [INFO] GET /data/about/about.html 200 8.83ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":8.83,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:59 [WARN] GET /public/data/about/about.css 404 1.72ms {"meta":{"ip":"::1","method":"GET","url":"/public/data/about/about.css","status":404,"responseTimeMs":1.72,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:59 [WARN] GET /Asset/layout/withstroke.png 404 11.44ms {"meta":{"ip":"::1","method":"GET","url":"/Asset/layout/withstroke.png","status":404,"responseTimeMs":11.44,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:20:59 [WARN] GET /Asset/layout/ballon_comico.png 404 0.57ms {"meta":{"ip":"::1","method":"GET","url":"/Asset/layout/ballon_comico.png","status":404,"responseTimeMs":0.57,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:32 [INFO] Server running at http://localhost:3333 
+2025-12-01 10:25:35 [INFO] GET / 304 7.93ms {"meta":{"ip":"::1","method":"GET","url":"/","status":304,"responseTimeMs":7.93,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:35 [INFO] GET /style.css 304 2.82ms {"meta":{"ip":"::1","method":"GET","url":"/style.css","status":304,"responseTimeMs":2.82,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:35 [INFO] GET /assets/dialog/blink.png 304 24.30ms {"meta":{"ip":"::1","method":"GET","url":"/assets/dialog/blink.png","status":304,"responseTimeMs":24.3,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:35 [INFO] GET /assets/icon/project_icon.png 304 0.87ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/project_icon.png","status":304,"responseTimeMs":0.87,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:35 [INFO] GET /assets/icon/tentangku_icon.png 304 1.86ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/tentangku_icon.png","status":304,"responseTimeMs":1.86,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:35 [INFO] GET /assets/icon/blog_icon.png 304 5.93ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/blog_icon.png","status":304,"responseTimeMs":5.93,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:35 [INFO] GET /assets/icon/pesan_icon.png 304 24.95ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/pesan_icon.png","status":304,"responseTimeMs":24.95,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:35 [INFO] GET /assets/font/Pixel_NES.ttf 304 6.42ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixel_NES.ttf","status":304,"responseTimeMs":6.42,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:35 [INFO] GET /assets/font/NeuePixelSans.ttf 304 10.60ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/NeuePixelSans.ttf","status":304,"responseTimeMs":10.6,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:35 [INFO] GET /assets/font/PixelCode.woff2 304 14.59ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/PixelCode.woff2","status":304,"responseTimeMs":14.59,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:35 [INFO] GET /script/main.js 200 150.29ms {"meta":{"ip":"::1","method":"GET","url":"/script/main.js","status":200,"responseTimeMs":150.29,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:35 [INFO] GET /assets/font/Pixelary.otf 304 1.58ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixelary.otf","status":304,"responseTimeMs":1.58,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:35 [INFO] GET /assets/font/pixelmix.ttf 304 9.00ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/pixelmix.ttf","status":304,"responseTimeMs":9,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:35 [INFO] GET /data/projects.json?t=1764584735919 200 3.11ms {"meta":{"ip":"::1","method":"GET","url":"/data/projects.json?t=1764584735919","status":200,"responseTimeMs":3.11,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:35 [INFO] GET /data/quotes.json?t=1764584735919 200 6.84ms {"meta":{"ip":"::1","method":"GET","url":"/data/quotes.json?t=1764584735919","status":200,"responseTimeMs":6.84,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:35 [INFO] GET /data/dialog.json?t=1764584735919 200 20.97ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog.json?t=1764584735919","status":200,"responseTimeMs":20.97,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:36 [INFO] GET /data/afk.json?t=1764584736176 200 1.81ms {"meta":{"ip":"::1","method":"GET","url":"/data/afk.json?t=1764584736176","status":200,"responseTimeMs":1.81,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:36 [INFO] GET /data/afkspecial.json?t=1764584736191 200 2.70ms {"meta":{"ip":"::1","method":"GET","url":"/data/afkspecial.json?t=1764584736191","status":200,"responseTimeMs":2.7,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:36 [INFO] GET /data/about/about.html 200 8.85ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":8.85,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:36 [WARN] GET /public/data/about/about.css 404 4.51ms {"meta":{"ip":"::1","method":"GET","url":"/public/data/about/about.css","status":404,"responseTimeMs":4.51,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:36 [WARN] GET /public/assets/dialog/withstroke.png 404 7.99ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/withstroke.png","status":404,"responseTimeMs":7.99,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:36 [WARN] GET /public/assets/dialog/ballon_comico.png 404 11.15ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/ballon_comico.png","status":404,"responseTimeMs":11.15,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:44 [INFO] GET /data/dialog_tentang.json?t=1764584744228 200 3.85ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog_tentang.json?t=1764584744228","status":200,"responseTimeMs":3.85,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:44 [INFO] GET /data/about/about.html 200 7.77ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":7.77,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:44 [WARN] GET /public/data/about/about.css 404 1.14ms {"meta":{"ip":"::1","method":"GET","url":"/public/data/about/about.css","status":404,"responseTimeMs":1.14,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:44 [WARN] GET /public/assets/dialog/withstroke.png 404 2.30ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/withstroke.png","status":404,"responseTimeMs":2.3,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:25:44 [WARN] GET /public/assets/dialog/ballon_comico.png 404 4.88ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/ballon_comico.png","status":404,"responseTimeMs":4.88,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:26:06 [WARN] GET /.well-known/appspecific/com.chrome.devtools.json 404 2.51ms {"meta":{"ip":"::1","method":"GET","url":"/.well-known/appspecific/com.chrome.devtools.json","status":404,"responseTimeMs":2.51,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:26:06 [INFO] GET /style.css 304 43.24ms {"meta":{"ip":"::1","method":"GET","url":"/style.css","status":304,"responseTimeMs":43.24,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:26:06 [WARN] GET /public/data/about/about.css 404 30.04ms {"meta":{"ip":"::1","method":"GET","url":"/public/data/about/about.css","status":404,"responseTimeMs":30.04,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:14 [INFO] Server running at http://localhost:3333 
+2025-12-01 10:27:18 [INFO] GET / 304 16.35ms {"meta":{"ip":"::1","method":"GET","url":"/","status":304,"responseTimeMs":16.35,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:18 [WARN] GET /.well-known/appspecific/com.chrome.devtools.json 404 7.53ms {"meta":{"ip":"::1","method":"GET","url":"/.well-known/appspecific/com.chrome.devtools.json","status":404,"responseTimeMs":7.53,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:18 [INFO] GET /style.css 304 2.27ms {"meta":{"ip":"::1","method":"GET","url":"/style.css","status":304,"responseTimeMs":2.27,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:18 [INFO] GET /assets/dialog/blink.png 304 5.41ms {"meta":{"ip":"::1","method":"GET","url":"/assets/dialog/blink.png","status":304,"responseTimeMs":5.41,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:18 [INFO] GET /assets/icon/project_icon.png 304 10.56ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/project_icon.png","status":304,"responseTimeMs":10.56,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:19 [INFO] GET /assets/icon/tentangku_icon.png 304 3.89ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/tentangku_icon.png","status":304,"responseTimeMs":3.89,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:19 [INFO] GET /assets/icon/blog_icon.png 304 10.42ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/blog_icon.png","status":304,"responseTimeMs":10.42,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:19 [INFO] GET /assets/icon/pesan_icon.png 304 14.06ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/pesan_icon.png","status":304,"responseTimeMs":14.06,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:19 [INFO] GET /assets/font/Pixel_NES.ttf 304 4.59ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixel_NES.ttf","status":304,"responseTimeMs":4.59,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:19 [INFO] GET /assets/font/NeuePixelSans.ttf 304 7.18ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/NeuePixelSans.ttf","status":304,"responseTimeMs":7.18,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:19 [INFO] GET /assets/font/PixelCode.woff2 304 11.91ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/PixelCode.woff2","status":304,"responseTimeMs":11.91,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:19 [INFO] GET /assets/font/Pixelary.otf 304 11.27ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixelary.otf","status":304,"responseTimeMs":11.27,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:19 [INFO] GET /assets/font/pixelmix.ttf 304 74.01ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/pixelmix.ttf","status":304,"responseTimeMs":74.01,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:19 [INFO] GET /script/main.js 200 325.77ms {"meta":{"ip":"::1","method":"GET","url":"/script/main.js","status":200,"responseTimeMs":325.77,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:20 [INFO] GET /data/projects.json?t=1764584839982 200 37.19ms {"meta":{"ip":"::1","method":"GET","url":"/data/projects.json?t=1764584839982","status":200,"responseTimeMs":37.19,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:20 [INFO] GET /data/dialog.json?t=1764584839981 200 77.41ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog.json?t=1764584839981","status":200,"responseTimeMs":77.41,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:20 [INFO] GET /data/quotes.json?t=1764584839982 200 93.34ms {"meta":{"ip":"::1","method":"GET","url":"/data/quotes.json?t=1764584839982","status":200,"responseTimeMs":93.34,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:20 [INFO] GET /data/afk.json?t=1764584840393 200 7.59ms {"meta":{"ip":"::1","method":"GET","url":"/data/afk.json?t=1764584840393","status":200,"responseTimeMs":7.59,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:20 [INFO] GET /data/afkspecial.json?t=1764584840411 200 19.00ms {"meta":{"ip":"::1","method":"GET","url":"/data/afkspecial.json?t=1764584840411","status":200,"responseTimeMs":19,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:20 [INFO] GET /data/about/about.html 200 7.05ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":7.05,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:20 [WARN] GET /about.css 404 2.54ms {"meta":{"ip":"::1","method":"GET","url":"/about.css","status":404,"responseTimeMs":2.54,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:20 [WARN] GET /public/assets/dialog/withstroke.png 404 33.37ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/withstroke.png","status":404,"responseTimeMs":33.37,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:20 [WARN] GET /public/assets/dialog/ballon_comico.png 404 46.72ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/ballon_comico.png","status":404,"responseTimeMs":46.72,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:34 [INFO] GET /data/dialog_tentang.json?t=1764584854201 200 10.45ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog_tentang.json?t=1764584854201","status":200,"responseTimeMs":10.45,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:34 [INFO] GET /data/about/about.html 200 7.60ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":7.6,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:34 [WARN] GET /about.css 404 1.71ms {"meta":{"ip":"::1","method":"GET","url":"/about.css","status":404,"responseTimeMs":1.71,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:34 [WARN] GET /public/assets/dialog/withstroke.png 404 6.97ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/withstroke.png","status":404,"responseTimeMs":6.97,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:27:34 [WARN] GET /public/assets/dialog/ballon_comico.png 404 1.35ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/ballon_comico.png","status":404,"responseTimeMs":1.35,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:30:56 [INFO] Server running at http://localhost:3333 
+2025-12-01 10:31:01 [INFO] GET / 304 12.37ms {"meta":{"ip":"::1","method":"GET","url":"/","status":304,"responseTimeMs":12.37,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:01 [INFO] GET /style.css 304 5.44ms {"meta":{"ip":"::1","method":"GET","url":"/style.css","status":304,"responseTimeMs":5.44,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:01 [INFO] GET /assets/dialog/blink.png 304 25.28ms {"meta":{"ip":"::1","method":"GET","url":"/assets/dialog/blink.png","status":304,"responseTimeMs":25.28,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:01 [INFO] GET /assets/icon/project_icon.png 304 53.08ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/project_icon.png","status":304,"responseTimeMs":53.08,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:02 [INFO] GET /assets/icon/tentangku_icon.png 304 3.19ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/tentangku_icon.png","status":304,"responseTimeMs":3.19,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:02 [INFO] GET /assets/icon/blog_icon.png 304 24.55ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/blog_icon.png","status":304,"responseTimeMs":24.55,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:02 [INFO] GET /assets/icon/pesan_icon.png 304 13.30ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/pesan_icon.png","status":304,"responseTimeMs":13.3,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:02 [INFO] GET /assets/font/Pixel_NES.ttf 304 7.35ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixel_NES.ttf","status":304,"responseTimeMs":7.35,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:02 [INFO] GET /assets/font/NeuePixelSans.ttf 304 12.66ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/NeuePixelSans.ttf","status":304,"responseTimeMs":12.66,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:02 [INFO] GET /assets/font/PixelCode.woff2 304 47.24ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/PixelCode.woff2","status":304,"responseTimeMs":47.24,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:02 [INFO] GET /script/main.js 200 259.66ms {"meta":{"ip":"::1","method":"GET","url":"/script/main.js","status":200,"responseTimeMs":259.66,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:02 [INFO] GET /assets/font/Pixelary.otf 304 55.95ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixelary.otf","status":304,"responseTimeMs":55.95,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:02 [INFO] GET /assets/font/pixelmix.ttf 304 76.86ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/pixelmix.ttf","status":304,"responseTimeMs":76.86,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:02 [INFO] GET /data/projects.json?t=1764585062662 200 31.83ms {"meta":{"ip":"::1","method":"GET","url":"/data/projects.json?t=1764585062662","status":200,"responseTimeMs":31.83,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:02 [INFO] GET /data/quotes.json?t=1764585062663 200 46.98ms {"meta":{"ip":"::1","method":"GET","url":"/data/quotes.json?t=1764585062663","status":200,"responseTimeMs":46.98,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:02 [INFO] GET /data/dialog.json?t=1764585062662 200 74.32ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog.json?t=1764585062662","status":200,"responseTimeMs":74.32,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:03 [INFO] GET /data/afk.json?t=1764585063056 200 1.81ms {"meta":{"ip":"::1","method":"GET","url":"/data/afk.json?t=1764585063056","status":200,"responseTimeMs":1.81,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:03 [INFO] GET /data/afkspecial.json?t=1764585063076 200 1.11ms {"meta":{"ip":"::1","method":"GET","url":"/data/afkspecial.json?t=1764585063076","status":200,"responseTimeMs":1.11,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:03 [INFO] GET /data/about/about.html 200 62.89ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":62.89,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:03 [WARN] GET /public/assets/dialog/withstroke.png 404 4.99ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/withstroke.png","status":404,"responseTimeMs":4.99,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:03 [WARN] GET /public/assets/dialog/ballon_comico.png 404 10.21ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/ballon_comico.png","status":404,"responseTimeMs":10.21,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:13 [INFO] GET /data/dialog_proyek.json?t=1764585072999 200 28.15ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog_proyek.json?t=1764585072999","status":200,"responseTimeMs":28.15,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:22 [INFO] GET /data/dialog_tentang.json?t=1764585082412 200 2.04ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog_tentang.json?t=1764585082412","status":200,"responseTimeMs":2.04,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:22 [INFO] GET /data/about/about.html 200 6.52ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":6.52,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:22 [WARN] GET /public/assets/dialog/withstroke.png 404 1.92ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/withstroke.png","status":404,"responseTimeMs":1.92,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:31:22 [WARN] GET /public/assets/dialog/ballon_comico.png 404 8.56ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/ballon_comico.png","status":404,"responseTimeMs":8.56,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:47 [INFO] Server running at http://localhost:3333 
+2025-12-01 10:32:50 [INFO] GET / 304 7.59ms {"meta":{"ip":"::1","method":"GET","url":"/","status":304,"responseTimeMs":7.59,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:50 [INFO] GET /style.css 304 7.23ms {"meta":{"ip":"::1","method":"GET","url":"/style.css","status":304,"responseTimeMs":7.23,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:50 [INFO] GET /assets/dialog/blink.png 304 16.78ms {"meta":{"ip":"::1","method":"GET","url":"/assets/dialog/blink.png","status":304,"responseTimeMs":16.78,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:50 [INFO] GET /assets/icon/project_icon.png 304 12.32ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/project_icon.png","status":304,"responseTimeMs":12.32,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [INFO] GET /assets/icon/tentangku_icon.png 304 4.32ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/tentangku_icon.png","status":304,"responseTimeMs":4.32,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [INFO] GET /assets/icon/blog_icon.png 304 5.62ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/blog_icon.png","status":304,"responseTimeMs":5.62,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [INFO] GET /assets/icon/pesan_icon.png 304 5.85ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/pesan_icon.png","status":304,"responseTimeMs":5.85,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [INFO] GET /assets/font/Pixel_NES.ttf 304 6.40ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixel_NES.ttf","status":304,"responseTimeMs":6.4,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [INFO] GET /assets/font/NeuePixelSans.ttf 304 10.78ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/NeuePixelSans.ttf","status":304,"responseTimeMs":10.78,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [INFO] GET /assets/font/PixelCode.woff2 304 8.69ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/PixelCode.woff2","status":304,"responseTimeMs":8.69,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [INFO] GET /assets/font/Pixelary.otf 304 15.73ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixelary.otf","status":304,"responseTimeMs":15.73,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [INFO] GET /assets/font/pixelmix.ttf 304 18.36ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/pixelmix.ttf","status":304,"responseTimeMs":18.36,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [INFO] GET /script/main.js 200 259.75ms {"meta":{"ip":"::1","method":"GET","url":"/script/main.js","status":200,"responseTimeMs":259.75,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [INFO] GET /data/projects.json?t=1764585171306 200 5.71ms {"meta":{"ip":"::1","method":"GET","url":"/data/projects.json?t=1764585171306","status":200,"responseTimeMs":5.71,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [INFO] GET /data/quotes.json?t=1764585171306 200 15.26ms {"meta":{"ip":"::1","method":"GET","url":"/data/quotes.json?t=1764585171306","status":200,"responseTimeMs":15.26,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [INFO] GET /data/dialog.json?t=1764585171305 200 27.22ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog.json?t=1764585171305","status":200,"responseTimeMs":27.22,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [INFO] GET /data/afk.json?t=1764585171395 200 7.03ms {"meta":{"ip":"::1","method":"GET","url":"/data/afk.json?t=1764585171395","status":200,"responseTimeMs":7.03,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [INFO] GET /data/afkspecial.json?t=1764585171409 200 1.78ms {"meta":{"ip":"::1","method":"GET","url":"/data/afkspecial.json?t=1764585171409","status":200,"responseTimeMs":1.78,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [INFO] GET /data/about/about.html 200 62.11ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":62.11,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [WARN] GET /public/assets/dialog/withstroke.png 404 2.96ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/withstroke.png","status":404,"responseTimeMs":2.96,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:32:51 [WARN] GET /public/assets/dialog/ballon_comico.png 404 6.50ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/ballon_comico.png","status":404,"responseTimeMs":6.5,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:40 [INFO] Server running at http://localhost:3333 
+2025-12-01 10:33:46 [INFO] GET / 304 14.77ms {"meta":{"ip":"::1","method":"GET","url":"/","status":304,"responseTimeMs":14.77,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:46 [INFO] GET /style.css 304 4.61ms {"meta":{"ip":"::1","method":"GET","url":"/style.css","status":304,"responseTimeMs":4.61,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:46 [INFO] GET /assets/dialog/blink.png 304 7.95ms {"meta":{"ip":"::1","method":"GET","url":"/assets/dialog/blink.png","status":304,"responseTimeMs":7.95,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:46 [INFO] GET /assets/icon/project_icon.png 304 1.86ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/project_icon.png","status":304,"responseTimeMs":1.86,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [INFO] GET /assets/icon/tentangku_icon.png 304 5.03ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/tentangku_icon.png","status":304,"responseTimeMs":5.03,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [INFO] GET /assets/icon/blog_icon.png 304 15.27ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/blog_icon.png","status":304,"responseTimeMs":15.27,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [INFO] GET /assets/icon/pesan_icon.png 304 17.89ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/pesan_icon.png","status":304,"responseTimeMs":17.89,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [INFO] GET /assets/font/Pixel_NES.ttf 304 29.14ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixel_NES.ttf","status":304,"responseTimeMs":29.14,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [INFO] GET /assets/font/NeuePixelSans.ttf 304 18.35ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/NeuePixelSans.ttf","status":304,"responseTimeMs":18.35,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [INFO] GET /assets/font/PixelCode.woff2 304 12.24ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/PixelCode.woff2","status":304,"responseTimeMs":12.24,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [INFO] GET /assets/font/Pixelary.otf 304 6.83ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixelary.otf","status":304,"responseTimeMs":6.83,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [INFO] GET /assets/font/pixelmix.ttf 304 9.31ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/pixelmix.ttf","status":304,"responseTimeMs":9.31,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [INFO] GET /script/main.js 200 189.51ms {"meta":{"ip":"::1","method":"GET","url":"/script/main.js","status":200,"responseTimeMs":189.51,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [INFO] GET /data/projects.json?t=1764585227323 200 11.29ms {"meta":{"ip":"::1","method":"GET","url":"/data/projects.json?t=1764585227323","status":200,"responseTimeMs":11.29,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [INFO] GET /data/quotes.json?t=1764585227323 200 10.87ms {"meta":{"ip":"::1","method":"GET","url":"/data/quotes.json?t=1764585227323","status":200,"responseTimeMs":10.87,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [INFO] GET /data/dialog.json?t=1764585227323 200 23.69ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog.json?t=1764585227323","status":200,"responseTimeMs":23.69,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [INFO] GET /data/afk.json?t=1764585227405 200 1.79ms {"meta":{"ip":"::1","method":"GET","url":"/data/afk.json?t=1764585227405","status":200,"responseTimeMs":1.79,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [INFO] GET /data/afkspecial.json?t=1764585227425 200 1.73ms {"meta":{"ip":"::1","method":"GET","url":"/data/afkspecial.json?t=1764585227425","status":200,"responseTimeMs":1.73,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [INFO] GET /data/about/about.html 200 7.07ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":7.07,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [WARN] GET /public/assets/dialog/withstroke.png 404 2.93ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/withstroke.png","status":404,"responseTimeMs":2.93,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:33:47 [WARN] GET /public/assets/dialog/ballon_comico.png 404 5.85ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/ballon_comico.png","status":404,"responseTimeMs":5.85,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:05 [INFO] Server running at http://localhost:3333 
+2025-12-01 10:34:08 [INFO] GET / 304 4.82ms {"meta":{"ip":"::1","method":"GET","url":"/","status":304,"responseTimeMs":4.82,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:08 [INFO] GET /style.css 304 6.01ms {"meta":{"ip":"::1","method":"GET","url":"/style.css","status":304,"responseTimeMs":6.01,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:08 [INFO] GET /assets/dialog/blink.png 304 22.77ms {"meta":{"ip":"::1","method":"GET","url":"/assets/dialog/blink.png","status":304,"responseTimeMs":22.77,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:08 [INFO] GET /assets/icon/project_icon.png 304 0.86ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/project_icon.png","status":304,"responseTimeMs":0.86,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:08 [INFO] GET /assets/icon/tentangku_icon.png 304 3.85ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/tentangku_icon.png","status":304,"responseTimeMs":3.85,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:08 [INFO] GET /assets/icon/blog_icon.png 304 9.62ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/blog_icon.png","status":304,"responseTimeMs":9.62,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:08 [INFO] GET /assets/icon/pesan_icon.png 304 137.29ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/pesan_icon.png","status":304,"responseTimeMs":137.29,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:08 [INFO] GET /assets/font/Pixel_NES.ttf 304 5.95ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixel_NES.ttf","status":304,"responseTimeMs":5.95,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:08 [INFO] GET /assets/font/NeuePixelSans.ttf 304 10.80ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/NeuePixelSans.ttf","status":304,"responseTimeMs":10.8,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:08 [INFO] GET /assets/font/pixelmix.ttf 304 11.41ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/pixelmix.ttf","status":304,"responseTimeMs":11.41,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:09 [INFO] GET /assets/font/PixelCode.woff2 304 7.88ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/PixelCode.woff2","status":304,"responseTimeMs":7.88,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:09 [INFO] GET /assets/font/Pixelary.otf 304 14.17ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixelary.otf","status":304,"responseTimeMs":14.17,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:09 [INFO] GET /script/main.js 200 217.68ms {"meta":{"ip":"::1","method":"GET","url":"/script/main.js","status":200,"responseTimeMs":217.68,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:09 [INFO] GET /data/projects.json?t=1764585249025 200 8.09ms {"meta":{"ip":"::1","method":"GET","url":"/data/projects.json?t=1764585249025","status":200,"responseTimeMs":8.09,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:09 [INFO] GET /data/quotes.json?t=1764585249025 200 9.75ms {"meta":{"ip":"::1","method":"GET","url":"/data/quotes.json?t=1764585249025","status":200,"responseTimeMs":9.75,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:09 [INFO] GET /data/dialog.json?t=1764585249025 200 31.60ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog.json?t=1764585249025","status":200,"responseTimeMs":31.6,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:09 [INFO] GET /data/afk.json?t=1764585249117 200 1.54ms {"meta":{"ip":"::1","method":"GET","url":"/data/afk.json?t=1764585249117","status":200,"responseTimeMs":1.54,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:09 [INFO] GET /data/afkspecial.json?t=1764585249132 200 4.93ms {"meta":{"ip":"::1","method":"GET","url":"/data/afkspecial.json?t=1764585249132","status":200,"responseTimeMs":4.93,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:09 [INFO] GET /data/about/about.html 200 5.11ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":5.11,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:09 [WARN] GET /public/assets/dialog/withstroke.png 404 3.39ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/withstroke.png","status":404,"responseTimeMs":3.39,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:09 [WARN] GET /public/assets/dialog/ballon_comico.png 404 6.47ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/ballon_comico.png","status":404,"responseTimeMs":6.47,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:18 [INFO] GET /data/dialog_tentang.json?t=1764585258975 200 2.86ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog_tentang.json?t=1764585258975","status":200,"responseTimeMs":2.86,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:18 [INFO] GET /data/about/about.html 200 6.99ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":6.99,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:19 [WARN] GET /public/assets/dialog/withstroke.png 404 1.12ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/withstroke.png","status":404,"responseTimeMs":1.12,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:34:19 [WARN] GET /public/assets/dialog/ballon_comico.png 404 4.33ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/ballon_comico.png","status":404,"responseTimeMs":4.33,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:35 [INFO] Server running at http://localhost:3333 
+2025-12-01 10:35:37 [INFO] GET / 304 6.47ms {"meta":{"ip":"::1","method":"GET","url":"/","status":304,"responseTimeMs":6.47,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:37 [INFO] GET /style.css 304 2.22ms {"meta":{"ip":"::1","method":"GET","url":"/style.css","status":304,"responseTimeMs":2.22,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:37 [INFO] GET /assets/dialog/blink.png 304 7.85ms {"meta":{"ip":"::1","method":"GET","url":"/assets/dialog/blink.png","status":304,"responseTimeMs":7.85,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:37 [INFO] GET /assets/icon/project_icon.png 304 3.28ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/project_icon.png","status":304,"responseTimeMs":3.28,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:38 [INFO] GET /assets/icon/tentangku_icon.png 304 8.86ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/tentangku_icon.png","status":304,"responseTimeMs":8.86,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:38 [INFO] GET /assets/icon/blog_icon.png 304 10.02ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/blog_icon.png","status":304,"responseTimeMs":10.02,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:38 [INFO] GET /assets/icon/pesan_icon.png 304 88.22ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/pesan_icon.png","status":304,"responseTimeMs":88.22,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:38 [INFO] GET /script/main.js 200 165.81ms {"meta":{"ip":"::1","method":"GET","url":"/script/main.js","status":200,"responseTimeMs":165.81,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:38 [INFO] GET /data/projects.json?t=1764585338357 200 5.08ms {"meta":{"ip":"::1","method":"GET","url":"/data/projects.json?t=1764585338357","status":200,"responseTimeMs":5.08,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:38 [INFO] GET /data/dialog.json?t=1764585338357 200 12.00ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog.json?t=1764585338357","status":200,"responseTimeMs":12,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:38 [INFO] GET /data/quotes.json?t=1764585338357 200 16.30ms {"meta":{"ip":"::1","method":"GET","url":"/data/quotes.json?t=1764585338357","status":200,"responseTimeMs":16.3,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:38 [INFO] GET /data/afk.json?t=1764585338443 200 3.16ms {"meta":{"ip":"::1","method":"GET","url":"/data/afk.json?t=1764585338443","status":200,"responseTimeMs":3.16,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:38 [INFO] GET /data/afkspecial.json?t=1764585338461 200 1.42ms {"meta":{"ip":"::1","method":"GET","url":"/data/afkspecial.json?t=1764585338461","status":200,"responseTimeMs":1.42,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:38 [INFO] GET /data/about/about.html 200 3.92ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":3.92,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:38 [WARN] GET /public/assets/dialog/withstroke.png 404 8.10ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/withstroke.png","status":404,"responseTimeMs":8.1,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:38 [WARN] GET /public/assets/dialog/ballon_comico.png 404 10.52ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/ballon_comico.png","status":404,"responseTimeMs":10.52,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:48 [INFO] GET /data/dialog_tentang.json?t=1764585348151 200 2.17ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog_tentang.json?t=1764585348151","status":200,"responseTimeMs":2.17,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:48 [INFO] GET /data/about/about.html 200 7.41ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":7.41,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:48 [WARN] GET /public/assets/dialog/withstroke.png 404 1.23ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/withstroke.png","status":404,"responseTimeMs":1.23,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:35:48 [WARN] GET /public/assets/dialog/ballon_comico.png 404 4.70ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/ballon_comico.png","status":404,"responseTimeMs":4.7,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:05 [INFO] Server running at http://localhost:3333 
+2025-12-01 10:37:07 [INFO] GET / 304 7.31ms {"meta":{"ip":"::1","method":"GET","url":"/","status":304,"responseTimeMs":7.31,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:07 [INFO] GET /style.css 304 3.98ms {"meta":{"ip":"::1","method":"GET","url":"/style.css","status":304,"responseTimeMs":3.98,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:07 [INFO] GET /assets/dialog/blink.png 304 12.33ms {"meta":{"ip":"::1","method":"GET","url":"/assets/dialog/blink.png","status":304,"responseTimeMs":12.33,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:07 [INFO] GET /assets/icon/project_icon.png 304 1.09ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/project_icon.png","status":304,"responseTimeMs":1.09,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:07 [INFO] GET /assets/icon/tentangku_icon.png 304 4.21ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/tentangku_icon.png","status":304,"responseTimeMs":4.21,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:07 [INFO] GET /assets/icon/blog_icon.png 304 1.83ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/blog_icon.png","status":304,"responseTimeMs":1.83,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:07 [INFO] GET /assets/icon/pesan_icon.png 304 7.61ms {"meta":{"ip":"::1","method":"GET","url":"/assets/icon/pesan_icon.png","status":304,"responseTimeMs":7.61,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:08 [INFO] GET /assets/font/Pixel_NES.ttf 304 17.18ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixel_NES.ttf","status":304,"responseTimeMs":17.18,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:08 [INFO] GET /assets/font/NeuePixelSans.ttf 304 35.40ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/NeuePixelSans.ttf","status":304,"responseTimeMs":35.4,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:08 [INFO] GET /assets/font/PixelCode.woff2 304 41.57ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/PixelCode.woff2","status":304,"responseTimeMs":41.57,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:08 [INFO] GET /assets/font/Pixelary.otf 304 2.22ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/Pixelary.otf","status":304,"responseTimeMs":2.22,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:08 [INFO] GET /assets/font/pixelmix.ttf 304 8.55ms {"meta":{"ip":"::1","method":"GET","url":"/assets/font/pixelmix.ttf","status":304,"responseTimeMs":8.55,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:08 [INFO] GET /script/main.js 200 81.74ms {"meta":{"ip":"::1","method":"GET","url":"/script/main.js","status":200,"responseTimeMs":81.74,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:08 [INFO] GET /data/projects.json?t=1764585428171 200 11.39ms {"meta":{"ip":"::1","method":"GET","url":"/data/projects.json?t=1764585428171","status":200,"responseTimeMs":11.39,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:08 [INFO] GET /data/quotes.json?t=1764585428171 200 14.89ms {"meta":{"ip":"::1","method":"GET","url":"/data/quotes.json?t=1764585428171","status":200,"responseTimeMs":14.89,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:08 [INFO] GET /data/dialog.json?t=1764585428171 200 24.55ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog.json?t=1764585428171","status":200,"responseTimeMs":24.55,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:08 [INFO] GET /data/afk.json?t=1764585428255 200 2.02ms {"meta":{"ip":"::1","method":"GET","url":"/data/afk.json?t=1764585428255","status":200,"responseTimeMs":2.02,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:08 [INFO] GET /data/afkspecial.json?t=1764585428275 200 9.73ms {"meta":{"ip":"::1","method":"GET","url":"/data/afkspecial.json?t=1764585428275","status":200,"responseTimeMs":9.73,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:08 [INFO] GET /data/about/about.html 200 4.76ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":4.76,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:08 [WARN] GET /public/assets/dialog/withstroke.png 404 4.56ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/withstroke.png","status":404,"responseTimeMs":4.56,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:08 [WARN] GET /public/assets/dialog/ballon_comico.png 404 8.55ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/ballon_comico.png","status":404,"responseTimeMs":8.55,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:16 [INFO] GET /data/dialog_tentang.json?t=1764585436178 200 2.09ms {"meta":{"ip":"::1","method":"GET","url":"/data/dialog_tentang.json?t=1764585436178","status":200,"responseTimeMs":2.09,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:16 [INFO] GET /data/about/about.html 200 7.38ms {"meta":{"ip":"::1","method":"GET","url":"/data/about/about.html","status":200,"responseTimeMs":7.38,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:16 [WARN] GET /public/assets/dialog/withstroke.png 404 2.44ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/withstroke.png","status":404,"responseTimeMs":2.44,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-01 10:37:16 [WARN] GET /public/assets/dialog/ballon_comico.png 404 7.90ms {"meta":{"ip":"::1","method":"GET","url":"/public/assets/dialog/ballon_comico.png","status":404,"responseTimeMs":7.9,"browser":"Edge","os":"Windows","device":"desktop","isBot":false}}
+2025-12-02 05:07:24 [INFO] [GET] /index.html 
+2025-12-02 05:07:24 [INFO] [GET] /index.html 
+2025-12-02 05:07:24 [INFO] [GET] / 
+2025-12-02 05:07:24 [INFO] [GET] / 
+2025-12-02 05:07:24 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:07:24 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:08:43 [INFO] [GET] /index.html 
+2025-12-02 05:08:43 [INFO] [GET] /index.html 
+2025-12-02 05:08:43 [INFO] [GET] / 
+2025-12-02 05:08:43 [INFO] [GET] / 
+2025-12-02 05:08:43 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:08:43 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:09:42 [INFO] [GET] /index.html 
+2025-12-02 05:09:42 [INFO] [GET] /index.html 
+2025-12-02 05:09:42 [INFO] [GET] / 
+2025-12-02 05:09:42 [INFO] [GET] / 
+2025-12-02 05:09:42 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:09:42 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:12:09 [INFO] [GET] /index.html 
+2025-12-02 05:12:09 [INFO] [GET] /index.html 
+2025-12-02 05:12:09 [INFO] [GET] / 
+2025-12-02 05:12:09 [INFO] [GET] / 
+2025-12-02 05:12:09 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:12:09 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:13:34 [INFO] [GET] /index.html 
+2025-12-02 05:13:34 [INFO] [GET] /index.html 
+2025-12-02 05:13:34 [INFO] [GET] / 
+2025-12-02 05:13:34 [INFO] [GET] / 
+2025-12-02 05:13:34 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:13:34 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:13:39 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:13:39 [INFO] [GET] /data/projects.json 
+2025-12-02 05:13:39 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:13:39 [INFO] [GET] /data/afk.json 
+2025-12-02 05:13:39 [INFO] [GET] /favicon.ico 
+2025-12-02 05:13:39 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:20:18 [INFO] [GET] /index.html 
+2025-12-02 05:20:18 [INFO] [GET] /index.html 
+2025-12-02 05:20:18 [INFO] [GET] / 
+2025-12-02 05:20:18 [INFO] [GET] / 
+2025-12-02 05:20:18 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:20:18 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:20:38 [INFO] [GET] /index.html 
+2025-12-02 05:20:38 [INFO] [GET] /index.html 
+2025-12-02 05:20:38 [INFO] [GET] / 
+2025-12-02 05:20:38 [INFO] [GET] / 
+2025-12-02 05:20:38 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:20:38 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:20:43 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:20:43 [INFO] [GET] /data/projects.json 
+2025-12-02 05:20:43 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:20:43 [INFO] [GET] /data/afk.json 
+2025-12-02 05:20:44 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:21:02 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 05:21:03 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 05:21:04 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 05:21:10 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 05:21:24 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:21:25 [INFO] [GET] /data/projects.json 
+2025-12-02 05:21:25 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:21:25 [INFO] [GET] /data/afk.json 
+2025-12-02 05:21:25 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:26:54 [INFO] [GET] /index.html 
+2025-12-02 05:26:54 [INFO] [GET] /index.html 
+2025-12-02 05:26:54 [INFO] [GET] / 
+2025-12-02 05:26:54 [INFO] [GET] / 
+2025-12-02 05:26:54 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:26:54 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:27:42 [INFO] [GET] /index.html 
+2025-12-02 05:27:42 [INFO] [GET] /index.html 
+2025-12-02 05:27:42 [INFO] [GET] / 
+2025-12-02 05:27:42 [INFO] [GET] / 
+2025-12-02 05:27:42 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:27:42 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:30:28 [INFO] [GET] /index.html 
+2025-12-02 05:30:28 [INFO] [GET] /index.html 
+2025-12-02 05:30:28 [INFO] [GET] / 
+2025-12-02 05:30:28 [INFO] [GET] / 
+2025-12-02 05:30:28 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:30:28 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:30:32 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:30:32 [INFO] [GET] /data/projects.json 
+2025-12-02 05:30:32 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:30:32 [INFO] [GET] /data/afk.json 
+2025-12-02 05:30:32 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:31:40 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 05:31:47 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 05:33:04 [INFO] [GET] /index.html 
+2025-12-02 05:33:04 [INFO] [GET] /index.html 
+2025-12-02 05:33:04 [INFO] [GET] / 
+2025-12-02 05:33:04 [INFO] [GET] / 
+2025-12-02 05:33:04 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:33:04 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:33:08 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:33:08 [INFO] [GET] /data/projects.json 
+2025-12-02 05:33:08 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:33:09 [INFO] [GET] /data/afk.json 
+2025-12-02 05:33:09 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:33:17 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 05:34:16 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 05:34:38 [INFO] [GET] /index.html 
+2025-12-02 05:34:38 [INFO] [GET] /index.html 
+2025-12-02 05:34:38 [INFO] [GET] / 
+2025-12-02 05:34:38 [INFO] [GET] / 
+2025-12-02 05:34:38 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:34:38 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:34:41 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:34:41 [INFO] [GET] /data/projects.json 
+2025-12-02 05:34:41 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:34:41 [INFO] [GET] /data/afk.json 
+2025-12-02 05:34:41 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:35:11 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:35:11 [INFO] [GET] /data/projects.json 
+2025-12-02 05:35:11 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:35:12 [INFO] [GET] /data/afk.json 
+2025-12-02 05:35:12 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:35:27 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:35:27 [INFO] [GET] /data/projects.json 
+2025-12-02 05:35:27 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:35:27 [INFO] [GET] /data/afk.json 
+2025-12-02 05:35:27 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:35:41 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:35:41 [INFO] [GET] /data/projects.json 
+2025-12-02 05:35:41 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:35:41 [INFO] [GET] /data/afk.json 
+2025-12-02 05:35:41 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:35:53 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:35:53 [INFO] [GET] /data/projects.json 
+2025-12-02 05:35:53 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:35:53 [INFO] [GET] /data/afk.json 
+2025-12-02 05:35:53 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:36:08 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:36:08 [INFO] [GET] /data/projects.json 
+2025-12-02 05:36:08 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:36:09 [INFO] [GET] /data/afk.json 
+2025-12-02 05:36:09 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:36:40 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:36:40 [INFO] [GET] /data/projects.json 
+2025-12-02 05:36:40 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:36:40 [INFO] [GET] /data/afk.json 
+2025-12-02 05:36:40 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:37:03 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:37:03 [INFO] [GET] /data/projects.json 
+2025-12-02 05:37:03 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:37:03 [INFO] [GET] /data/afk.json 
+2025-12-02 05:37:03 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:37:27 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:37:27 [INFO] [GET] /data/projects.json 
+2025-12-02 05:37:27 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:37:28 [INFO] [GET] /data/afk.json 
+2025-12-02 05:37:28 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:37:55 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:37:55 [INFO] [GET] /data/projects.json 
+2025-12-02 05:37:55 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:37:55 [INFO] [GET] /data/afk.json 
+2025-12-02 05:37:55 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:38:08 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 05:38:21 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 05:40:11 [INFO] [GET] /index.html 
+2025-12-02 05:40:11 [INFO] [GET] /index.html 
+2025-12-02 05:40:11 [INFO] [GET] / 
+2025-12-02 05:40:11 [INFO] [GET] / 
+2025-12-02 05:40:11 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:40:11 [INFO] [GET] /data/about/about.html 
+2025-12-02 05:40:16 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:40:16 [INFO] [GET] /data/projects.json 
+2025-12-02 05:40:16 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:40:17 [INFO] [GET] /data/afk.json 
+2025-12-02 05:40:17 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:40:36 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 05:42:12 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:42:12 [INFO] [GET] /data/projects.json 
+2025-12-02 05:42:12 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:42:12 [INFO] [GET] /data/afk.json 
+2025-12-02 05:42:12 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:42:21 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 05:45:10 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:45:10 [INFO] [GET] /data/projects.json 
+2025-12-02 05:45:10 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:45:11 [INFO] [GET] /data/afk.json 
+2025-12-02 05:45:11 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:45:19 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 05:46:33 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:46:33 [INFO] [GET] /data/projects.json 
+2025-12-02 05:46:33 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:46:33 [INFO] [GET] /data/afk.json 
+2025-12-02 05:46:33 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:46:44 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 05:48:01 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:48:01 [INFO] [GET] /data/projects.json 
+2025-12-02 05:48:01 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:48:01 [INFO] [GET] /data/afk.json 
+2025-12-02 05:48:01 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:48:09 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 05:48:30 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:48:30 [INFO] [GET] /data/projects.json 
+2025-12-02 05:48:30 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:48:30 [INFO] [GET] /data/afk.json 
+2025-12-02 05:48:30 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:48:43 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 05:50:52 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:50:52 [INFO] [GET] /data/projects.json 
+2025-12-02 05:50:52 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:50:53 [INFO] [GET] /data/afk.json 
+2025-12-02 05:50:53 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:51:00 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 05:51:24 [INFO] [GET] /data/dialog.json 
+2025-12-02 05:51:24 [INFO] [GET] /data/projects.json 
+2025-12-02 05:51:24 [INFO] [GET] /data/quotes.json 
+2025-12-02 05:51:24 [INFO] [GET] /data/afk.json 
+2025-12-02 05:51:24 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 05:52:02 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 05:53:33 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 05:54:36 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 06:14:48 [INFO] [GET] /index.html 
+2025-12-02 06:14:48 [INFO] [GET] /index.html 
+2025-12-02 06:14:48 [INFO] [GET] / 
+2025-12-02 06:14:48 [INFO] [GET] / 
+2025-12-02 06:14:48 [INFO] [GET] /data/about/about.html 
+2025-12-02 06:14:48 [INFO] [GET] /data/about/about.html 
+2025-12-02 06:17:27 [INFO] [GET] /index.html 
+2025-12-02 06:17:27 [INFO] [GET] /index.html 
+2025-12-02 06:17:27 [INFO] [GET] / 
+2025-12-02 06:17:27 [INFO] [GET] / 
+2025-12-02 06:17:27 [INFO] [GET] /data/about/about.html 
+2025-12-02 06:17:27 [INFO] [GET] /data/about/about.html 
+2025-12-02 06:19:04 [INFO] [GET] /index.html 
+2025-12-02 06:19:04 [INFO] [GET] /index.html 
+2025-12-02 06:19:04 [INFO] [GET] / 
+2025-12-02 06:19:04 [INFO] [GET] / 
+2025-12-02 06:19:04 [INFO] [GET] /data/about/about.html 
+2025-12-02 06:19:04 [INFO] [GET] /data/about/about.html 
+2025-12-02 06:19:09 [INFO] [GET] /data/dialog.json 
+2025-12-02 06:19:09 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 06:19:09 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 06:19:09 [INFO] [GET] /data/projects.json 
+2025-12-02 06:19:09 [INFO] [GET] /data/quotes.json 
+2025-12-02 06:19:09 [INFO] [GET] /data/afk.json 
+2025-12-02 06:19:09 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 06:20:22 [INFO] [GET] /index.html 
+2025-12-02 06:20:22 [INFO] [GET] /index.html 
+2025-12-02 06:20:22 [INFO] [GET] / 
+2025-12-02 06:20:22 [INFO] [GET] / 
+2025-12-02 06:20:22 [INFO] [GET] /data/about/about.html 
+2025-12-02 06:20:22 [INFO] [GET] /data/about/about.html 
+2025-12-02 06:20:29 [INFO] [GET] /data/dialog.json 
+2025-12-02 06:20:29 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 06:20:29 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 06:20:29 [INFO] [GET] /data/projects.json 
+2025-12-02 06:20:29 [INFO] [GET] /data/quotes.json 
+2025-12-02 06:20:29 [INFO] [GET] /data/afk.json 
+2025-12-02 06:20:29 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 06:22:03 [INFO] [GET] /data/dialog.json 
+2025-12-02 06:22:03 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 06:22:03 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 06:22:03 [INFO] [GET] /data/projects.json 
+2025-12-02 06:22:03 [INFO] [GET] /data/quotes.json 
+2025-12-02 06:22:03 [INFO] [GET] /data/afk.json 
+2025-12-02 06:22:03 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 06:22:19 [INFO] [GET] /data/dialog.json 
+2025-12-02 06:22:19 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 06:22:19 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 06:22:19 [INFO] [GET] /data/projects.json 
+2025-12-02 06:22:19 [INFO] [GET] /data/quotes.json 
+2025-12-02 06:22:19 [INFO] [GET] /data/afk.json 
+2025-12-02 06:22:19 [INFO] [GET] /favicon.ico 
+2025-12-02 06:22:19 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 06:22:19 [INFO] [GET] /api/whoami 
+2025-12-02 06:23:32 [INFO] [GET] /data/dialog.json 
+2025-12-02 06:23:32 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 06:23:32 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 06:23:32 [INFO] [GET] /data/projects.json 
+2025-12-02 06:23:32 [INFO] [GET] /data/quotes.json 
+2025-12-02 06:23:32 [INFO] [GET] /data/afk.json 
+2025-12-02 06:23:32 [INFO] [GET] /favicon.ico 
+2025-12-02 06:23:32 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 06:23:32 [INFO] [GET] /api/whoami 
+2025-12-02 06:31:43 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 06:32:09 [INFO] [GET] /data/dialog.json 
+2025-12-02 06:32:09 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 06:32:09 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 06:32:09 [INFO] [GET] /data/projects.json 
+2025-12-02 06:32:09 [INFO] [GET] /data/quotes.json 
+2025-12-02 06:32:09 [INFO] [GET] /data/afk.json 
+2025-12-02 06:32:09 [INFO] [GET] /favicon.ico 
+2025-12-02 06:32:09 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 06:32:09 [INFO] [GET] /api/whoami 
+2025-12-02 06:32:16 [INFO] [GET] /data/dialog.json 
+2025-12-02 06:32:16 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 06:32:16 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 06:32:16 [INFO] [GET] /data/projects.json 
+2025-12-02 06:32:16 [INFO] [GET] /data/quotes.json 
+2025-12-02 06:32:16 [INFO] [GET] /data/afk.json 
+2025-12-02 06:32:16 [INFO] [GET] /favicon.ico 
+2025-12-02 06:32:16 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 06:32:16 [INFO] [GET] /api/whoami 
+2025-12-02 06:32:55 [INFO] [POST] /api/visit 
+2025-12-02 06:32:55 [INFO] [VISIT] 127.0.0.1 -> "MinBrowser" 
+2025-12-02 06:33:30 [INFO] [GET] /data/dialog.json 
+2025-12-02 06:33:30 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 06:33:30 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 06:33:30 [INFO] [GET] /data/projects.json 
+2025-12-02 06:33:30 [INFO] [GET] /data/quotes.json 
+2025-12-02 06:33:30 [INFO] [GET] /data/afk.json 
+2025-12-02 06:33:30 [INFO] [GET] /favicon.ico 
+2025-12-02 06:33:30 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 06:33:36 [INFO] [GET] /data/dialog.json 
+2025-12-02 06:33:36 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 06:33:36 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 06:33:36 [INFO] [GET] /data/projects.json 
+2025-12-02 06:33:36 [INFO] [GET] /data/quotes.json 
+2025-12-02 06:33:36 [INFO] [GET] /data/afk.json 
+2025-12-02 06:33:36 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 06:34:02 [INFO] [GET] /data/dialog.json 
+2025-12-02 06:34:02 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 06:34:02 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 06:34:02 [INFO] [GET] /data/projects.json 
+2025-12-02 06:34:02 [INFO] [GET] /data/quotes.json 
+2025-12-02 06:34:02 [INFO] [GET] /data/afk.json 
+2025-12-02 06:34:02 [INFO] [GET] /favicon.ico 
+2025-12-02 06:34:02 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 06:34:04 [INFO] [GET] /data/dialog.json 
+2025-12-02 06:34:04 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 06:34:04 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 06:34:05 [INFO] [GET] /data/projects.json 
+2025-12-02 06:34:05 [INFO] [GET] /data/quotes.json 
+2025-12-02 06:34:05 [INFO] [GET] /data/afk.json 
+2025-12-02 06:34:05 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 06:34:05 [INFO] [GET] /favicon.ico 
+2025-12-02 06:34:29 [INFO] [GET] /index.html 
+2025-12-02 06:34:29 [INFO] [GET] /index.html 
+2025-12-02 06:34:29 [INFO] [GET] / 
+2025-12-02 06:34:29 [INFO] [GET] / 
+2025-12-02 06:34:29 [INFO] [GET] /data/about/about.html 
+2025-12-02 06:34:29 [INFO] [GET] /data/about/about.html 
+2025-12-02 06:34:32 [INFO] [GET] /data/dialog.json 
+2025-12-02 06:34:32 [INFO] [GET] /data/projects.json 
+2025-12-02 06:34:32 [INFO] [GET] /data/quotes.json 
+2025-12-02 06:34:32 [INFO] [GET] /data/afk.json 
+2025-12-02 06:34:32 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 06:34:32 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 06:34:32 [INFO] [GET] /favicon.ico 
+2025-12-02 06:34:32 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:17:24 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 08:18:36 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 08:18:37 [INFO] [GET] /data/dialog.json 
+2025-12-02 08:18:37 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 08:18:38 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 08:18:38 [INFO] [GET] /data/projects.json 
+2025-12-02 08:18:38 [INFO] [GET] /data/quotes.json 
+2025-12-02 08:18:38 [INFO] [GET] /data/afk.json 
+2025-12-02 08:18:38 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:18:38 [INFO] [GET] /api/whoami 
+2025-12-02 08:32:10 [INFO] [GET] /index.html 
+2025-12-02 08:32:10 [INFO] [GET] /index.html 
+2025-12-02 08:32:10 [INFO] [GET] / 
+2025-12-02 08:32:10 [INFO] [GET] / 
+2025-12-02 08:32:10 [INFO] [GET] /data/about/about.html 
+2025-12-02 08:32:10 [INFO] [GET] /data/about/about.html 
+2025-12-02 08:32:14 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 08:32:16 [INFO] [GET] /data/dialog.json 
+2025-12-02 08:32:16 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 08:32:16 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 08:32:16 [INFO] [GET] /data/projects.json 
+2025-12-02 08:32:16 [INFO] [GET] /data/quotes.json 
+2025-12-02 08:32:16 [INFO] [GET] /data/afk.json 
+2025-12-02 08:32:16 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:32:17 [INFO] [GET] /api/whoami 
+2025-12-02 08:32:36 [INFO] [POST] /api/visit 
+2025-12-02 08:32:37 [INFO] [VISIT] 127.0.0.1 -> "Rahasia" 
+2025-12-02 08:32:54 [INFO] [GET] /data/dialog.json 
+2025-12-02 08:32:54 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 08:32:55 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 08:32:55 [INFO] [GET] /data/projects.json 
+2025-12-02 08:32:55 [INFO] [GET] /data/quotes.json 
+2025-12-02 08:32:55 [INFO] [GET] /data/afk.json 
+2025-12-02 08:32:55 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:33:08 [INFO] [GET] /data/dialog.json 
+2025-12-02 08:33:08 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 08:33:09 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 08:33:09 [INFO] [GET] /data/projects.json 
+2025-12-02 08:33:09 [INFO] [GET] /data/quotes.json 
+2025-12-02 08:33:09 [INFO] [GET] /data/afk.json 
+2025-12-02 08:33:09 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:33:11 [INFO] [GET] /data/dialog.json 
+2025-12-02 08:33:11 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 08:33:11 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 08:33:11 [INFO] [GET] /data/projects.json 
+2025-12-02 08:33:11 [INFO] [GET] /data/quotes.json 
+2025-12-02 08:33:11 [INFO] [GET] /data/afk.json 
+2025-12-02 08:33:11 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:33:16 [INFO] [GET] /index.html 
+2025-12-02 08:33:16 [INFO] [GET] /index.html 
+2025-12-02 08:33:16 [INFO] [GET] / 
+2025-12-02 08:33:16 [INFO] [GET] / 
+2025-12-02 08:33:16 [INFO] [GET] /data/about/about.html 
+2025-12-02 08:33:16 [INFO] [GET] /data/about/about.html 
+2025-12-02 08:33:20 [INFO] [GET] /data/dialog.json 
+2025-12-02 08:33:20 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 08:33:20 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 08:33:20 [INFO] [GET] /data/projects.json 
+2025-12-02 08:33:20 [INFO] [GET] /data/quotes.json 
+2025-12-02 08:33:20 [INFO] [GET] /data/afk.json 
+2025-12-02 08:33:20 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:35:39 [INFO] [GET] /data/dialog.json 
+2025-12-02 08:35:39 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 08:35:39 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 08:35:39 [INFO] [GET] /data/projects.json 
+2025-12-02 08:35:39 [INFO] [GET] /data/quotes.json 
+2025-12-02 08:35:39 [INFO] [GET] /data/afk.json 
+2025-12-02 08:35:39 [INFO] [GET] /favicon.ico 
+2025-12-02 08:35:40 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:37:07 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 08:42:29 [INFO] [GET] /data/dialog.json 
+2025-12-02 08:42:29 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 08:42:29 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 08:42:29 [INFO] [GET] /data/projects.json 
+2025-12-02 08:42:29 [INFO] [GET] /data/quotes.json 
+2025-12-02 08:42:29 [INFO] [GET] /data/afk.json 
+2025-12-02 08:42:29 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:42:29 [INFO] [GET] /api/whoami 
+2025-12-02 08:42:39 [INFO] [POST] /api/visit 
+2025-12-02 08:42:39 [INFO] [VISIT] 127.0.0.1 -> "Emha Tampan" 
+2025-12-02 08:43:20 [INFO] [GET] /data/dialog.json 
+2025-12-02 08:43:20 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 08:43:20 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 08:43:20 [INFO] [GET] /data/projects.json 
+2025-12-02 08:43:20 [INFO] [GET] /data/quotes.json 
+2025-12-02 08:43:20 [INFO] [GET] /data/afk.json 
+2025-12-02 08:43:20 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:43:41 [INFO] [GET] /data/dialog.json 
+2025-12-02 08:43:42 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 08:43:42 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 08:43:42 [INFO] [GET] /data/projects.json 
+2025-12-02 08:43:42 [INFO] [GET] /data/quotes.json 
+2025-12-02 08:43:42 [INFO] [GET] /data/afk.json 
+2025-12-02 08:43:42 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:49:30 [INFO] [GET] /index.html 
+2025-12-02 08:49:30 [INFO] [GET] /index.html 
+2025-12-02 08:49:30 [INFO] [GET] / 
+2025-12-02 08:49:30 [INFO] [GET] / 
+2025-12-02 08:49:30 [INFO] [GET] /data/about/about.html 
+2025-12-02 08:49:30 [INFO] [GET] /data/about/about.html 
+2025-12-02 08:49:36 [INFO] [GET] /chunk-jf8k424j.css 
+2025-12-02 08:49:37 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 08:49:38 [INFO] [GET] /chunk-1aw5f2kh.js.map 
+2025-12-02 08:49:52 [INFO] [GET] /data/dialog.json 
+2025-12-02 08:49:52 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 08:49:52 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 08:49:52 [INFO] [GET] /data/projects.json 
+2025-12-02 08:49:52 [INFO] [GET] /data/quotes.json 
+2025-12-02 08:49:52 [INFO] [GET] /data/afk.json 
+2025-12-02 08:49:52 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:49:54 [INFO] [GET] /api/whoami 
+2025-12-02 08:50:05 [INFO] [GET] /data/dialog.json 
+2025-12-02 08:50:05 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 08:50:05 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 08:50:05 [INFO] [GET] /data/projects.json 
+2025-12-02 08:50:05 [INFO] [GET] /data/quotes.json 
+2025-12-02 08:50:05 [INFO] [GET] /data/afk.json 
+2025-12-02 08:50:06 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:50:06 [INFO] [GET] /api/whoami 
+2025-12-02 08:50:14 [INFO] [POST] /api/visit 
+2025-12-02 08:50:14 [INFO] [VISIT - Session] 7e01e8f0-88ba-457a-9fa4-16eab05a0843 -> "Emha Tampan" 
+2025-12-02 08:50:26 [INFO] [GET] /data/dialog.json 
+2025-12-02 08:50:26 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 08:50:26 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 08:50:26 [INFO] [GET] /data/projects.json 
+2025-12-02 08:50:26 [INFO] [GET] /data/quotes.json 
+2025-12-02 08:50:26 [INFO] [GET] /data/afk.json 
+2025-12-02 08:50:26 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:50:26 [INFO] [GET] /api/whoami 
+2025-12-02 08:51:36 [INFO] [GET] /index.html 
+2025-12-02 08:51:36 [INFO] [GET] /index.html 
+2025-12-02 08:51:36 [INFO] [GET] / 
+2025-12-02 08:51:36 [INFO] [GET] / 
+2025-12-02 08:51:36 [INFO] [GET] /data/about/about.html 
+2025-12-02 08:51:36 [INFO] [GET] /data/about/about.html 
+2025-12-02 08:51:40 [INFO] [GET] /data/dialog.json 
+2025-12-02 08:51:40 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 08:51:40 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 08:51:40 [INFO] [GET] /data/projects.json 
+2025-12-02 08:51:40 [INFO] [GET] /data/quotes.json 
+2025-12-02 08:51:40 [INFO] [GET] /data/afk.json 
+2025-12-02 08:51:40 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:51:41 [INFO] [GET] /api/whoami 
+2025-12-02 08:51:49 [INFO] [POST] /api/visit 
+2025-12-02 08:51:49 [INFO] [VISIT - Session] 1a966991-e9f0-4f0d-abe5-772ce7aaa719 -> "Emha Tampan" 
+2025-12-02 08:56:10 [INFO] [GET] /index.html 
+2025-12-02 08:56:10 [INFO] [GET] /index.html 
+2025-12-02 08:56:10 [INFO] [GET] / 
+2025-12-02 08:56:10 [INFO] [GET] / 
+2025-12-02 08:56:10 [INFO] [GET] /data/about/about.html 
+2025-12-02 08:56:10 [INFO] [GET] /data/about/about.html 
+2025-12-02 08:56:20 [INFO] [GET] /data/dialog.json 
+2025-12-02 08:56:20 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 08:56:20 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 08:56:20 [INFO] [GET] /data/projects.json 
+2025-12-02 08:56:20 [INFO] [GET] /data/quotes.json 
+2025-12-02 08:56:20 [INFO] [GET] /data/afk.json 
+2025-12-02 08:56:20 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 08:56:21 [INFO] [GET] /api/whoami 
+2025-12-02 08:56:34 [INFO] [POST] /api/visit 
+2025-12-02 08:56:34 [INFO] [VISIT - Session] 25aed2b3-5607-4bae-9581-75484ebb0005 -> "Emhajuga" 
+2025-12-02 09:06:55 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 09:06:55 [INFO] [GET] /index.html 
+2025-12-02 09:06:55 [INFO] [GET] /index.html 
+2025-12-02 09:06:55 [INFO] [GET] / 
+2025-12-02 09:06:55 [INFO] [GET] / 
+2025-12-02 09:06:55 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:06:55 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:07:06 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:07:06 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:07:06 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:07:06 [INFO] [GET] /data/projects.json 
+2025-12-02 09:07:06 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:07:07 [INFO] [GET] /data/afk.json 
+2025-12-02 09:07:07 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:07:07 [INFO] [GET] /api/whoami 
+2025-12-02 09:07:23 [INFO] [POST] /api/visit 
+2025-12-02 09:07:23 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json... 
+2025-12-02 09:07:23 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. 
+2025-12-02 09:07:23 [INFO] [VISIT - Session] ac723c69-e4ca-4154-bfe7-59103d643188 -> "WarungTekno" 
+2025-12-02 09:08:23 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 09:08:24 [INFO] [GET] /index.html 
+2025-12-02 09:08:24 [INFO] [GET] /index.html 
+2025-12-02 09:08:24 [INFO] [GET] / 
+2025-12-02 09:08:24 [INFO] [GET] / 
+2025-12-02 09:08:24 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:08:24 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:08:28 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:08:28 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:08:28 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:08:28 [INFO] [GET] /data/projects.json 
+2025-12-02 09:08:28 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:08:28 [INFO] [GET] /data/afk.json 
+2025-12-02 09:08:28 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:08:28 [INFO] [GET] /api/whoami 
+2025-12-02 09:08:37 [INFO] [POST] /api/visit 
+2025-12-02 09:08:38 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json... 
+2025-12-02 09:08:38 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. 
+2025-12-02 09:08:38 [INFO] [VISIT - Session] a8961e67-4d8d-4658-a85a-4a3ba6299845 -> "yanto" 
+2025-12-02 09:11:27 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 09:11:27 [INFO] [GET] /index.html 
+2025-12-02 09:11:27 [INFO] [GET] /index.html 
+2025-12-02 09:11:27 [INFO] [GET] / 
+2025-12-02 09:11:27 [INFO] [GET] / 
+2025-12-02 09:11:27 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:11:27 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:11:33 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:11:33 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:11:33 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:11:33 [INFO] [GET] /data/projects.json 
+2025-12-02 09:11:33 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:11:33 [INFO] [GET] /data/afk.json 
+2025-12-02 09:11:33 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:11:33 [INFO] [GET] /api/whoami 
+2025-12-02 09:11:45 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:11:45 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:11:45 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:11:45 [INFO] [GET] /data/projects.json 
+2025-12-02 09:11:45 [INFO] [GET] /data/afk.json 
+2025-12-02 09:11:45 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:11:45 [INFO] [GET] /favicon.ico 
+2025-12-02 09:11:45 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:11:45 [INFO] [GET] /api/whoami 
+2025-12-02 09:11:54 [INFO] [POST] /api/visit 
+2025-12-02 09:11:54 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json... 
+2025-12-02 09:11:54 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file yang dikonfirmasi: 2 byte) 
+2025-12-02 09:11:54 [INFO] [VISIT - Session] 89ae1a1c-961f-45b3-a2e7-26f7c23eb897 -> "MinBrowser" 
+2025-12-02 09:15:17 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 09:15:17 [INFO] [GET] /index.html 
+2025-12-02 09:15:17 [INFO] [GET] /index.html 
+2025-12-02 09:15:17 [INFO] [GET] / 
+2025-12-02 09:15:17 [INFO] [GET] / 
+2025-12-02 09:15:17 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:15:17 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:15:24 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:15:24 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:15:24 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:15:24 [INFO] [GET] /data/projects.json 
+2025-12-02 09:15:24 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:15:24 [INFO] [GET] /data/afk.json 
+2025-12-02 09:15:24 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:15:24 [INFO] [GET] /api/whoami 
+2025-12-02 09:15:31 [INFO] [POST] /api/visit 
+2025-12-02 09:15:31 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 09:15:31 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 2 byte) 
+2025-12-02 09:15:31 [INFO] [VISIT - Session] 69be7c11-5a40-4d2e-ab91-ec4c218f15ad -> "testing" 
+2025-12-02 09:17:41 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 09:17:41 [INFO] [GET] /index.html 
+2025-12-02 09:17:41 [INFO] [GET] /index.html 
+2025-12-02 09:17:41 [INFO] [GET] / 
+2025-12-02 09:17:41 [INFO] [GET] / 
+2025-12-02 09:17:41 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:17:41 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:17:48 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:17:48 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:17:48 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:17:48 [INFO] [GET] /data/projects.json 
+2025-12-02 09:17:48 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:17:48 [INFO] [GET] /data/afk.json 
+2025-12-02 09:17:48 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:17:48 [INFO] [GET] /api/whoami 
+2025-12-02 09:18:01 [INFO] [POST] /api/visit 
+2025-12-02 09:18:02 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 09:18:02 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 299 byte) 
+2025-12-02 09:18:02 [INFO] [VISIT - Session] f13a6f8b-7ba5-4c91-ba63-4c7ed8eb6e57 -> "BahlilKontol" 
+2025-12-02 09:18:18 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:18:18 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:18:18 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:18:18 [INFO] [GET] /data/projects.json 
+2025-12-02 09:18:18 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:18:18 [INFO] [GET] /data/afk.json 
+2025-12-02 09:18:18 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:18:19 [INFO] [GET] /api/whoami 
+2025-12-02 09:18:46 [INFO] [POST] /api/visit 
+2025-12-02 09:18:47 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 09:18:47 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 2 byte) 
+2025-12-02 09:18:47 [INFO] [VISIT - Session] 35270615-72ba-442b-bd07-b150c666c283 -> "SuciKa" 
+2025-12-02 09:18:57 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:18:57 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:18:57 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:18:57 [INFO] [GET] /data/projects.json 
+2025-12-02 09:18:57 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:18:57 [INFO] [GET] /data/afk.json 
+2025-12-02 09:18:58 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:18:58 [INFO] [GET] /api/whoami 
+2025-12-02 09:19:09 [INFO] [POST] /api/visit 
+2025-12-02 09:19:09 [ERROR] [FATAL READ ERROR] Gagal membaca C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json. Mengembalikan objek kosong. 
+2025-12-02 09:19:09 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 09:19:09 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 292 byte) 
+2025-12-02 09:19:09 [INFO] [VISIT - Session] 23062fd2-6835-49cc-aef0-f6c5a0eea587 -> "Katon" 
+2025-12-02 09:21:32 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 09:21:32 [INFO] [GET] /index.html 
+2025-12-02 09:21:32 [INFO] [GET] /index.html 
+2025-12-02 09:21:32 [INFO] [GET] / 
+2025-12-02 09:21:32 [INFO] [GET] / 
+2025-12-02 09:21:32 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:21:32 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:21:37 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:21:37 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:21:37 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:21:37 [INFO] [GET] /data/projects.json 
+2025-12-02 09:21:37 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:21:37 [INFO] [GET] /data/afk.json 
+2025-12-02 09:21:37 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:21:37 [INFO] [GET] /api/whoami 
+2025-12-02 09:21:49 [INFO] [POST] /api/visit 
+2025-12-02 09:21:49 [INFO] [FS ACTION] Mencoba menulis 2 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 09:21:50 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 582 byte) 
+2025-12-02 09:21:50 [INFO] [VISIT - Session] 87a05c95-c890-4708-9359-fd56fda93822 -> "Jacob" 
+2025-12-02 09:22:19 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:22:19 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:22:19 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:22:19 [INFO] [GET] /data/projects.json 
+2025-12-02 09:22:19 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:22:19 [INFO] [GET] /data/afk.json 
+2025-12-02 09:22:19 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:22:19 [INFO] [GET] /api/whoami 
+2025-12-02 09:22:49 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 09:22:49 [INFO] [GET] /index.html 
+2025-12-02 09:22:49 [INFO] [GET] /index.html 
+2025-12-02 09:22:49 [INFO] [GET] / 
+2025-12-02 09:22:49 [INFO] [GET] / 
+2025-12-02 09:22:49 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:22:49 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:22:56 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:22:56 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:22:56 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:22:56 [INFO] [GET] /data/projects.json 
+2025-12-02 09:22:56 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:22:56 [INFO] [GET] /data/afk.json 
+2025-12-02 09:22:56 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:22:56 [INFO] [GET] /api/whoami 
+2025-12-02 09:24:36 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 09:24:36 [INFO] [GET] /index.html 
+2025-12-02 09:24:36 [INFO] [GET] /index.html 
+2025-12-02 09:24:36 [INFO] [GET] / 
+2025-12-02 09:24:36 [INFO] [GET] / 
+2025-12-02 09:24:36 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:24:36 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:24:41 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:24:41 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:24:41 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:24:41 [INFO] [GET] /data/projects.json 
+2025-12-02 09:24:41 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:24:41 [INFO] [GET] /data/afk.json 
+2025-12-02 09:24:41 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:24:41 [INFO] [GET] /api/whoami 
+2025-12-02 09:24:41 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:24:53 [INFO] [POST] /api/visit 
+2025-12-02 09:24:53 [ERROR] [FATAL READ ERROR] Gagal membaca C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json. Mengembalikan objek kosong. 
+2025-12-02 09:24:54 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 09:24:54 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 294 byte) 
+2025-12-02 09:24:54 [INFO] [VISIT - Session] d782cf81-eca1-4ea3-a678-476ced599e2d -> "Kenichi" 
+2025-12-02 09:25:09 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:25:09 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:25:09 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:25:09 [INFO] [GET] /data/projects.json 
+2025-12-02 09:25:09 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:25:10 [INFO] [GET] /data/afk.json 
+2025-12-02 09:25:10 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:25:10 [INFO] [GET] /api/whoami 
+2025-12-02 09:25:10 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:25:21 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:25:21 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:25:21 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:25:21 [INFO] [GET] /data/projects.json 
+2025-12-02 09:25:21 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:25:21 [INFO] [GET] /data/afk.json 
+2025-12-02 09:25:21 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:25:21 [INFO] [GET] /api/whoami 
+2025-12-02 09:25:21 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:29:46 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 09:29:46 [INFO] [GET] /index.html 
+2025-12-02 09:29:46 [INFO] [GET] /index.html 
+2025-12-02 09:29:46 [INFO] [GET] / 
+2025-12-02 09:29:46 [INFO] [GET] / 
+2025-12-02 09:29:46 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:29:46 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:29:52 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:29:52 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:29:52 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:29:52 [INFO] [GET] /data/projects.json 
+2025-12-02 09:29:52 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:29:52 [INFO] [GET] /data/afk.json 
+2025-12-02 09:29:52 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:29:52 [INFO] [GET] /api/whoami 
+2025-12-02 09:29:52 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:30:08 [INFO] [POST] /api/visit 
+2025-12-02 09:30:09 [INFO] [FS ACTION] Mencoba menulis 2 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 09:30:09 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 585 byte) 
+2025-12-02 09:30:09 [INFO] [VISIT - Session] bf6333f3-cffa-4972-bbf8-325b272f41ed -> "Tegguh" 
+2025-12-02 09:31:03 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:31:03 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:31:03 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:31:03 [INFO] [GET] /data/projects.json 
+2025-12-02 09:31:03 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:31:03 [INFO] [GET] /data/afk.json 
+2025-12-02 09:31:03 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:31:03 [INFO] [GET] /favicon.ico 
+2025-12-02 09:31:03 [INFO] [GET] /api/whoami 
+2025-12-02 09:31:03 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:31:11 [INFO] [POST] /api/visit 
+2025-12-02 09:31:11 [INFO] [FS ACTION] Mencoba menulis 3 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 09:31:11 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 877 byte) 
+2025-12-02 09:31:11 [INFO] [VISIT - Session] bb52758c-f83a-4b83-859f-481ecbb4f56c -> "Jacob" 
+2025-12-02 09:32:12 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 09:32:26 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 09:32:27 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:32:27 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:32:27 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:32:27 [INFO] [GET] /data/projects.json 
+2025-12-02 09:32:27 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:32:27 [INFO] [GET] /data/afk.json 
+2025-12-02 09:32:27 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:32:28 [INFO] [GET] /api/whoami 
+2025-12-02 09:32:28 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:33:54 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 09:34:02 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:34:02 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:34:02 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:34:02 [INFO] [GET] /data/projects.json 
+2025-12-02 09:34:02 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:34:02 [INFO] [GET] /data/afk.json 
+2025-12-02 09:34:02 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:34:03 [INFO] [GET] /api/whoami 
+2025-12-02 09:34:03 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:34:12 [INFO] [POST] /api/visit 
+2025-12-02 09:34:13 [INFO] [FS ACTION] Mencoba menulis 4 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 09:34:13 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 1175 byte) 
+2025-12-02 09:34:13 [INFO] [VISIT - Session] 841892fc-a8f5-4df7-a28c-4895295caa36 -> "JackTheRipper" 
+2025-12-02 09:34:46 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 09:34:47 [INFO] [GET] /index.html 
+2025-12-02 09:34:47 [INFO] [GET] /index.html 
+2025-12-02 09:34:47 [INFO] [GET] / 
+2025-12-02 09:34:47 [INFO] [GET] / 
+2025-12-02 09:34:47 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:34:47 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:34:53 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 09:34:53 [INFO] [GET] /chunk-jf8k424j.css 
+2025-12-02 09:34:54 [INFO] [GET] /chunk-xpw0kp63.js.map 
+2025-12-02 09:35:09 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:35:09 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:35:09 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:35:09 [INFO] [GET] /data/projects.json 
+2025-12-02 09:35:09 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:35:09 [INFO] [GET] /data/afk.json 
+2025-12-02 09:35:09 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:35:09 [INFO] [GET] /api/whoami 
+2025-12-02 09:35:09 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:35:28 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:35:28 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:35:28 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:35:28 [INFO] [GET] /data/projects.json 
+2025-12-02 09:35:28 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:35:28 [INFO] [GET] /data/afk.json 
+2025-12-02 09:35:28 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:35:28 [INFO] [GET] /api/whoami 
+2025-12-02 09:35:28 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:35:46 [INFO] [POST] /api/visit 
+2025-12-02 09:35:46 [INFO] [FS ACTION] Mencoba menulis 5 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 09:35:46 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 1465 byte) 
+2025-12-02 09:35:46 [INFO] [VISIT - Session] 1ccbbacf-b790-41a8-a3cb-d1608196f5f1 -> "Jukir" 
+2025-12-02 09:41:48 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 09:41:49 [INFO] [GET] /index.html 
+2025-12-02 09:41:49 [INFO] [GET] /index.html 
+2025-12-02 09:41:49 [INFO] [GET] / 
+2025-12-02 09:41:49 [INFO] [GET] / 
+2025-12-02 09:41:49 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:41:49 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:41:55 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 09:41:56 [INFO] [GET] /chunk-jf8k424j.css 
+2025-12-02 09:41:56 [INFO] [GET] /chunk-xpw0kp63.js.map 
+2025-12-02 09:42:34 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 09:42:35 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:42:35 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:42:35 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:42:35 [INFO] [GET] /data/projects.json 
+2025-12-02 09:42:35 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:42:35 [INFO] [GET] /data/afk.json 
+2025-12-02 09:42:35 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:42:36 [INFO] [GET] /api/whoami 
+2025-12-02 09:42:36 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:42:53 [INFO] [POST] /api/visit 
+2025-12-02 09:42:54 [INFO] [FS ACTION] Mencoba menulis 6 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 09:42:54 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 1755 byte) 
+2025-12-02 09:42:54 [INFO] [VISIT - Session] a5610344-7444-4990-a281-9943b4385646 -> "James" 
+2025-12-02 09:43:09 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:43:09 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:43:09 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:43:09 [INFO] [GET] /data/projects.json 
+2025-12-02 09:43:09 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:43:09 [INFO] [GET] /data/afk.json 
+2025-12-02 09:43:09 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:43:10 [INFO] [GET] /api/whoami 
+2025-12-02 09:43:10 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:43:26 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 09:43:51 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 09:43:52 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:43:52 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:43:52 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:43:52 [INFO] [GET] /data/projects.json 
+2025-12-02 09:43:52 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:43:52 [INFO] [GET] /data/afk.json 
+2025-12-02 09:43:52 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:43:53 [INFO] [GET] /api/whoami 
+2025-12-02 09:43:53 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:43:59 [INFO] [POST] /api/visit 
+2025-12-02 09:43:59 [ERROR] [FATAL READ ERROR] Gagal membaca C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json. Mengembalikan objek kosong. 
+2025-12-02 09:44:00 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 09:44:00 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 297 byte) 
+2025-12-02 09:44:00 [INFO] [VISIT - Session] 3877ccb0-e690-452f-94f9-345f3b5e0453 -> "IzaGanteng" 
+2025-12-02 09:44:06 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:44:06 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:44:06 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:44:06 [INFO] [GET] /data/projects.json 
+2025-12-02 09:44:06 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:44:06 [INFO] [GET] /data/afk.json 
+2025-12-02 09:44:06 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:44:06 [INFO] [GET] /api/whoami 
+2025-12-02 09:44:06 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:49:13 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 09:49:13 [INFO] [GET] /index.html 
+2025-12-02 09:49:13 [INFO] [GET] /index.html 
+2025-12-02 09:49:13 [INFO] [GET] / 
+2025-12-02 09:49:13 [INFO] [GET] / 
+2025-12-02 09:49:13 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:49:13 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:49:19 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:49:19 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:49:19 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:49:19 [INFO] [GET] /data/projects.json 
+2025-12-02 09:49:19 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:49:19 [INFO] [GET] /data/afk.json 
+2025-12-02 09:49:19 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:49:20 [INFO] [GET] /api/whoami 
+2025-12-02 09:49:20 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:49:42 [INFO] [POST] /api/visit 
+2025-12-02 09:49:42 [ERROR] [FATAL READ ERROR] Gagal membaca C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json. Mengembalikan objek kosong. 
+2025-12-02 09:49:42 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 09:49:42 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 292 byte) 
+2025-12-02 09:49:42 [INFO] [VISIT - Session] 38e6f98c-5165-4b87-bd7e-2f597b376087 -> "Maven" 
+2025-12-02 09:50:20 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:50:20 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:50:20 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:50:20 [INFO] [GET] /data/projects.json 
+2025-12-02 09:50:20 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:50:20 [INFO] [GET] /data/afk.json 
+2025-12-02 09:50:20 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:50:20 [INFO] [GET] /api/whoami 
+2025-12-02 09:50:20 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:51:14 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 09:52:05 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:52:05 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:52:05 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:52:05 [INFO] [GET] /data/projects.json 
+2025-12-02 09:52:05 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:52:05 [INFO] [GET] /data/afk.json 
+2025-12-02 09:52:05 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:52:05 [INFO] [GET] /api/whoami 
+2025-12-02 09:52:05 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:52:16 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 09:52:16 [INFO] [GET] /index.html 
+2025-12-02 09:52:16 [INFO] [GET] /index.html 
+2025-12-02 09:52:16 [INFO] [GET] / 
+2025-12-02 09:52:16 [INFO] [GET] / 
+2025-12-02 09:52:16 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:52:16 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:52:20 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:52:20 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:52:20 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:52:20 [INFO] [GET] /data/projects.json 
+2025-12-02 09:52:20 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:52:20 [INFO] [GET] /data/afk.json 
+2025-12-02 09:52:20 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:52:20 [INFO] [GET] /api/whoami 
+2025-12-02 09:52:20 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:52:27 [INFO] [POST] /api/visit 
+2025-12-02 09:52:27 [ERROR] [FATAL READ ERROR] Gagal membaca C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json. Mengembalikan objek kosong. 
+2025-12-02 09:52:27 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 09:52:27 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 292 byte) 
+2025-12-02 09:52:27 [INFO] [VISIT - Session] 8ba2fd90-f822-419e-8115-875d0ebe698d -> "Kemem" 
+2025-12-02 09:52:36 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:52:36 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:52:36 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:52:36 [INFO] [GET] /data/projects.json 
+2025-12-02 09:52:36 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:52:36 [INFO] [GET] /data/afk.json 
+2025-12-02 09:52:36 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:52:36 [INFO] [GET] /api/whoami 
+2025-12-02 09:52:36 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset 
+2025-12-02 09:55:26 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 09:55:26 [INFO] [GET] /index.html 
+2025-12-02 09:55:26 [INFO] [GET] /index.html 
+2025-12-02 09:55:26 [INFO] [GET] / 
+2025-12-02 09:55:26 [INFO] [GET] / 
+2025-12-02 09:55:26 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:55:26 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:55:32 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 09:55:32 [INFO] [GET] /chunk-jf8k424j.css 
+2025-12-02 09:55:34 [INFO] [GET] /chunk-gmvphp8t.js.map 
+2025-12-02 09:56:03 [INFO] [POST] /api/visit 
+2025-12-02 09:56:03 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 09:56:03 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 292 byte) 
+2025-12-02 09:56:03 [INFO] [VISIT - Session] 73962b93-3c86-4a9c-86e4-5852e4dd43a1 -> "Nuhan" 
+2025-12-02 09:56:20 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:56:20 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:56:20 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:56:20 [INFO] [GET] /data/projects.json 
+2025-12-02 09:56:20 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:56:20 [INFO] [GET] /data/afk.json 
+2025-12-02 09:56:20 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:56:21 [INFO] [GET] /api/whoami 
+2025-12-02 09:56:21 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset. Source: OTHER 
+2025-12-02 09:59:25 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 09:59:25 [INFO] [GET] /index.html 
+2025-12-02 09:59:25 [INFO] [GET] /index.html 
+2025-12-02 09:59:25 [INFO] [GET] / 
+2025-12-02 09:59:25 [INFO] [GET] / 
+2025-12-02 09:59:25 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:59:25 [INFO] [GET] /data/about/about.html 
+2025-12-02 09:59:30 [INFO] [GET] /chunk-jf8k424j.css 
+2025-12-02 09:59:31 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 09:59:32 [INFO] [GET] /chunk-04w01xdf.js.map 
+2025-12-02 09:59:55 [INFO] [GET] /data/dialog.json 
+2025-12-02 09:59:55 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 09:59:55 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 09:59:55 [INFO] [GET] /data/projects.json 
+2025-12-02 09:59:55 [INFO] [GET] /data/quotes.json 
+2025-12-02 09:59:55 [INFO] [GET] /data/afk.json 
+2025-12-02 09:59:55 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 09:59:55 [INFO] [GET] /api/whoami 
+2025-12-02 09:59:55 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset. Source: OTHER 
+2025-12-02 10:00:01 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:00:01 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:00:01 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:00:01 [INFO] [GET] /data/projects.json 
+2025-12-02 10:00:01 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:00:01 [INFO] [GET] /data/afk.json 
+2025-12-02 10:00:01 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:00:02 [INFO] [GET] /api/whoami 
+2025-12-02 10:00:02 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset. Source: OTHER 
+2025-12-02 10:00:10 [INFO] [POST] /api/visit 
+2025-12-02 10:00:10 [INFO] [FS ACTION] Mencoba menulis 2 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 10:00:10 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 587 byte) 
+2025-12-02 10:00:10 [INFO] [VISIT - Session] ee63ab4c-c710-4439-888e-447d4cb55b74 -> "JugarSalir" 
+2025-12-02 10:00:17 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:00:17 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:00:17 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:00:17 [INFO] [GET] /data/projects.json 
+2025-12-02 10:00:17 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:00:17 [INFO] [GET] /data/afk.json 
+2025-12-02 10:00:17 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:00:17 [INFO] [GET] /api/whoami 
+2025-12-02 10:00:17 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset. Source: OTHER 
+2025-12-02 10:00:45 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 10:03:21 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 10:03:22 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:03:22 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:03:22 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:03:22 [INFO] [GET] /data/projects.json 
+2025-12-02 10:03:22 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:03:22 [INFO] [GET] /data/afk.json 
+2025-12-02 10:03:22 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:03:22 [INFO] [GET] /api/whoami 
+2025-12-02 10:03:22 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset. Source: OTHER 
+2025-12-02 10:03:33 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 10:03:34 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:03:34 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:03:34 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:03:34 [INFO] [GET] /data/projects.json 
+2025-12-02 10:03:34 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:03:34 [INFO] [GET] /data/afk.json 
+2025-12-02 10:03:34 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:03:35 [INFO] [GET] /api/whoami 
+2025-12-02 10:03:35 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset. Source: OTHER 
+2025-12-02 10:04:59 [INFO] [POST] /api/visit 
+2025-12-02 10:05:00 [INFO] [FS ACTION] Mencoba menulis 3 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 10:05:00 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 877 byte) 
+2025-12-02 10:05:00 [INFO] [VISIT - Session] b87c5f8f-a0ad-42c4-a61b-3d7a5950e30b -> "Jacob" 
+2025-12-02 10:05:39 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 10:05:40 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:05:40 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:05:40 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:05:40 [INFO] [GET] /data/projects.json 
+2025-12-02 10:05:40 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:05:40 [INFO] [GET] /data/afk.json 
+2025-12-02 10:05:40 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:05:40 [INFO] [GET] /api/whoami 
+2025-12-02 10:05:40 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset. Source: OTHER 
+2025-12-02 10:13:33 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 10:13:33 [INFO] [GET] /index.html 
+2025-12-02 10:13:33 [INFO] [GET] /index.html 
+2025-12-02 10:13:33 [INFO] [GET] / 
+2025-12-02 10:13:33 [INFO] [GET] / 
+2025-12-02 10:13:33 [INFO] [GET] /data/about/about.html 
+2025-12-02 10:13:33 [INFO] [GET] /data/about/about.html 
+2025-12-02 10:13:46 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:13:46 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:13:46 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:13:46 [INFO] [GET] /data/projects.json 
+2025-12-02 10:13:46 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:13:46 [INFO] [GET] /data/afk.json 
+2025-12-02 10:13:46 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:13:46 [INFO] [GET] /api/whoami 
+2025-12-02 10:13:46 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset. Source: OTHER 
+2025-12-02 10:13:49 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 10:14:16 [INFO] [POST] /api/visit 
+2025-12-02 10:14:16 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 10:14:16 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 292 byte) 
+2025-12-02 10:14:16 [INFO] [VISIT - Session] bd475b2a-4684-4eb0-9e60-de1284339236 -> "Yunus" 
+2025-12-02 10:14:40 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:14:41 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:14:41 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:14:41 [INFO] [GET] /data/projects.json 
+2025-12-02 10:14:41 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:14:41 [INFO] [GET] /data/afk.json 
+2025-12-02 10:14:41 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:14:41 [INFO] [GET] /api/whoami 
+2025-12-02 10:14:41 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset. Source: OTHER 
+2025-12-02 10:16:43 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 10:16:43 [INFO] [GET] /index.html 
+2025-12-02 10:16:43 [INFO] [GET] /index.html 
+2025-12-02 10:16:43 [INFO] [GET] / 
+2025-12-02 10:16:43 [INFO] [GET] / 
+2025-12-02 10:16:43 [INFO] [GET] /data/about/about.html 
+2025-12-02 10:16:43 [INFO] [GET] /data/about/about.html 
+2025-12-02 10:16:47 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:16:47 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:16:47 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:16:47 [INFO] [GET] /data/projects.json 
+2025-12-02 10:16:47 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:16:47 [INFO] [GET] /data/afk.json 
+2025-12-02 10:16:47 [INFO] [GET] /favicon.ico 
+2025-12-02 10:16:47 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:16:47 [INFO] [GET] /api/whoami 
+2025-12-02 10:16:47 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset. Source: OTHER 
+2025-12-02 10:16:56 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:16:56 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:16:56 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:16:56 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:16:56 [INFO] [GET] /data/afk.json 
+2025-12-02 10:16:56 [INFO] [GET] /data/projects.json 
+2025-12-02 10:16:56 [INFO] [GET] /favicon.ico 
+2025-12-02 10:16:56 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:16:56 [INFO] [GET] /api/whoami 
+2025-12-02 10:16:56 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset. Source: OTHER 
+2025-12-02 10:17:18 [INFO] [POST] /api/visit 
+2025-12-02 10:17:19 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 10:17:19 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 294 byte) 
+2025-12-02 10:17:19 [INFO] [VISIT - Session] 5673eb15-542c-4224-9019-a9155313266d -> "Jacob" 
+2025-12-02 10:17:46 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:17:46 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:17:46 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:17:46 [INFO] [GET] /data/projects.json 
+2025-12-02 10:17:46 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:17:46 [INFO] [GET] /data/afk.json 
+2025-12-02 10:17:46 [INFO] [GET] /favicon.ico 
+2025-12-02 10:17:46 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:17:46 [INFO] [GET] /api/whoami 
+2025-12-02 10:17:46 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset. Source: OTHER 
+2025-12-02 10:18:48 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:18:48 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:18:48 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:18:48 [INFO] [GET] /data/projects.json 
+2025-12-02 10:18:48 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:18:48 [INFO] [GET] /data/afk.json 
+2025-12-02 10:18:48 [INFO] [GET] /favicon.ico 
+2025-12-02 10:18:48 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:18:48 [INFO] [GET] /api/whoami 
+2025-12-02 10:18:48 [INFO] [WHOAMI CHECK] Received sessionId: NO - Session will reset. Source: OTHER 
+2025-12-02 10:18:59 [INFO] [POST] /api/visit 
+2025-12-02 10:18:59 [INFO] [FS ACTION] Mencoba menulis 2 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 10:18:59 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 586 byte) 
+2025-12-02 10:18:59 [INFO] [VISIT - Session] e48eb9d9-d731-4ee0-ad48-94c54bfb2a2b -> "Nepal" 
+2025-12-02 10:29:06 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 10:29:06 [INFO] [GET] /index.html 
+2025-12-02 10:29:06 [INFO] [GET] /index.html 
+2025-12-02 10:29:06 [INFO] [GET] / 
+2025-12-02 10:29:06 [INFO] [GET] / 
+2025-12-02 10:29:06 [INFO] [GET] /data/about/about.html 
+2025-12-02 10:29:06 [INFO] [GET] /data/about/about.html 
+2025-12-02 10:29:26 [INFO] [GET] /favicon.ico 
+2025-12-02 10:30:39 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 10:30:39 [INFO] [GET] /index.html 
+2025-12-02 10:30:39 [INFO] [GET] /index.html 
+2025-12-02 10:30:39 [INFO] [GET] / 
+2025-12-02 10:30:39 [INFO] [GET] / 
+2025-12-02 10:30:39 [INFO] [GET] /data/about/about.html 
+2025-12-02 10:30:39 [INFO] [GET] /data/about/about.html 
+2025-12-02 10:30:44 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:30:44 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:30:44 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:30:44 [INFO] [GET] /data/projects.json 
+2025-12-02 10:30:44 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:30:44 [INFO] [GET] /data/afk.json 
+2025-12-02 10:30:44 [INFO] [GET] /favicon.ico 
+2025-12-02 10:30:44 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:30:46 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:30:46 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:30:46 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:30:46 [INFO] [GET] /data/projects.json 
+2025-12-02 10:30:46 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:30:46 [INFO] [GET] /data/afk.json 
+2025-12-02 10:30:46 [INFO] [GET] /favicon.ico 
+2025-12-02 10:30:46 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:31:15 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 10:31:15 [INFO] [GET] /index.html 
+2025-12-02 10:31:15 [INFO] [GET] /index.html 
+2025-12-02 10:31:15 [INFO] [GET] / 
+2025-12-02 10:31:15 [INFO] [GET] / 
+2025-12-02 10:31:15 [INFO] [GET] /data/about/about.html 
+2025-12-02 10:31:15 [INFO] [GET] /data/about/about.html 
+2025-12-02 10:31:20 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:31:20 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:31:20 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:31:20 [INFO] [GET] /data/afk.json 
+2025-12-02 10:31:20 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:31:20 [INFO] [GET] /data/projects.json 
+2025-12-02 10:31:21 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:31:21 [INFO] [GET] /favicon.ico 
+2025-12-02 10:31:29 [INFO] [POST] /api/visit 
+2025-12-02 10:31:29 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 10:31:29 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 294 byte) 
+2025-12-02 10:31:29 [INFO] [VISIT - Session] 17bbf497-85b2-43fb-8835-3c64deda9a29 -> "Denis" 
+2025-12-02 10:31:58 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:31:58 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:31:58 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:31:58 [INFO] [GET] /data/afk.json 
+2025-12-02 10:31:58 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:31:58 [INFO] [GET] /data/projects.json 
+2025-12-02 10:31:58 [INFO] [GET] /favicon.ico 
+2025-12-02 10:31:58 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:31:58 [INFO] [GET] /api/whoami 
+2025-12-02 10:31:58 [INFO] [WHOAMI CHECK] Received sessionId: 17bbf497-85b2-43fb-8835-3c64deda9a29. Source: QUERY_PARAM 
+2025-12-02 10:32:00 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:32:01 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:32:01 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:32:01 [INFO] [GET] /data/projects.json 
+2025-12-02 10:32:01 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:32:01 [INFO] [GET] /data/afk.json 
+2025-12-02 10:32:01 [INFO] [GET] /favicon.ico 
+2025-12-02 10:32:01 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:32:01 [INFO] [GET] /api/whoami 
+2025-12-02 10:32:01 [INFO] [WHOAMI CHECK] Received sessionId: 17bbf497-85b2-43fb-8835-3c64deda9a29. Source: QUERY_PARAM 
+2025-12-02 10:32:02 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:32:02 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:32:02 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:32:02 [INFO] [GET] /data/projects.json 
+2025-12-02 10:32:02 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:32:02 [INFO] [GET] /data/afk.json 
+2025-12-02 10:32:02 [INFO] [GET] /favicon.ico 
+2025-12-02 10:32:02 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:32:02 [INFO] [GET] /api/whoami 
+2025-12-02 10:32:02 [INFO] [WHOAMI CHECK] Received sessionId: 17bbf497-85b2-43fb-8835-3c64deda9a29. Source: QUERY_PARAM 
+2025-12-02 10:32:11 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:32:11 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:32:11 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:32:11 [INFO] [GET] /data/projects.json 
+2025-12-02 10:32:11 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:32:11 [INFO] [GET] /data/afk.json 
+2025-12-02 10:32:11 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:32:11 [INFO] [GET] /api/whoami 
+2025-12-02 10:32:11 [INFO] [WHOAMI CHECK] Received sessionId: 17bbf497-85b2-43fb-8835-3c64deda9a29. Source: QUERY_PARAM 
+2025-12-02 10:32:11 [WARN] [STALE COOKIE] Session ID 17bbf497-85b2-43fb-8835-3c64deda9a29 tidak ditemukan di server. Cookie dihapus. 
+2025-12-02 10:32:11 [INFO] [GET] /favicon.ico 
+2025-12-02 10:32:21 [INFO] [POST] /api/visit 
+2025-12-02 10:32:21 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 10:32:21 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 296 byte) 
+2025-12-02 10:32:21 [INFO] [VISIT - Session] 33d1ab72-7d67-4a6f-a2c4-22b27aa6ee2d -> "Jujutsu" 
+2025-12-02 10:32:26 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:32:26 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:32:26 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:32:26 [INFO] [GET] /data/afk.json 
+2025-12-02 10:32:26 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:32:26 [INFO] [GET] /data/projects.json 
+2025-12-02 10:32:26 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:32:26 [INFO] [GET] /favicon.ico 
+2025-12-02 10:32:26 [INFO] [GET] /api/whoami 
+2025-12-02 10:32:26 [INFO] [WHOAMI CHECK] Received sessionId: 33d1ab72-7d67-4a6f-a2c4-22b27aa6ee2d. Source: QUERY_PARAM 
+2025-12-02 10:32:28 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:32:28 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:32:28 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:32:28 [INFO] [GET] /data/projects.json 
+2025-12-02 10:32:28 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:32:28 [INFO] [GET] /data/afk.json 
+2025-12-02 10:32:28 [INFO] [GET] /favicon.ico 
+2025-12-02 10:32:28 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:32:28 [INFO] [GET] /api/whoami 
+2025-12-02 10:32:28 [INFO] [WHOAMI CHECK] Received sessionId: 33d1ab72-7d67-4a6f-a2c4-22b27aa6ee2d. Source: QUERY_PARAM 
+2025-12-02 10:34:03 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 10:34:03 [INFO] [GET] /index.html 
+2025-12-02 10:34:03 [INFO] [GET] /index.html 
+2025-12-02 10:34:03 [INFO] [GET] / 
+2025-12-02 10:34:03 [INFO] [GET] / 
+2025-12-02 10:34:03 [INFO] [GET] /data/about/about.html 
+2025-12-02 10:34:03 [INFO] [GET] /data/about/about.html 
+2025-12-02 10:34:06 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:34:06 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:34:06 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:34:06 [INFO] [GET] /data/afk.json 
+2025-12-02 10:34:06 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:34:06 [INFO] [GET] /data/projects.json 
+2025-12-02 10:34:06 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:34:11 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 10:34:32 [INFO] [POST] /api/visit 
+2025-12-02 10:34:32 [INFO] [FS ACTION] Mencoba menulis 2 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 10:34:32 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 585 byte) 
+2025-12-02 10:34:32 [INFO] [VISIT - Session] 4b89d842-70b2-4219-88af-f8f9837dce03 -> "REPP" 
+2025-12-02 10:34:35 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 10:34:36 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:34:36 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:34:36 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:34:36 [INFO] [GET] /data/projects.json 
+2025-12-02 10:34:36 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:34:36 [INFO] [GET] /data/afk.json 
+2025-12-02 10:34:36 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:34:37 [INFO] [GET] /api/whoami 
+2025-12-02 10:34:37 [INFO] [WHOAMI CHECK] Received sessionId: 4b89d842-70b2-4219-88af-f8f9837dce03. Source: QUERY_PARAM 
+2025-12-02 10:34:39 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 10:34:40 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:34:40 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:34:40 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:34:40 [INFO] [GET] /data/projects.json 
+2025-12-02 10:34:40 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:34:40 [INFO] [GET] /data/afk.json 
+2025-12-02 10:34:40 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:34:41 [INFO] [GET] /api/whoami 
+2025-12-02 10:34:41 [INFO] [WHOAMI CHECK] Received sessionId: 4b89d842-70b2-4219-88af-f8f9837dce03. Source: QUERY_PARAM 
+2025-12-02 10:38:19 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 10:38:19 [INFO] [GET] /index.html 
+2025-12-02 10:38:19 [INFO] [GET] /index.html 
+2025-12-02 10:38:19 [INFO] [GET] / 
+2025-12-02 10:38:19 [INFO] [GET] / 
+2025-12-02 10:38:19 [INFO] [GET] /data/about/about.html 
+2025-12-02 10:38:19 [INFO] [GET] /data/about/about.html 
+2025-12-02 10:38:39 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:38:39 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:38:39 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:38:39 [INFO] [GET] /data/projects.json 
+2025-12-02 10:38:39 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:38:39 [INFO] [GET] /data/afk.json 
+2025-12-02 10:38:39 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:38:54 [INFO] [POST] /api/visit 
+2025-12-02 10:38:54 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 10:38:54 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 333 byte) 
+2025-12-02 10:38:54 [INFO] [VISIT - Session] 210a61e8-622e-46fa-b8cb-0f23671fc33c -> "REPP" 
+2025-12-02 10:39:57 [INFO] [GET] /data/dialog.json 
+2025-12-02 10:39:57 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 10:39:57 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 10:39:57 [INFO] [GET] /data/projects.json 
+2025-12-02 10:39:57 [INFO] [GET] /data/quotes.json 
+2025-12-02 10:39:57 [INFO] [GET] /data/afk.json 
+2025-12-02 10:39:57 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 10:39:57 [INFO] [GET] /api/whoami 
+2025-12-02 10:39:57 [INFO] [WHOAMI CHECK] Received sessionId: 210a61e8-622e-46fa-b8cb-0f23671fc33c. Source: QUERY_PARAM 
