@@ -1,6 +1,9 @@
 node_modules
-bun_lock
+bun.lock
 node*
 bun*
 package.json
 logs
+visitors.json
+*.log
+*.logs
