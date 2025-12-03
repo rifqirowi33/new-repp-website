@@ -36,8 +36,8 @@ body {
 }
 
 .avatar {
-    margin-top: -150px;
-    margin-left: -515px;
+    /* margin-top: -150px;
+    margin-left: -515px; */
     transform: scale(.35);
     user-select: none;
     -webkit-user-select: none;

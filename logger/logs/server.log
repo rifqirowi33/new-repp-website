@@ -1597,3 +1597,749 @@
 2025-12-02 10:39:57 [INFO] [GET] /data/afkspecial.json 
 2025-12-02 10:39:57 [INFO] [GET] /api/whoami 
 2025-12-02 10:39:57 [INFO] [WHOAMI CHECK] Received sessionId: 210a61e8-622e-46fa-b8cb-0f23671fc33c. Source: QUERY_PARAM 
+2025-12-02 12:23:45 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 12:23:45 [INFO] [GET] /index.html 
+2025-12-02 12:23:45 [INFO] [GET] /index.html 
+2025-12-02 12:23:45 [INFO] [GET] / 
+2025-12-02 12:23:45 [INFO] [GET] / 
+2025-12-02 12:23:45 [INFO] [GET] /data/about/about.html 
+2025-12-02 12:23:45 [INFO] [GET] /data/about/about.html 
+2025-12-02 12:23:52 [INFO] [GET] /data/dialog.json 
+2025-12-02 12:23:52 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 12:23:52 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 12:23:52 [INFO] [GET] /data/projects.json 
+2025-12-02 12:23:52 [INFO] [GET] /data/quotes.json 
+2025-12-02 12:23:52 [INFO] [GET] /data/afk.json 
+2025-12-02 12:23:52 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 12:23:52 [INFO] [GET] /api/whoami 
+2025-12-02 12:23:52 [INFO] [WHOAMI CHECK] Received sessionId: 210a61e8-622e-46fa-b8cb-0f23671fc33c. Source: QUERY_PARAM 
+2025-12-02 12:23:52 [WARN] [STALE COOKIE] Session ID 210a61e8-622e-46fa-b8cb-0f23671fc33c tidak ditemukan di server. Cookie dihapus. 
+2025-12-02 12:24:02 [INFO] [POST] /api/visit 
+2025-12-02 12:24:02 [INFO] [FS ACTION] Mencoba menulis 1 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-02 12:24:02 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 336 byte) 
+2025-12-02 12:24:02 [INFO] [VISIT - Session] 20265d9f-304f-4df3-a1c4-526e033f05ec -> "Testing" 
+2025-12-02 12:24:15 [INFO] [GET] /data/dialog.json 
+2025-12-02 12:24:15 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 12:24:15 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 12:24:15 [INFO] [GET] /data/projects.json 
+2025-12-02 12:24:15 [INFO] [GET] /data/quotes.json 
+2025-12-02 12:24:15 [INFO] [GET] /data/afk.json 
+2025-12-02 12:24:15 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 12:24:15 [INFO] [GET] /api/whoami 
+2025-12-02 12:24:15 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 12:24:24 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 12:26:31 [INFO] [GET] /data/dialog.json 
+2025-12-02 12:26:31 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 12:26:31 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 12:26:31 [INFO] [GET] /data/projects.json 
+2025-12-02 12:26:31 [INFO] [GET] /data/quotes.json 
+2025-12-02 12:26:31 [INFO] [GET] /data/afk.json 
+2025-12-02 12:26:31 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 12:26:31 [INFO] [GET] /api/whoami 
+2025-12-02 12:26:31 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 12:26:39 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 13:20:21 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 13:20:21 [INFO] [GET] /index.html 
+2025-12-02 13:20:21 [INFO] [GET] /index.html 
+2025-12-02 13:20:21 [INFO] [GET] / 
+2025-12-02 13:20:21 [INFO] [GET] / 
+2025-12-02 13:20:21 [INFO] [GET] /data/about/about.html 
+2025-12-02 13:20:21 [INFO] [GET] /data/about/about.html 
+2025-12-02 13:20:34 [INFO] [GET] /data/dialog.json 
+2025-12-02 13:20:34 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 13:20:34 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 13:20:34 [INFO] [GET] /data/projects.json 
+2025-12-02 13:20:34 [INFO] [GET] /data/quotes.json 
+2025-12-02 13:20:34 [INFO] [GET] /data/afk.json 
+2025-12-02 13:20:34 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 13:20:34 [INFO] [GET] /api/whoami 
+2025-12-02 13:20:34 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 13:47:55 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 13:47:55 [INFO] [GET] /index.html 
+2025-12-02 13:47:55 [INFO] [GET] /index.html 
+2025-12-02 13:47:55 [INFO] [GET] / 
+2025-12-02 13:47:55 [INFO] [GET] / 
+2025-12-02 13:47:55 [INFO] [GET] /data/about/about.html 
+2025-12-02 13:47:55 [INFO] [GET] /data/about/about.html 
+2025-12-02 13:48:36 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 13:48:36 [INFO] [GET] /index.html 
+2025-12-02 13:48:36 [INFO] [GET] /index.html 
+2025-12-02 13:48:36 [INFO] [GET] / 
+2025-12-02 13:48:36 [INFO] [GET] / 
+2025-12-02 13:48:36 [INFO] [GET] /data/about/about.html 
+2025-12-02 13:48:36 [INFO] [GET] /data/about/about.html 
+2025-12-02 13:48:43 [INFO] [GET] /data/dialog.json 
+2025-12-02 13:48:43 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 13:48:43 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 13:48:43 [INFO] [GET] /data/projects.json 
+2025-12-02 13:48:43 [INFO] [GET] /data/quotes.json 
+2025-12-02 13:48:43 [INFO] [GET] /data/afk.json 
+2025-12-02 13:48:43 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 13:48:43 [INFO] [GET] /api/whoami 
+2025-12-02 13:48:43 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 13:52:31 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 13:52:31 [INFO] [GET] /index.html 
+2025-12-02 13:52:31 [INFO] [GET] /index.html 
+2025-12-02 13:52:31 [INFO] [GET] / 
+2025-12-02 13:52:31 [INFO] [GET] / 
+2025-12-02 13:52:31 [INFO] [GET] /data/about/about.html 
+2025-12-02 13:52:31 [INFO] [GET] /data/about/about.html 
+2025-12-02 13:53:58 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 13:55:04 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 13:55:04 [INFO] [GET] /index.html 
+2025-12-02 13:55:04 [INFO] [GET] /index.html 
+2025-12-02 13:55:04 [INFO] [GET] / 
+2025-12-02 13:55:04 [INFO] [GET] / 
+2025-12-02 13:55:04 [INFO] [GET] /data/about/about.html 
+2025-12-02 13:55:04 [INFO] [GET] /data/about/about.html 
+2025-12-02 13:55:07 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 13:55:08 [INFO] [GET] /data/dialog.json 
+2025-12-02 13:55:08 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 13:55:08 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 13:55:08 [INFO] [GET] /data/projects.json 
+2025-12-02 13:55:08 [INFO] [GET] /data/quotes.json 
+2025-12-02 13:55:08 [INFO] [GET] /data/afk.json 
+2025-12-02 13:55:08 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 13:55:09 [INFO] [GET] /api/whoami 
+2025-12-02 13:55:09 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 13:56:20 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 13:56:20 [INFO] [GET] /index.html 
+2025-12-02 13:56:20 [INFO] [GET] /index.html 
+2025-12-02 13:56:20 [INFO] [GET] / 
+2025-12-02 13:56:20 [INFO] [GET] / 
+2025-12-02 13:56:20 [INFO] [GET] /data/about/about.html 
+2025-12-02 13:56:20 [INFO] [GET] /data/about/about.html 
+2025-12-02 13:56:24 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 13:56:25 [INFO] [GET] /data/dialog.json 
+2025-12-02 13:56:25 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 13:56:25 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 13:56:25 [INFO] [GET] /data/projects.json 
+2025-12-02 13:56:25 [INFO] [GET] /data/quotes.json 
+2025-12-02 13:56:25 [INFO] [GET] /data/afk.json 
+2025-12-02 13:56:25 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 13:56:26 [INFO] [GET] /api/whoami 
+2025-12-02 13:56:26 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 13:59:57 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 13:59:57 [INFO] [GET] /index.html 
+2025-12-02 13:59:57 [INFO] [GET] /index.html 
+2025-12-02 13:59:57 [INFO] [GET] / 
+2025-12-02 13:59:57 [INFO] [GET] / 
+2025-12-02 13:59:57 [INFO] [GET] /data/about/about.html 
+2025-12-02 13:59:57 [INFO] [GET] /data/about/about.html 
+2025-12-02 14:00:01 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 14:00:02 [INFO] [GET] /data/dialog.json 
+2025-12-02 14:00:03 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 14:00:03 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 14:00:03 [INFO] [GET] /data/projects.json 
+2025-12-02 14:00:03 [INFO] [GET] /data/quotes.json 
+2025-12-02 14:00:03 [INFO] [GET] /data/afk.json 
+2025-12-02 14:00:03 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 14:00:03 [INFO] [GET] /api/whoami 
+2025-12-02 14:00:03 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 14:00:07 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 14:00:08 [INFO] [GET] /data/dialog.json 
+2025-12-02 14:00:08 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 14:00:08 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 14:00:09 [INFO] [GET] /data/projects.json 
+2025-12-02 14:00:09 [INFO] [GET] /data/quotes.json 
+2025-12-02 14:00:09 [INFO] [GET] /data/afk.json 
+2025-12-02 14:00:09 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 14:00:09 [INFO] [GET] /api/whoami 
+2025-12-02 14:00:09 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 14:44:34 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-02 14:44:34 [INFO] [GET] /index.html 
+2025-12-02 14:44:34 [INFO] [GET] /index.html 
+2025-12-02 14:44:34 [INFO] [GET] / 
+2025-12-02 14:44:34 [INFO] [GET] / 
+2025-12-02 14:44:34 [INFO] [GET] /data/about/about.html 
+2025-12-02 14:44:34 [INFO] [GET] /data/about/about.html 
+2025-12-02 14:44:42 [INFO] [GET] /data/dialog.json 
+2025-12-02 14:44:42 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 14:44:42 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 14:44:42 [INFO] [GET] /data/projects.json 
+2025-12-02 14:44:42 [INFO] [GET] /data/quotes.json 
+2025-12-02 14:44:42 [INFO] [GET] /data/afk.json 
+2025-12-02 14:44:42 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 14:44:42 [INFO] [GET] /api/whoami 
+2025-12-02 14:44:42 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 14:45:22 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 14:46:09 [INFO] [GET] /data/dialog.json 
+2025-12-02 14:46:09 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 14:46:09 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 14:46:09 [INFO] [GET] /data/projects.json 
+2025-12-02 14:46:09 [INFO] [GET] /data/quotes.json 
+2025-12-02 14:46:09 [INFO] [GET] /data/afk.json 
+2025-12-02 14:46:09 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 14:46:09 [INFO] [GET] /api/whoami 
+2025-12-02 14:46:09 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 14:48:14 [INFO] [GET] /data/dialog.json 
+2025-12-02 14:48:14 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 14:48:14 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 14:48:14 [INFO] [GET] /data/projects.json 
+2025-12-02 14:48:14 [INFO] [GET] /data/quotes.json 
+2025-12-02 14:48:14 [INFO] [GET] /data/afk.json 
+2025-12-02 14:48:14 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 14:48:14 [INFO] [GET] /api/whoami 
+2025-12-02 14:48:14 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 14:48:22 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 14:48:29 [INFO] [GET] /data/dialog.json 
+2025-12-02 14:48:29 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 14:48:29 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 14:48:29 [INFO] [GET] /data/projects.json 
+2025-12-02 14:48:29 [INFO] [GET] /data/quotes.json 
+2025-12-02 14:48:29 [INFO] [GET] /data/afk.json 
+2025-12-02 14:48:29 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 14:48:29 [INFO] [GET] /api/whoami 
+2025-12-02 14:48:29 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 14:48:43 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 14:48:51 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 14:51:05 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 14:51:07 [INFO] [GET] /data/dialog.json 
+2025-12-02 14:51:07 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 14:51:07 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 14:51:07 [INFO] [GET] /data/projects.json 
+2025-12-02 14:51:07 [INFO] [GET] /data/quotes.json 
+2025-12-02 14:51:07 [INFO] [GET] /data/afk.json 
+2025-12-02 14:51:07 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 14:51:07 [INFO] [GET] /api/whoami 
+2025-12-02 14:51:07 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 14:51:17 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 14:52:59 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 14:53:00 [INFO] [GET] /data/dialog.json 
+2025-12-02 14:53:01 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 14:53:01 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 14:53:01 [INFO] [GET] /data/projects.json 
+2025-12-02 14:53:01 [INFO] [GET] /data/quotes.json 
+2025-12-02 14:53:01 [INFO] [GET] /data/afk.json 
+2025-12-02 14:53:01 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 14:53:01 [INFO] [GET] /api/whoami 
+2025-12-02 14:53:01 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 14:53:11 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 14:53:26 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 14:59:07 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 14:59:08 [INFO] [GET] /data/dialog.json 
+2025-12-02 14:59:08 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 14:59:08 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 14:59:08 [INFO] [GET] /data/projects.json 
+2025-12-02 14:59:08 [INFO] [GET] /data/quotes.json 
+2025-12-02 14:59:08 [INFO] [GET] /data/afk.json 
+2025-12-02 14:59:08 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 14:59:08 [INFO] [GET] /api/whoami 
+2025-12-02 14:59:08 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 14:59:47 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 15:00:45 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 15:00:46 [INFO] [GET] /data/dialog.json 
+2025-12-02 15:00:46 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 15:00:46 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 15:00:46 [INFO] [GET] /data/projects.json 
+2025-12-02 15:00:46 [INFO] [GET] /data/quotes.json 
+2025-12-02 15:00:46 [INFO] [GET] /data/afk.json 
+2025-12-02 15:00:46 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 15:00:47 [INFO] [GET] /api/whoami 
+2025-12-02 15:00:47 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 15:01:01 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 15:08:49 [INFO] [GET] /data/dialog.json 
+2025-12-02 15:08:49 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 15:08:49 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 15:08:49 [INFO] [GET] /data/projects.json 
+2025-12-02 15:08:49 [INFO] [GET] /data/quotes.json 
+2025-12-02 15:08:50 [INFO] [GET] /data/afk.json 
+2025-12-02 15:08:50 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 15:08:50 [INFO] [GET] /api/whoami 
+2025-12-02 15:08:50 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 15:08:56 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 15:08:57 [INFO] [GET] /data/dialog.json 
+2025-12-02 15:08:57 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 15:08:57 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 15:08:57 [INFO] [GET] /data/projects.json 
+2025-12-02 15:08:57 [INFO] [GET] /data/quotes.json 
+2025-12-02 15:08:57 [INFO] [GET] /data/afk.json 
+2025-12-02 15:08:57 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 15:08:58 [INFO] [GET] /api/whoami 
+2025-12-02 15:08:58 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 15:09:06 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 15:17:24 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-02 15:17:26 [INFO] [GET] /data/dialog.json 
+2025-12-02 15:17:26 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-02 15:17:26 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-02 15:17:26 [INFO] [GET] /data/projects.json 
+2025-12-02 15:17:26 [INFO] [GET] /data/quotes.json 
+2025-12-02 15:17:26 [INFO] [GET] /data/afk.json 
+2025-12-02 15:17:26 [INFO] [GET] /data/afkspecial.json 
+2025-12-02 15:17:27 [INFO] [GET] /api/whoami 
+2025-12-02 15:17:27 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-02 15:17:37 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 01:57:28 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 01:57:28 [INFO] [GET] /index.html 
+2025-12-03 01:57:28 [INFO] [GET] /index.html 
+2025-12-03 01:57:28 [INFO] [GET] / 
+2025-12-03 01:57:28 [INFO] [GET] / 
+2025-12-03 01:57:29 [INFO] [GET] /data/about/about.html 
+2025-12-03 01:57:29 [INFO] [GET] /data/about/about.html 
+2025-12-03 01:57:45 [INFO] [GET] /data/dialog.json 
+2025-12-03 01:57:47 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 01:57:47 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 01:57:47 [INFO] [GET] /data/projects.json 
+2025-12-03 01:57:47 [INFO] [GET] /data/quotes.json 
+2025-12-03 01:57:47 [INFO] [GET] /data/afk.json 
+2025-12-03 01:57:47 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 01:57:47 [INFO] [GET] /favicon.ico 
+2025-12-03 01:57:47 [INFO] [GET] /api/whoami 
+2025-12-03 01:57:47 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 02:04:50 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 02:04:50 [INFO] [GET] /index.html 
+2025-12-03 02:04:50 [INFO] [GET] /index.html 
+2025-12-03 02:04:50 [INFO] [GET] / 
+2025-12-03 02:04:50 [INFO] [GET] / 
+2025-12-03 02:04:50 [INFO] [GET] /data/about/about.html 
+2025-12-03 02:04:50 [INFO] [GET] /data/about/about.html 
+2025-12-03 02:04:55 [INFO] [GET] /data/dialog.json 
+2025-12-03 02:04:56 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:04:56 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 02:04:56 [INFO] [GET] /data/projects.json 
+2025-12-03 02:04:56 [INFO] [GET] /data/quotes.json 
+2025-12-03 02:04:56 [INFO] [GET] /data/afk.json 
+2025-12-03 02:04:56 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 02:04:56 [INFO] [GET] /api/whoami 
+2025-12-03 02:04:56 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 02:06:53 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:06:56 [INFO] [GET] /data/dialog.json 
+2025-12-03 02:06:56 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:06:56 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 02:06:56 [INFO] [GET] /data/projects.json 
+2025-12-03 02:06:56 [INFO] [GET] /data/quotes.json 
+2025-12-03 02:06:56 [INFO] [GET] /data/afk.json 
+2025-12-03 02:06:56 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 02:06:57 [INFO] [GET] /api/whoami 
+2025-12-03 02:06:57 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 02:07:05 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:18:29 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 02:18:29 [INFO] [GET] /index.html 
+2025-12-03 02:18:29 [INFO] [GET] /index.html 
+2025-12-03 02:18:29 [INFO] [GET] / 
+2025-12-03 02:18:29 [INFO] [GET] / 
+2025-12-03 02:18:29 [INFO] [GET] /data/about/about.html 
+2025-12-03 02:18:29 [INFO] [GET] /data/about/about.html 
+2025-12-03 02:18:34 [INFO] [GET] /data/dialog.json 
+2025-12-03 02:18:34 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:18:34 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 02:18:34 [INFO] [GET] /data/projects.json 
+2025-12-03 02:18:34 [INFO] [GET] /data/quotes.json 
+2025-12-03 02:18:34 [INFO] [GET] /data/afk.json 
+2025-12-03 02:18:34 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 02:18:35 [INFO] [GET] /api/whoami 
+2025-12-03 02:18:35 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 02:18:45 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:20:08 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 02:27:03 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 02:27:03 [INFO] [GET] /index.html 
+2025-12-03 02:27:03 [INFO] [GET] /index.html 
+2025-12-03 02:27:03 [INFO] [GET] / 
+2025-12-03 02:27:03 [INFO] [GET] / 
+2025-12-03 02:27:03 [INFO] [GET] /data/about/about.html 
+2025-12-03 02:27:03 [INFO] [GET] /data/about/about.html 
+2025-12-03 02:27:12 [INFO] [GET] /data/dialog.json 
+2025-12-03 02:27:13 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:27:13 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 02:27:13 [INFO] [GET] /data/projects.json 
+2025-12-03 02:27:13 [INFO] [GET] /data/quotes.json 
+2025-12-03 02:27:13 [INFO] [GET] /data/afk.json 
+2025-12-03 02:27:13 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 02:27:13 [INFO] [GET] /api/whoami 
+2025-12-03 02:27:13 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 02:27:29 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:27:35 [INFO] [GET] /data/dialog.json 
+2025-12-03 02:27:35 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:27:35 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 02:27:35 [INFO] [GET] /data/projects.json 
+2025-12-03 02:27:35 [INFO] [GET] /data/quotes.json 
+2025-12-03 02:27:35 [INFO] [GET] /data/afk.json 
+2025-12-03 02:27:35 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 02:27:35 [INFO] [GET] /api/whoami 
+2025-12-03 02:27:35 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 02:27:46 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:36:59 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 02:36:59 [INFO] [GET] /index.html 
+2025-12-03 02:36:59 [INFO] [GET] /index.html 
+2025-12-03 02:36:59 [INFO] [GET] / 
+2025-12-03 02:36:59 [INFO] [GET] / 
+2025-12-03 02:36:59 [INFO] [GET] /data/about/about.html 
+2025-12-03 02:36:59 [INFO] [GET] /data/about/about.html 
+2025-12-03 02:37:05 [INFO] [GET] /data/dialog.json 
+2025-12-03 02:37:05 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:37:05 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 02:37:05 [INFO] [GET] /data/projects.json 
+2025-12-03 02:37:05 [INFO] [GET] /data/quotes.json 
+2025-12-03 02:37:05 [INFO] [GET] /data/afk.json 
+2025-12-03 02:37:05 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 02:37:06 [INFO] [GET] /api/whoami 
+2025-12-03 02:37:06 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 02:37:16 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:38:54 [INFO] [GET] /data/dialog.json 
+2025-12-03 02:38:54 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:38:54 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 02:38:54 [INFO] [GET] /data/projects.json 
+2025-12-03 02:38:54 [INFO] [GET] /data/quotes.json 
+2025-12-03 02:38:54 [INFO] [GET] /data/afk.json 
+2025-12-03 02:38:54 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 02:38:55 [INFO] [GET] /api/whoami 
+2025-12-03 02:38:55 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 02:40:14 [INFO] [GET] /data/dialog.json 
+2025-12-03 02:40:14 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:40:14 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 02:40:14 [INFO] [GET] /data/projects.json 
+2025-12-03 02:40:14 [INFO] [GET] /data/quotes.json 
+2025-12-03 02:40:14 [INFO] [GET] /data/afk.json 
+2025-12-03 02:40:14 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 02:40:15 [INFO] [GET] /api/whoami 
+2025-12-03 02:40:15 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 02:40:17 [INFO] [GET] /.well-known/appspecific/com.chrome.devtools.json 
+2025-12-03 02:40:26 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:43:14 [INFO] [GET] /data/dialog.json 
+2025-12-03 02:43:14 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:43:14 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 02:43:14 [INFO] [GET] /data/projects.json 
+2025-12-03 02:43:14 [INFO] [GET] /data/quotes.json 
+2025-12-03 02:43:14 [INFO] [GET] /data/afk.json 
+2025-12-03 02:43:14 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 02:43:14 [INFO] [GET] /favicon.ico 
+2025-12-03 02:43:14 [INFO] [GET] /api/whoami 
+2025-12-03 02:43:14 [INFO] [WHOAMI CHECK] Received sessionId: 33d1ab72-7d67-4a6f-a2c4-22b27aa6ee2d. Source: QUERY_PARAM 
+2025-12-03 02:43:14 [WARN] [STALE COOKIE] Session ID 33d1ab72-7d67-4a6f-a2c4-22b27aa6ee2d tidak ditemukan di server. Cookie dihapus. 
+2025-12-03 02:43:33 [INFO] [POST] /api/visit 
+2025-12-03 02:43:33 [INFO] [FS ACTION] Mencoba menulis 2 sesi ke visitors.json (FORCE SYNC WRITE)... 
+2025-12-03 02:43:33 [INFO] [FS SUCCESS] visitors.json berhasil diupdate. (Panjang file SYNC terkonfirmasi: 676 byte) 
+2025-12-03 02:43:33 [INFO] [VISIT - Session] bc57920e-6161-40b2-9891-c79fb1cae6f4 -> "MinBrowser" 
+2025-12-03 02:44:50 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 02:44:50 [INFO] [GET] /index.html 
+2025-12-03 02:44:50 [INFO] [GET] /index.html 
+2025-12-03 02:44:50 [INFO] [GET] / 
+2025-12-03 02:44:50 [INFO] [GET] / 
+2025-12-03 02:44:50 [INFO] [GET] /data/about/about.html 
+2025-12-03 02:44:50 [INFO] [GET] /data/about/about.html 
+2025-12-03 02:53:03 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 02:53:03 [INFO] [GET] /index.html 
+2025-12-03 02:53:03 [INFO] [GET] /index.html 
+2025-12-03 02:53:03 [INFO] [GET] / 
+2025-12-03 02:53:03 [INFO] [GET] / 
+2025-12-03 02:53:03 [INFO] [GET] /data/about/about.html 
+2025-12-03 02:53:03 [INFO] [GET] /data/about/about.html 
+2025-12-03 02:53:09 [INFO] [GET] /data/dialog.json 
+2025-12-03 02:53:09 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:53:09 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 02:53:09 [INFO] [GET] /data/projects.json 
+2025-12-03 02:53:09 [INFO] [GET] /data/quotes.json 
+2025-12-03 02:53:09 [INFO] [GET] /data/afk.json 
+2025-12-03 02:53:09 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 02:53:10 [INFO] [GET] /api/whoami 
+2025-12-03 02:53:10 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 02:53:20 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 02:54:31 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 02:54:40 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 02:54:56 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 03:10:33 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 03:10:33 [INFO] [GET] /index.html 
+2025-12-03 03:10:33 [INFO] [GET] /index.html 
+2025-12-03 03:10:33 [INFO] [GET] / 
+2025-12-03 03:10:33 [INFO] [GET] / 
+2025-12-03 03:10:33 [INFO] [GET] /data/about/about.html 
+2025-12-03 03:10:33 [INFO] [GET] /data/about/about.html 
+2025-12-03 03:10:38 [INFO] [GET] /data/dialog.json 
+2025-12-03 03:10:39 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 03:10:39 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 03:10:39 [INFO] [GET] /data/projects.json 
+2025-12-03 03:10:39 [INFO] [GET] /data/quotes.json 
+2025-12-03 03:10:39 [INFO] [GET] /data/afk.json 
+2025-12-03 03:10:39 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 03:10:39 [INFO] [GET] /api/whoami 
+2025-12-03 03:10:39 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 03:10:48 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 03:10:53 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 04:15:29 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 04:15:29 [INFO] [GET] /index.html 
+2025-12-03 04:15:29 [INFO] [GET] /index.html 
+2025-12-03 04:15:29 [INFO] [GET] / 
+2025-12-03 04:15:29 [INFO] [GET] / 
+2025-12-03 04:15:29 [INFO] [GET] /data/about/about.html 
+2025-12-03 04:15:29 [INFO] [GET] /data/about/about.html 
+2025-12-03 04:15:33 [INFO] [GET] /data/dialog.json 
+2025-12-03 04:15:34 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 04:15:34 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 04:15:34 [INFO] [GET] /data/projects.json 
+2025-12-03 04:15:34 [INFO] [GET] /data/quotes.json 
+2025-12-03 04:15:34 [INFO] [GET] /data/afk.json 
+2025-12-03 04:15:34 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 04:15:34 [INFO] [GET] /api/whoami 
+2025-12-03 04:15:34 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 04:15:47 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 04:33:25 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 04:33:26 [INFO] [GET] /index.html 
+2025-12-03 04:33:26 [INFO] [GET] /index.html 
+2025-12-03 04:33:26 [INFO] [GET] / 
+2025-12-03 04:33:26 [INFO] [GET] / 
+2025-12-03 04:33:26 [INFO] [GET] /data/about/about.html 
+2025-12-03 04:33:26 [INFO] [GET] /data/about/about.html 
+2025-12-03 04:33:31 [INFO] [GET] /data/dialog.json 
+2025-12-03 04:33:31 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 04:33:31 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 04:33:31 [INFO] [GET] /data/projects.json 
+2025-12-03 04:33:31 [INFO] [GET] /data/quotes.json 
+2025-12-03 04:33:31 [INFO] [GET] /data/afk.json 
+2025-12-03 04:33:31 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 04:33:31 [INFO] [GET] /api/whoami 
+2025-12-03 04:33:31 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 04:33:38 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 04:41:41 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 04:41:41 [INFO] [GET] /index.html 
+2025-12-03 04:41:41 [INFO] [GET] /index.html 
+2025-12-03 04:41:41 [INFO] [GET] / 
+2025-12-03 04:41:41 [INFO] [GET] / 
+2025-12-03 04:41:41 [INFO] [GET] /data/about/about.html 
+2025-12-03 04:41:41 [INFO] [GET] /data/about/about.html 
+2025-12-03 04:41:45 [INFO] [GET] /data/dialog.json 
+2025-12-03 04:41:45 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 04:41:45 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 04:41:45 [INFO] [GET] /data/projects.json 
+2025-12-03 04:41:45 [INFO] [GET] /data/quotes.json 
+2025-12-03 04:41:45 [INFO] [GET] /data/afk.json 
+2025-12-03 04:41:45 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 04:41:45 [INFO] [GET] /api/whoami 
+2025-12-03 04:41:45 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 04:41:55 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 04:50:33 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 04:50:33 [INFO] [GET] /index.html 
+2025-12-03 04:50:33 [INFO] [GET] /index.html 
+2025-12-03 04:50:33 [INFO] [GET] / 
+2025-12-03 04:50:33 [INFO] [GET] / 
+2025-12-03 04:50:33 [INFO] [GET] /data/about/about.html 
+2025-12-03 04:50:33 [INFO] [GET] /data/about/about.html 
+2025-12-03 04:50:38 [INFO] [GET] /data/dialog.json 
+2025-12-03 04:50:38 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 04:50:38 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 04:50:38 [INFO] [GET] /data/projects.json 
+2025-12-03 04:50:38 [INFO] [GET] /data/quotes.json 
+2025-12-03 04:50:38 [INFO] [GET] /data/afk.json 
+2025-12-03 04:50:39 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 04:50:39 [INFO] [GET] /api/whoami 
+2025-12-03 04:50:39 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 04:50:45 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 04:55:21 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 04:55:21 [INFO] [GET] /index.html 
+2025-12-03 04:55:21 [INFO] [GET] /index.html 
+2025-12-03 04:55:21 [INFO] [GET] / 
+2025-12-03 04:55:21 [INFO] [GET] / 
+2025-12-03 04:55:21 [INFO] [GET] /data/about/about.html 
+2025-12-03 04:55:21 [INFO] [GET] /data/about/about.html 
+2025-12-03 04:55:26 [INFO] [GET] /data/dialog.json 
+2025-12-03 04:55:26 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 04:55:26 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 04:55:26 [INFO] [GET] /data/projects.json 
+2025-12-03 04:55:26 [INFO] [GET] /data/quotes.json 
+2025-12-03 04:55:26 [INFO] [GET] /data/afk.json 
+2025-12-03 04:55:26 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 04:55:27 [INFO] [GET] /api/whoami 
+2025-12-03 04:55:27 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 04:55:36 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 04:59:52 [INFO] [GET] /data/dialog.json 
+2025-12-03 04:59:52 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 04:59:52 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 04:59:52 [INFO] [GET] /data/projects.json 
+2025-12-03 04:59:52 [INFO] [GET] /data/quotes.json 
+2025-12-03 04:59:52 [INFO] [GET] /data/afk.json 
+2025-12-03 04:59:52 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 04:59:53 [INFO] [GET] /api/whoami 
+2025-12-03 04:59:53 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 05:00:01 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 05:01:44 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 05:01:44 [INFO] [GET] /index.html 
+2025-12-03 05:01:44 [INFO] [GET] /index.html 
+2025-12-03 05:01:44 [INFO] [GET] / 
+2025-12-03 05:01:44 [INFO] [GET] / 
+2025-12-03 05:01:44 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:01:44 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:01:51 [INFO] [GET] /data/dialog.json 
+2025-12-03 05:01:51 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 05:01:51 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 05:01:51 [INFO] [GET] /data/projects.json 
+2025-12-03 05:01:51 [INFO] [GET] /data/quotes.json 
+2025-12-03 05:01:51 [INFO] [GET] /data/afk.json 
+2025-12-03 05:01:51 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 05:01:52 [INFO] [GET] /api/whoami 
+2025-12-03 05:01:52 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 05:02:04 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 05:14:56 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 05:14:56 [INFO] [GET] /index.html 
+2025-12-03 05:14:56 [INFO] [GET] /index.html 
+2025-12-03 05:14:56 [INFO] [GET] / 
+2025-12-03 05:14:56 [INFO] [GET] / 
+2025-12-03 05:14:56 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:14:56 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:15:00 [INFO] [GET] /data/dialog.json 
+2025-12-03 05:15:01 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 05:15:01 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 05:15:01 [INFO] [GET] /data/projects.json 
+2025-12-03 05:15:01 [INFO] [GET] /data/quotes.json 
+2025-12-03 05:15:01 [INFO] [GET] /data/afk.json 
+2025-12-03 05:15:01 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 05:15:01 [INFO] [GET] /api/whoami 
+2025-12-03 05:15:01 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 05:16:08 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 05:16:09 [INFO] [GET] /index.html 
+2025-12-03 05:16:09 [INFO] [GET] /index.html 
+2025-12-03 05:16:09 [INFO] [GET] / 
+2025-12-03 05:16:09 [INFO] [GET] / 
+2025-12-03 05:16:09 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:16:09 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:16:13 [INFO] [GET] /data/dialog.json 
+2025-12-03 05:16:13 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 05:16:13 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 05:16:13 [INFO] [GET] /data/projects.json 
+2025-12-03 05:16:13 [INFO] [GET] /data/quotes.json 
+2025-12-03 05:16:13 [INFO] [GET] /data/afk.json 
+2025-12-03 05:16:13 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 05:16:13 [INFO] [GET] /api/whoami 
+2025-12-03 05:16:13 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 05:16:45 [INFO] [GET] /data/dialog.json 
+2025-12-03 05:16:45 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 05:16:45 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 05:16:45 [INFO] [GET] /data/projects.json 
+2025-12-03 05:16:45 [INFO] [GET] /data/quotes.json 
+2025-12-03 05:16:45 [INFO] [GET] /data/afk.json 
+2025-12-03 05:16:45 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 05:16:45 [INFO] [GET] /api/whoami 
+2025-12-03 05:16:45 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 05:16:53 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 05:24:39 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 05:24:39 [INFO] [GET] /index.html 
+2025-12-03 05:24:39 [INFO] [GET] /index.html 
+2025-12-03 05:24:39 [INFO] [GET] / 
+2025-12-03 05:24:39 [INFO] [GET] / 
+2025-12-03 05:24:39 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:24:39 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:24:45 [INFO] [GET] /data/dialog.json 
+2025-12-03 05:24:45 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 05:24:45 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 05:24:45 [INFO] [GET] /data/projects.json 
+2025-12-03 05:24:45 [INFO] [GET] /data/quotes.json 
+2025-12-03 05:24:45 [INFO] [GET] /data/afk.json 
+2025-12-03 05:24:46 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 05:24:46 [INFO] [GET] /api/whoami 
+2025-12-03 05:24:46 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 05:24:52 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 05:30:42 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 05:30:42 [INFO] [GET] /index.html 
+2025-12-03 05:30:42 [INFO] [GET] /index.html 
+2025-12-03 05:30:42 [INFO] [GET] / 
+2025-12-03 05:30:42 [INFO] [GET] / 
+2025-12-03 05:30:42 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:30:42 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:31:09 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 05:31:09 [INFO] [GET] /index.html 
+2025-12-03 05:31:09 [INFO] [GET] /index.html 
+2025-12-03 05:31:09 [INFO] [GET] / 
+2025-12-03 05:31:09 [INFO] [GET] / 
+2025-12-03 05:31:09 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:31:09 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:31:16 [INFO] [GET] /data/dialog.json 
+2025-12-03 05:31:16 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 05:31:16 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 05:31:16 [INFO] [GET] /data/projects.json 
+2025-12-03 05:31:16 [INFO] [GET] /data/quotes.json 
+2025-12-03 05:31:16 [INFO] [GET] /data/afk.json 
+2025-12-03 05:31:16 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 05:31:16 [INFO] [GET] /api/whoami 
+2025-12-03 05:31:16 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 05:33:16 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 05:33:16 [INFO] [GET] /index.html 
+2025-12-03 05:33:16 [INFO] [GET] /index.html 
+2025-12-03 05:33:16 [INFO] [GET] / 
+2025-12-03 05:33:16 [INFO] [GET] / 
+2025-12-03 05:33:16 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:33:16 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:33:19 [INFO] [GET] /data/dialog.json 
+2025-12-03 05:33:19 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 05:33:19 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 05:33:19 [INFO] [GET] /data/projects.json 
+2025-12-03 05:33:20 [INFO] [GET] /data/quotes.json 
+2025-12-03 05:33:20 [INFO] [GET] /data/afk.json 
+2025-12-03 05:33:20 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 05:33:20 [INFO] [GET] /api/whoami 
+2025-12-03 05:33:20 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 05:33:36 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 05:33:36 [INFO] [GET] /index.html 
+2025-12-03 05:33:36 [INFO] [GET] /index.html 
+2025-12-03 05:33:36 [INFO] [GET] / 
+2025-12-03 05:33:36 [INFO] [GET] / 
+2025-12-03 05:33:36 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:33:36 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:33:39 [INFO] [GET] /data/dialog.json 
+2025-12-03 05:33:39 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 05:33:39 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 05:33:39 [INFO] [GET] /data/projects.json 
+2025-12-03 05:33:39 [INFO] [GET] /data/quotes.json 
+2025-12-03 05:33:39 [INFO] [GET] /data/afk.json 
+2025-12-03 05:33:39 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 05:33:39 [INFO] [GET] /api/whoami 
+2025-12-03 05:33:39 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 05:35:16 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 05:35:16 [INFO] [GET] /index.html 
+2025-12-03 05:35:16 [INFO] [GET] /index.html 
+2025-12-03 05:35:16 [INFO] [GET] / 
+2025-12-03 05:35:16 [INFO] [GET] / 
+2025-12-03 05:35:16 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:35:16 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:35:19 [INFO] [GET] /data/dialog.json 
+2025-12-03 05:35:19 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 05:35:19 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 05:35:19 [INFO] [GET] /data/projects.json 
+2025-12-03 05:35:19 [INFO] [GET] /data/quotes.json 
+2025-12-03 05:35:19 [INFO] [GET] /data/afk.json 
+2025-12-03 05:35:19 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 05:35:19 [INFO] [GET] /api/whoami 
+2025-12-03 05:35:19 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: QUERY_PARAM 
+2025-12-03 05:35:29 [INFO] [GET] /data/dialog_proyek.json 
+2025-12-03 05:47:17 [INFO] [FS DEBUG] Path visitors.json: C:\Users\rifqi\Documents\PROJEK\PRIBADI\WEB\new-repp-website\data\visitors.json 
+2025-12-03 05:47:17 [INFO] [GET] /index.html 
+2025-12-03 05:47:17 [INFO] [GET] /index.html 
+2025-12-03 05:47:17 [INFO] [GET] / 
+2025-12-03 05:47:17 [INFO] [GET] / 
+2025-12-03 05:47:17 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:47:17 [INFO] [GET] /data/about/about.html 
+2025-12-03 05:47:24 [INFO] [GET] /data/dialog.json 
+2025-12-03 05:47:24 [INFO] [GET] /data/projects.json 
+2025-12-03 05:47:24 [INFO] [GET] /data/quotes.json 
+2025-12-03 05:47:24 [INFO] [GET] /data/afk.json 
+2025-12-03 05:47:24 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 05:47:24 [INFO] [GET] /api/whoami 
+2025-12-03 05:47:24 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: OTHER 
+2025-12-03 05:47:49 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 05:48:00 [INFO] [GET] /data/dialog_tentang.json 
+2025-12-03 05:48:10 [INFO] [GET] /data/dialog.json 
+2025-12-03 05:48:10 [INFO] [GET] /data/projects.json 
+2025-12-03 05:48:10 [INFO] [GET] /data/quotes.json 
+2025-12-03 05:48:11 [INFO] [GET] /data/afk.json 
+2025-12-03 05:48:11 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 05:48:11 [INFO] [GET] /api/whoami 
+2025-12-03 05:48:11 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: OTHER 
+2025-12-03 05:48:52 [INFO] [GET] /data/dialog.json 
+2025-12-03 05:48:53 [INFO] [GET] /data/projects.json 
+2025-12-03 05:48:53 [INFO] [GET] /data/quotes.json 
+2025-12-03 05:48:53 [INFO] [GET] /data/afk.json 
+2025-12-03 05:48:53 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 05:48:53 [INFO] [GET] /api/whoami 
+2025-12-03 05:48:53 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: OTHER 
+2025-12-03 05:49:20 [INFO] [GET] /data/dialog.json 
+2025-12-03 05:49:20 [INFO] [GET] /data/projects.json 
+2025-12-03 05:49:20 [INFO] [GET] /data/quotes.json 
+2025-12-03 05:49:20 [INFO] [GET] /data/afk.json 
+2025-12-03 05:49:20 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 05:49:20 [INFO] [GET] /api/whoami 
+2025-12-03 05:49:20 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: OTHER 
+2025-12-03 05:49:37 [INFO] [GET] /data/dialog.json 
+2025-12-03 05:49:37 [INFO] [GET] /data/projects.json 
+2025-12-03 05:49:37 [INFO] [GET] /data/quotes.json 
+2025-12-03 05:49:37 [INFO] [GET] /data/afk.json 
+2025-12-03 05:49:37 [INFO] [GET] /data/afkspecial.json 
+2025-12-03 05:49:37 [INFO] [GET] /api/whoami 
+2025-12-03 05:49:37 [INFO] [WHOAMI CHECK] Received sessionId: 20265d9f-304f-4df3-a1c4-526e033f05ec. Source: OTHER 
+2025-12-03 05:49:49 [INFO] [GET] /data/dialog_proyek.json 
